@@ -1,5 +1,4 @@
 body{
-    margin: 10px;
     margin: 1em;
   }
   
@@ -49,15 +48,26 @@ body{
     margin: 2em;
   }
   
-  .fa-bars{
+  #topnav-right a.icon{
     display: none;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 3em 3.5em;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0 0.75em 0 0.75em;
   }
   
   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
   @media screen and (max-width: 1024px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav img {display: none;}
-    .topnav a.icon {
+    .topnav a {
+        display: none;
+    }
+    .topnav img {
+        display: none;
+    }
+    #topnav-right a.icon {
       float: right;
       display: block;
     }
@@ -65,7 +75,9 @@ body{
   
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   @media screen and (max-width: 1024px) {
-    .topnav.responsive {position: relative;}
+    .topnav.responsive {
+        position: relative;
+    }
     .topnav.responsive a.icon {
       position: absolute;
       right: 0;
