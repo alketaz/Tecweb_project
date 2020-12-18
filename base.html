@@ -8,23 +8,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="HTML, CSS, JavaScript, MySQL, notizie, covid, sport, economia, cultura, scienze, spettacolo, politica">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css" media="screen">
   </head>
 
   <body>
     <header>
-      <h1>Nome Giornale</h1>
-      <img id="logo" src="" alt="">
-      <nav role="user_profile">
-        <img id="user_icon" src="" alt="">
-        <a href="#">Accedi/Registrati</a>
-        <a href="#">Il mio profilo</a>
-        <p>Username</p>
-      </nav>
-      <nav role="page_navigation">
-        <a href="#">Home</a>
-        <a href="#">Categorie</a>
-        <a href="#">Scrivi il tuo articolo!</a>
+      <nav>
+        <div class="topnav" id="topnav-left">
+          <h3>The Post</h3>
+        </div>
+        <div class="topnav" id="topnav-right">
+          <a href="#home" class="txt_link"><span lang="en">Home</span></a>
+          <a href="#cat" class="txt_link">Categorie</a>
+          <a href="#create" class="txt_link">Scrivi il tuo articolo</a>
+          <a href="#access" class="txt_link">Accedi</a>
+          <img src="img/user_logo.svg" alt="" id="user_img">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
       </nav>
     </header>
     <h1>Ultime News</h1>
@@ -67,4 +70,15 @@
       </address>
     </footer>
   </body>
+
+  <script>
+  function myFunction() {
+      var x = document.getElementById("topnav-right");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
 </html>
