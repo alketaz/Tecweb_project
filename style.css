@@ -9,7 +9,7 @@ html {
 }
 
 body{
-  max-width: 1420px;
+  max-width: 1660px;
   margin: auto;
   border: 1px;
 }
@@ -64,13 +64,35 @@ header {
   background-color: grey;
 }
 
+.articoli {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+article {
+  padding: 1em;
+  flex-grow: 5;
+  flex-shrink: 2;
+  margin right: 8px;
+}
+
+h1 {
+  padding: .5em;
+}
+
+aside {
+  flex-basis: 25%;
+  padding: 1em;
+}
 
 footer {
   background-color: grey;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
+  order: 2;
 }
 
 #address {
