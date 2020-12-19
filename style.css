@@ -11,14 +11,14 @@ html {
 
 body{
   background-color: white;
-  max-width: 1660px;
+  max-width: 75%;
   margin: auto;
   border: 1px;
 }
 
 /* Add a black background color to the top navigation */
 nav {
-  background-color: #2982F0;
+  background-color: #6d808a;
   overflow: hidden;
 }
 
@@ -122,12 +122,16 @@ aside {
   margin: 5px;
   margin-right: 20px;
   margin-bottom: 20px;
-  flex-basis: 25%;
+  flex-basis: 35%;
   padding: 1em;
 }
 
+aside h2 {
+  margin-bottom: 17px;
+}
+
 footer {
-  background-color: #2982F0;
+  background-color: #6d808a;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -149,4 +153,61 @@ footer {
 #cssLogo {
   order: 2;
   align-self: center;
+}
+
+.form_articolo {
+  display: flex;
+  flex-direction: column;
+  margin: 3em;
+}
+
+.form_articolo > h1 {
+  margin-left: -.5em;
+}
+
+.form_articolo > p {
+  font-size: 1.3em;
+  margin-bottom: 2em;
+}
+
+.form_articolo > input {
+  width: 99%;
+  margin-top: 0.5em;
+  margin-bottom: 2.3em;
+}
+
+.form_articolo > textarea {
+  min-height: 15em;
+  margin-top: 0.5em;
+  margin-bottom: 2.3em;
+}
+
+.cat_img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.img_sel{
+    display: flex;
+    flex-direction: column;
+}
+
+.img_sel > input {
+  margin-top: 0.5em;
+}
+
+.cat_sel{
+    display: flex;
+    flex-direction: column;
+}
+
+.cat_sel > select {
+  margin-top: 0.5em;
+}
+
+.form_articolo > button {
+  margin-top: 3em;
+  width: 100px;
+  height: 44px;
 }
