@@ -11,33 +11,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css" media="screen">
   </head>
-    <body>
-      <header>
-        <nav>
-          <div class="topnav" id="topnav-left">
-            <h3>The Post</h3>
-          </div>
-          <div class="topnav" id="topnav-right">
-            <a href="base.html" class="txt_link"><span lang="en">Home</span></a>
-            <a href="#cat" class="txt_link">Categorie</a>
-            <a href="form_articolo.html" class="txt_link">Scrivi il tuo articolo</a>
-            <a href="#access" class="txt_link">Accedi</a>
-            <img src="img/user_logo.svg" alt="" id="user_img">
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </div>
-        </nav>
-      </header>
 
-      <div class="cat_page">
-        <a href="article_filter.html/?cat_name=Sport" id="sport">Sport</a>
-        <a href="article_filter.html/?cat_name=Economia" id="economia">Economia</a>
-        <a href="article_filter.html/?cat_name=Politica" id="politica">Politica</a>
-        <a href="article_filter.html/?cat_name=Covid" id="covid">Covid</a>
-        <a href="article_filter.html/?cat_name=Spettacolo" id="spettacolo">Spettacolo</a>
-        <a href="article_filter.html/?cat_name=Gossip" id="gossip">Gossip</a>
-      </div>
+  <body>
+    <header>
+      <nav>
+        <div class="topnav" id="topnav-left">
+          <h3>The Post</h3>
+        </div>
+        <div class="topnav" id="topnav-right">
+          <a href="base.html" class="txt_link"><span lang="en">Home</span></a>
+          <a href="cat.html" class="txt_link">Categorie</a>
+          <a href="#create" class="txt_link">Scrivi il tuo articolo</a>
+          <a href="#access" class="txt_link">Accedi</a>
+          <img src="img/user_logo.svg" alt="" id="user_img">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <printArticolo></printArticolo>
+
+    <infoAutore></infoAutore>
+
+    <commentArea><commentArea>
 
     <footer>
       <img id="html5" src="img/badge-w3c-valid-html5.png" alt="Logo che certifica il rispetto dello standard w3c nella scrittura del codice html">
