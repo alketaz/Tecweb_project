@@ -20,8 +20,8 @@
         </div>
         <div class="topnav" id="topnav-right">
           <a href="base.html" class="txt_link"><span lang="en">Home</span></a>
-          <a href="cat.html" class="txt_link">Categorie</a>
-          <a href="#create" class="txt_link">Scrivi il tuo articolo</a>
+          <a href="#cat" class="txt_link">Categorie</a>
+          <a href="form_articolo.html" class="txt_link">Scrivi il tuo articolo</a>
           <a href="#access" class="txt_link">Accedi</a>
           <img src="img/user_logo.svg" alt="" id="user_img">
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -31,39 +31,14 @@
       </nav>
     </header>
 
-
-    <form action="/post_article.php" class="form_articolo">
-      <h1>Scrivi il tuo articolo!</h1>
-      <p>Scrivi e mandaci il tuo articolo, noi penseremo a valutarlo e pubblicarlo.<br>
-        La nostra redazione studierà attentamente il tuo articolo e deciderà se può essere pubblicato o meno. In caso di riscontro positivo ci occuperemo noi
-        di curare l'accessibilità del tuo articolo e di pubblicarlo col tuo nome.
-      </p>
-      <label for="titolo_art">Titolo dell'articolo</label>
-      <input type="text" name="titolo_art" placeholder="Titolo... (Massimo 126 caratteri)">
-      <label for="descr_art">Descrizione articolo</label>
-      <input type="text" name="descr_art" placeholder="Descrizione... (Massimo 300 caratteri)">
-      <label for="testo_art">Testo dell'articolo</label>
-      <textarea name="testo_art" placeholder="Testo dell'articolo... (Massimo 10000 caratteri)"></textarea>
-      <div class="cat_img">
-        <div class="img_sel">
-          <label for="image">Scegli un'immagine</label>
-          <input type="file" name="image" accept="image/jpeg, image/png">
-        </div>
-        <div class="cat_sel">
-          <label for="cat">Scegli una categoria</label>
-          <select name="cat">
-            <option value="sport">Sport</option>
-            <option value="economia">Economia</option>
-            <option value="politica">Politica</option>
-            <option value="covid">Covid</option>
-            <option value="scienze">Scienze</option>
-            <option value="spettacolo">Spettacolo</option>
-          </select>
-        </div>
-      </div>
-      <button type="submit" name="submit">Invia</button>
-    </form>
-
+    <div class="cat_page">
+      <button type="button" id="sport">Sport</button>
+      <button type="button" id="economia">Economia</button>
+      <button type="button" id="politica">Politica</button>
+      <button type="button" id="covid">Covid</button>
+      <button type="button" id="spettacolo">Spettacolo</button>
+      <button type="button" id="gossip">Gossip</button>
+    </div>
 
     <footer>
       <img id="html5" src="img/badge-w3c-valid-html5.png" alt="Logo che certifica il rispetto dello standard w3c nella scrittura del codice html">

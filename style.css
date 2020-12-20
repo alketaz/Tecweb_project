@@ -18,7 +18,7 @@ body{
 
 /* Add a black background color to the top navigation */
 nav {
-  background-color: #6d808a;
+  background-color: #00b3b3;
   overflow: hidden;
 }
 
@@ -100,12 +100,11 @@ nav h3{
 article {
   border: 2px solid grey;
   border-radius: 20px;
-  padding: 1em;
+  padding: 2em;
+  margin: 1.5em;
+  margin-left: 2em;
   flex-grow: 5;
   flex-shrink: 2;
-  margin: 5px;
-  margin-left: 20px;
-  margin-bottom: 20px;
 }
 
 h1 {
@@ -119,11 +118,11 @@ article h2 {
 aside {
   border: 2px solid grey;
   border-radius: 20px;
-  margin: 5px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin: 1.5em;
+  margin-left: .5em;
+  margin-right: 2em;
   flex-basis: 35%;
-  padding: 1em;
+  padding: 2em;
 }
 
 aside h2 {
@@ -131,12 +130,15 @@ aside h2 {
 }
 
 footer {
-  background-color: #6d808a;
+  background-color: #00b3b3;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
   order: 2;
+  padding: 1em;
+  height: 90px;
+  font-size: 0.8em;
 }
 
 #address {
@@ -155,6 +157,8 @@ footer {
   align-self: center;
 }
 
+
+/*  FORM SCRITTURA ARTICOLO  */
 .form_articolo {
   display: flex;
   flex-direction: column;
@@ -210,4 +214,49 @@ footer {
   margin-top: 3em;
   width: 100px;
   height: 44px;
+}
+
+
+
+/*  CSS PAGINA CATEGORIE  */
+.cat_page {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cat_page button {
+  margin: 2em;
+  width: 480px;
+  height: 250px;
+  font-size: 2em;
+  font-weight: bolder;
+  border: solid 1px;
+  border-radius: 15px;
+  border-style: outset;
+}
+
+.cat_page #sport {
+  background-image: url("img/sport_cat.jpeg");
+}
+
+.cat_page #politica {
+  background-image: url("img/politics_cat.png");
+}
+
+.cat_page #covid {
+  background-image: url("img/covid_cat.jpeg");
+}
+
+.cat_page #economia {
+  background-image: url("img/economy_cat.jpeg");
+}
+
+.cat_page #spettacolo {
+  background-image: url("img/spett_cat.jpeg");
+}
+
+.cat_page #gossip {
+  background-image: url("img/gossip_cat.jpeg");
 }
