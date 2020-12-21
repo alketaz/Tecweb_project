@@ -11,11 +11,12 @@ html {
 
 body{
   background-color: white;
-  max-width: 75%;
+  max-width: 1660px;
+  width: auto;
   margin: auto;
-  border: 1px;
 }
 
+/*HOME PAGE + HEADER E FOOTER*/
 /* Add a black background color to the top navigation */
 nav {
   background-color: #00b3b3;
@@ -91,42 +92,62 @@ nav h3{
   }
 }
 
-.articoli {
+h1 {
+  text-align: center;
+}
+
+.home_content {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.articoli {
+  margin: 1em;
+  width: 1220px;
 }
 
 article {
-  border: 2px solid grey;
-  border-radius: 20px;
-  padding: 2em;
-  margin: 1.5em;
-  margin-left: 2em;
-  flex-grow: 5;
-  flex-shrink: 2;
+  display: flex;
+  border: solid 1px;
+  padding: 1em;
+  flex-direction: column;
 }
 
-h1 {
-  padding: .5em;
+article h3 {
+  padding-bottom: 1em;
 }
 
-article h2 {
-  margin-bottom: 25px;
+article img {
+  width: 30%;
+  position: relative;
+  float: left;
+  padding-right: 1em;
+  padding-bottom: 1em;
+}
+
+article a {
+  width: inherit;
+}
+
+@media screen and (max-width: 1024px) {
+  article img {
+    width: 100%;
+    float: none;
+  }
 }
 
 aside {
-  border: 2px solid grey;
-  border-radius: 20px;
-  margin: 1.5em;
-  margin-left: .5em;
-  margin-right: 2em;
-  flex-basis: 35%;
-  padding: 2em;
+  border: solid 1px;
+  padding: 1em;
+  margin: 1em;
+  width: 440px;
+  min-height: 600px;
 }
 
 aside h2 {
-  margin-bottom: 17px;
+
 }
 
 footer {
@@ -158,7 +179,6 @@ footer {
 
 
 /*  FORM SCRITTURA ARTICOLO  */
-
 .form_articolo {
   display: flex;
   flex-direction: column;
@@ -223,21 +243,27 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 100%;
+  padding: 2em;
+  padding-right: 0em;
+  padding-bottom: 0em;
 }
 
 .cat_page a {
-  margin: 2em;
-  padding-top: 100px;
-  width: 480px;
-  height: 150px;
+  display: inline-block;
+  padding-top: 6.53%;
+  padding-bottom: 6.53%;
+  width: 29.9%;
   font-size: 2em;
   font-weight: bolder;
   border: solid 1px;
   border-color: grey;
   border-radius: 15px;
   text-align: center;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  background-size: cover;
 }
 
 .cat_page #sport {
@@ -245,7 +271,7 @@ footer {
 }
 
 .cat_page #politica {
-  background-image: url("img/politics_cat.png");
+  background-image: url("img/politics_cat.png")
 }
 
 .cat_page #covid {
@@ -262,4 +288,49 @@ footer {
 
 .cat_page #gossip {
   background-image: url("img/gossip_cat.jpeg");
+}
+
+@media screen and (max-width: 1024px){
+  .cat_page{
+    padding: 1em;
+  }
+  .cat_page a {
+    font-size: 1.2em;
+    padding-top: 10%;
+    padding-bottom: 9%;
+    width: 45%;
+    margin-right: 0em;
+    min-width: 164px;
+  }
+}
+
+/* GENERIC PAGE ARTICOLO*/
+.printArticolo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3em;
+}
+
+.upperPrint {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.upperPrint img {
+  order: 2;
+  width: 40%;
+  margin-left: 2em;
+}
+
+.upperPrint h1 {
+  text-align: left;
+}
+
+.printArticolo p {
+  text-align: justify;
 }
