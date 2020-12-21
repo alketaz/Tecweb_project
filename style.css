@@ -23,21 +23,20 @@ nav {
   overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
-.txt_link {
-float: left;
-color: #f2f2f2;
-text-align: center;
-padding: 3em 3.5em;
-text-decoration: none;
-font-size: 17px;
-margin: 0px;
-margin: 0 0.75em 0 0.75em;
+nav a:hover {
+  transform: scale(1.3);
+  transition: 0.2s;
 }
 
-nav a:hover {
-transform: scale(1.3);
-transition: 0.2s;
+/* Style the links inside the navigation bar */
+.txt_link {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 3em 1em;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 0 0.75em;
 }
 
 /* Right-aligned section inside the top navigation */
@@ -53,33 +52,56 @@ nav h3{
   color: #f2f2f2;
   padding: 2.6em 3.5em;
   text-align: center;
-  margin: 0px;
   margin: 0;
 }
 
-#user_img{
+.user_img{
   max-width: 3em;
   max-height: 3em;
   margin: 2em;
 }
 
-.fa-bars{
+#user_mob{
   display: none;
 }
 
+#topnav-right a.icon{
+  display: none;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: auto;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 0 0.75em;
+}
+
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 1024px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav img {display: none;}
-  .topnav a.icon {
+@media screen and (max-width: 1200px) {
+  .topnav a {
+      display: none;
+  }
+  .topnav #user_desk {
+    display: none;
+  }
+  #user_mob {
+    display: block;
+    float: left;
+  }
+  #topnav-left{
+    margin: auto;
+  }
+  #topnav-right a.icon {
     float: right;
     display: block;
   }
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 1024px) {
-  .topnav.responsive {position: relative;}
+@media screen and (max-width: 1200px) {
+  .topnav.responsive {
+      position: relative;
+  }
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
