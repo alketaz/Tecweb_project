@@ -10,7 +10,7 @@ html {
 }
 
 body{
-  background-color: white;
+  background-color: #f7f7f7;
   max-width: 1660px;
   width: auto;
   margin: auto;
@@ -19,7 +19,11 @@ body{
 /*HOME PAGE + HEADER E FOOTER*/
 /* Add a black background color to the top navigation */
 nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   background-color: #00b3b3;
+  background-image: linear-gradient(to right, #bcf7f7, #00b3b3);
   overflow: hidden;
 }
 
@@ -41,13 +45,17 @@ nav a:hover {
 
 /* Right-aligned section inside the top navigation */
 #topnav-right {
-float: right;
+  float: right;
 }
 
 #topnav-left{
   float: left;
 }
 
+#topnav-left img {
+  position: relative;
+  width: 60%;
+}
 nav h3{
   color: #f2f2f2;
   padding: 2.6em 3.5em;
@@ -116,6 +124,9 @@ nav h3{
 
 h1 {
   text-align: center;
+  margin: 1em 0 0 0;
+  font-family: 'Eugenio Text',Georgia,Times,'Times New Roman',serif;
+  font-size: 2em;
 }
 
 .home_content {
@@ -123,6 +134,8 @@ h1 {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  font-family: 'Eugenio Text',Georgia,Times,'Times New Roman',serif;
+  font-size: 1.3em;
 }
 
 .articoli {
@@ -132,8 +145,11 @@ h1 {
 
 article {
   display: flex;
-  border: solid 1px;
+  background-color: white;
+  /*border: solid 1px;*/
+  border-radius: 12px;
   padding: 1em;
+  margin-top: 1em;
   flex-direction: column;
 }
 
@@ -153,7 +169,7 @@ article a {
   width: inherit;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   article img {
     width: 100%;
     float: none;
@@ -161,23 +177,25 @@ article a {
 }
 
 aside {
-  border: solid 1px;
+  background-color: white;
+  /*border: solid 1px;*/
+  border-radius: 12px;
   padding: 1em;
   margin: 1em;
+  margin-top: 2em;
   width: 440px;
   min-height: 600px;
 }
 
-aside h2 {
-
-}
 
 footer {
-  background-color: #00b3b3;
+  background-color: #f2b28f;
+  background-image: linear-gradient(to right, #fcd9c5, #f28649);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
+  margin-top: 1em;
   order: 2;
   padding: 1em;
   font-size: 0.8em;
@@ -312,7 +330,7 @@ footer {
   background-image: url("img/gossip_cat.jpeg");
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1200px){
   .cat_page{
     padding: 1em;
   }
@@ -331,7 +349,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 3em;
 }
 
 .upperPrint {
@@ -340,7 +357,9 @@ footer {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 2em;
+  border-top: solid 1px;
+  padding: 0 3em 3em 3em;
+  margin-top: 3em;
 }
 
 .upperPrint img {
@@ -354,5 +373,42 @@ footer {
 }
 
 .printArticolo p {
-  text-align: justify;
+  padding: 0 3em 1em 3em;
+}
+
+.info_art {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  height: 40px;
+  align-items: center;
+}
+
+.info_art #author {
+  display: flex;
+  width: 45%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.info_art #get_cat {
+  display: flex;
+  width: 45%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  font-weight: bold;
+  color: #03bafc;
+}
+
+.info_art img{
+  margin-left: 1em;
+}
+
+.info_art p {
+  margin: 0 1em 0 1em;
 }
