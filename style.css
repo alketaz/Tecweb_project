@@ -38,8 +38,11 @@ header{
   max-width: 6em;
 }
 
+
 nav ul{
   list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 nav ul li{
