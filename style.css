@@ -168,9 +168,9 @@ aside {
   min-height: 600px;
 }
 
-aside h2 {
+/*aside h2 {
 
-}
+}*/
 
 footer {
   background-color: #00b3b3;
@@ -181,6 +181,7 @@ footer {
   order: 2;
   padding: 1em;
   font-size: 0.8em;
+  margin-top: auto;
 }
 
 #address {
@@ -360,10 +361,21 @@ footer {
 
 /* LOGIN */
 
+#short_html{
+  height: 100%;
+}
+
+#short_body{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
 #wrapper{
   display: flex;
   justify-content: center;
-  padding: 18.3vh;
+  padding: 20vh 0;
 }
 
 .box{
