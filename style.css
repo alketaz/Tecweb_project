@@ -356,3 +356,71 @@ footer {
 .printArticolo p {
   text-align: justify;
 }
+
+
+/* LOGIN */
+
+#wrapper{
+  display: flex;
+  justify-content: center;
+  padding: 18.3vh;
+}
+
+.box{
+  flex: 0.25;
+  width: 20em;
+  padding: 3em;
+  border: 3px solid #3d3d3d;
+  text-align: center;
+  border-radius: 36px;
+}
+
+.box h1{
+  color: black;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.box input[type="text"], .box input[type="password"]{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3d3d3d;
+  border-radius: 24px;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: black;
+  transition: 0.25s;
+}
+
+.box input[type="text"]:focus, .box input[type="password"]:focus{
+  width: 280px;
+  border-color: #00b3b3;
+}
+
+.box input[type="text"]:hover, .box input[type="password"]:hover{
+  border-color: #00b3b3;
+}
+
+.box input[type="submit"]{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #00b3b3;
+  border-radius: 24px;
+  padding: 14px 40px;
+  outline: none;
+  color: black;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.box input[type="submit"]:hover{
+  background-color: #3d3d3d;
+  color: #f2f2f2;
+}
