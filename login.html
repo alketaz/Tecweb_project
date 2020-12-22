@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" id="short_html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="short_body">
+    <header>
+        <nav>
+          <img src="img/user_icon.png" alt="" class="user_img" id="user_mob">
+            <div class="topnav" id="topnav-left">
+                <h3>The Post</h3>
+            </div>
+            <div class="topnav" id="topnav-right">
+                <a href="#home" class="txt_link"><span lang="en">Home</span></a>
+                <a href="#cat" class="txt_link">Categorie</a>
+                <a href="#create" class="txt_link">Scrivi il tuo articolo</a>
+                <a href="#access" class="txt_link">Accedi</a>
+                <img src="img/user_icon.png" alt="" class="user_img" id="user_desk">
+                <a href="javascript:void(0);" class="icon txt_link" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+          </div>
+        </nav>
+      </header>
+    <div id="wrapper">
+    <form class="box" action="index.html" method="post">
+        <h1>login</h1>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <input type="submit" value="Login">
+    </form>
+    </div>
+
+    <footer>
+        <img id="html5" src="img/badge-w3c-valid-html5.png" alt="Logo che certifica il rispetto dello standard w3c nella scrittura del codice html">
+        <img id="cssLogo" src="img/css.png" alt="Logo che certifica il rispetto dello standard w3c nella scrittura del codice css">
+        <address>
+            Progetto di Tecnologie Web sviluppato da:<br>
+            <a href="mailto:andrea.polato.7@studenti.unipd.it">Andrea Polato</a><br>
+            <a href="mailto:andrea.polato.7@studenti.unipd.it">Tommaso Allegretti</a><br>
+            <a href="mailto:andrea.polato.7@studenti.unipd.it">Giosu&egrave; Calgaro</a><br>
+            <a href="mailto:andrea.polato.7@studenti.unipd.it">Matteo Miotello</a><br>
+        </address>
+      </footer>
+</body>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("topnav-right");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+</html>
