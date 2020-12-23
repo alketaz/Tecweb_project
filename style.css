@@ -16,6 +16,16 @@ body{
   margin: auto;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  max-width: 1660px;
+}
+
+#wrapper {
+  margin-top: 100px;
+}
+
 /*HOME PAGE + HEADER E FOOTER*/
 /* Add a black background color to the top navigation */
 nav {
@@ -85,7 +95,7 @@ nav h3{
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   .topnav a {
       display: none;
   }
@@ -106,7 +116,7 @@ nav h3{
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   .topnav.responsive {
       position: relative;
   }
@@ -169,10 +179,34 @@ article a {
   width: inherit;
 }
 
-@media screen and (max-width: 1200px) {
+article #mobile_img {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
   article img {
     width: 100%;
     float: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .articoli {
+    margin: 2em;
+  }
+
+  article img {
+    display: none;
+  }
+
+  article #mobile_img {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+  aside{
+    display: none;
   }
 }
 
@@ -242,6 +276,7 @@ footer {
 
 .form_articolo > textarea {
   min-height: 15em;
+  max-width: 100%;
   margin-top: 0.5em;
   margin-bottom: 2.3em;
 }
@@ -330,7 +365,15 @@ footer {
   background-image: url("img/gossip_cat.jpeg");
 }
 
-@media screen and (max-width: 1200px){
+.cat_page #scienze {
+  background-image: url("img/science_cat.jpeg");
+}
+
+.cat_page #mondo {
+  background-image: url("img/world_cat.jpeg");
+}
+
+@media screen and (max-width: 1024px){
   .cat_page{
     padding: 1em;
   }
@@ -413,6 +456,43 @@ footer {
   margin: 0 1em 0 1em;
 }
 
+.commentArea {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  margin: 1em 2.5em 0 2.5em;
+  padding: 0.5em 0.5em 0 0.5em;
+  border: solid 0px;
+  border-radius: 12px;
+  background-color: #deffff;
+}
+
+.commentArea #print_comm{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  margin-top: 1em;
+  padding: 0.5em;
+}
+
+.commentArea #print_comm img{
+  width: 48px;
+  margin-right: 2em;
+}
+
+.commentArea form {
+  margin-top: 1em;
+  padding: 0.2em;
+}
+
+.commentArea #print_comm p {
+  padding: 0.5em;
+  border: solid 0px;
+  background-color: white;
+  width: 90%;
+}
 
 /* LOGIN */
 
@@ -427,7 +507,7 @@ footer {
 }
 
 
-#wrapper{
+#wrapper_login{
   display: flex;
   justify-content: center;
   padding: 20vh 0;

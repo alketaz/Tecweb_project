@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it" dir="ltr">
+<html lang="it" dir="ltr" id="short_html">
   <head>
     <meta http-equiv="content-type" content="text/html"; charset="utf-8">
     <title>Nome Giornale</title>
@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" media="screen">
   </head>
 
-  <body>
+  <body id="short_body">
     <header>
       <nav>
         <img src="img/user_icon.png" alt="" class="user_img" id="user_mob">
@@ -23,7 +23,7 @@
               <a href="base.html" class="txt_link"><span lang="en">Home</span></a>
               <a href="cat.html" class="txt_link">Categorie</a>
               <a href="form_articolo.html" class="txt_link">Scrivi il tuo articolo</a>
-              <a href="#access" class="txt_link">Accedi</a>
+              <a href="login.html" class="txt_link">Accedi</a>
               <img src="img/user_icon.png" alt="" class="user_img" id="user_desk">
               <a href="javascript:void(0);" class="icon txt_link" onclick="myFunction()">
                   <i class="fa fa-bars"></i>
@@ -66,13 +66,31 @@
       </div>
     </div>
 
-    <commentArea><commentArea>
+    <div class="commentArea">
+      <h2>Commenti</h2>
+      <div id="print_comm">
+        <img src="img/user_icon.png">
+        <p>Wow che figata sto articolo!</p>
+      </div>
+      <div id="print_comm">
+        <img src="img/user_icon.png">
+        <p>Il porcodio della madonna schifosa dio cane il covid</p>
+      </div>
+      <div id="print_comm">
+        <img src="img/user_icon.png">
+        <p>Tyler Herro < Jayson Tatum</p>
+      </div>
+      <form action="index.html" method="post">
+        <textarea name="comment" maxlength="200" placeholder="Inserisci un commento..."></textarea>
+        <button type="submit" name="pub_comm">Pubblica</button>
+      </form>
+    </div>
 
     <footer>
       <img id="html5" src="img/badge-w3c-valid-html5.png" alt="Logo che certifica il rispetto dello standard w3c nella scrittura del codice html">
       <img id="cssLogo" src="img/css.png" alt="Logo che certifica il rispetto dello standard w3c nella scrittura del codice css">
       <address>
-          Progetto di Tecnologie Web sviluppato da:<br>
+          <p>Progetto di Tecnologie Web sviluppato da:</p>
           <a href="mailto:andrea.polato.7@studenti.unipd.it">Andrea Polato</a><br>
           <a href="mailto:andrea.polato.7@studenti.unipd.it">Tommaso Allegretti</a><br>
           <a href="mailto:andrea.polato.7@studenti.unipd.it">Giosu&egrave; Calgaro</a><br>

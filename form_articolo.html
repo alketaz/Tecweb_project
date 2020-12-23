@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it" dir="ltr">
+<html lang="it" dir="ltr" id="short_html">
   <head>
     <meta http-equiv="content-type" content="text/html"; charset="utf-8">
     <title>Nome Giornale</title>
@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" media="screen">
   </head>
 
-  <body>
+  <body id="short_body">
     <header>
       <nav>
         <img src="img/user_icon.png" alt="" class="user_img" id="user_mob">
@@ -23,7 +23,7 @@
               <a href="base.html" class="txt_link"><span lang="en">Home</span></a>
               <a href="cat.html" class="txt_link">Categorie</a>
               <a href="form_articolo.html" class="txt_link">Scrivi il tuo articolo</a>
-              <a href="#access" class="txt_link">Accedi</a>
+              <a href="login.html" class="txt_link">Accedi</a>
               <img src="img/user_icon.png" alt="" class="user_img" id="user_desk">
               <a href="javascript:void(0);" class="icon txt_link" onclick="myFunction()">
                   <i class="fa fa-bars"></i>
@@ -32,7 +32,7 @@
       </nav>
     </header>
 
-
+    <div id="wrapper">
       <form action="/post_article.php" class="form_articolo">
         <h1>Scrivi il tuo articolo!</h1>
         <p>Scrivi e mandaci il tuo articolo, noi penseremo a valutarlo e pubblicarlo.<br>
@@ -44,7 +44,7 @@
         <label for="descr_art">Descrizione articolo</label>
         <input type="text" name="descr_art" placeholder="Descrizione... (Massimo 300 caratteri)">
         <label for="testo_art">Testo dell'articolo</label>
-        <textarea name="testo_art" placeholder="Testo dell'articolo... (Massimo 10000 caratteri)"></textarea>
+        <textarea maxlength="10000" name="testo_art" placeholder="Testo dell'articolo... (Massimo 10000 caratteri)"></textarea>
         <div class="cat_img">
           <div class="img_sel">
             <label for="image">Scegli un'immagine</label>
@@ -53,6 +53,7 @@
           <div class="cat_sel">
             <label for="cat">Scegli una categoria</label>
             <select name="cat">
+              <option value="" disabled selected>Categoria*</option>
               <option value="sport">Sport</option>
               <option value="economia">Economia</option>
               <option value="politica">Politica</option>
@@ -64,6 +65,7 @@
         </div>
         <button type="submit" name="submit">Invia</button>
       </form>
+    </div>
 
 
     <footer>
