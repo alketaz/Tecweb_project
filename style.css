@@ -16,15 +16,7 @@ body{
   margin: auto;
 }
 
-header {
-  position: fixed;
-  width: 100%;
-  max-width: 1660px;
-}
 
-#wrapper {
-  margin-top: 100px;
-}
 
 /*HOME PAGE + HEADER E FOOTER*/
 /* Add a black background color to the top navigation */
