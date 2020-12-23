@@ -30,7 +30,11 @@
                 </a>
         </div>
       </nav>
-    </header>
+      <img src="img/user_icon.png" alt="" class="user_img" id="user_desk">
+      <a href="javascript:void(0);" class="icon txt_link" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+  </header>
 
     <div id="wrapper">
       <form action="/post_article.php" class="form_articolo">
@@ -82,13 +86,13 @@
   </body>
 
   <script>
-  function myFunction() {
-      var x = document.getElementById("topnav-right");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
+    function myFunction() {
+        var x = document.getElementById("hd");
+        if (x.className === "header") {
+          x.className += " responsive";
+        } else {
+          x.className = "header";
+        }
       }
-    }
-    </script>
+      </script>
 </html>
