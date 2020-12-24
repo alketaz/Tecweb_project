@@ -15,6 +15,7 @@ body{
   width: auto;
   margin: auto;
   font-family: 'Eugenio Text',Georgia,Times,'Times New Roman',serif;
+  font-size: 1.2em;
 }
 
 
@@ -28,6 +29,7 @@ header{
   align-items: center;
   padding: 30px 10%;
   background-color: #0d719d;
+  /*background-image: linear-gradient(to right, #0d719d, #d8e7ed);*/
 }
 
 #logo {
@@ -141,7 +143,6 @@ header a.icon{
 h1 {
   text-align: center;
   margin: 1em 0 0 0;
-  font-family: 'Eugenio Text',Georgia,Times,'Times New Roman',serif;
   font-size: 2em;
 }
 
@@ -150,11 +151,11 @@ h1 {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  font-family: 'Eugenio Text',Georgia,Times,'Times New Roman',serif;
+  /*font-family: 'Eugenio Text',Georgia,Times,'Times New Roman',serif;*/
   font-size: 1.3em;
 }
 
-.articoli {
+.home_content .articoli {
   margin: 1em;
   width: 1220px;
 }
@@ -261,7 +262,7 @@ footer {
 .form_articolo {
   display: flex;
   flex-direction: column;
-  margin: 3em;
+  margin: 0 3em 1em 3em;
 }
 
 .form_articolo > h1 {
@@ -634,3 +635,7 @@ footer {
 }
 
 /*  FILTER PAGE */
+
+.home_content_filter .articoli {
+  margin: 1em;
+}
