@@ -14,6 +14,7 @@ body{
   max-width: 1660px;
   width: auto;
   margin: auto;
+  font-family: 'Eugenio Text',Georgia,Times,'Times New Roman',serif;
 }
 
 
@@ -43,15 +44,21 @@ nav ul{
   list-style: none;
     display: flex;
     flex-wrap: nowrap;
+    justify-content: space-around;
 }
 
 nav ul li{
   display: inline-block;
   padding: 0 20px;
   margin: auto;
+  text-align: center;
 }
 
 nav li a{
+  border: solid 0px;
+  border-radius: 25px;
+  padding: 0.8em;
+  background-color: #f7f7f7;
   transition: all 0.3s ease 0s;
 }
 
@@ -221,8 +228,7 @@ aside {
 }
 
 footer {
-  background-color: #f2b28f;
-  background-image: linear-gradient(to right, #fcd9c5, #f28649);
+  background-color: #0d719d;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -298,10 +304,15 @@ footer {
 .cat_sel{
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
 }
 
-.cat_sel > select {
-  margin-top: 0.5em;
+.cat_sel p {
+  margin-bottom: 0.3em;
+}
+
+.element {
+  margin-top: 0.2em;
 }
 
 .form_articolo > button {
@@ -310,6 +321,28 @@ footer {
   height: 44px;
 }
 
+@media screen and (max-width: 764px) {
+  .cat_img {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cat_sel{
+      align-items: flex-start;
+      margin-top: 1em;
+  }
+}
+
+/*  FORM ADMIN  */
+.alt_insert{
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.alt_insert input {
+  width: 99%;
+}
 
 
 /*  CSS PAGINA CATEGORIE  */
@@ -460,7 +493,7 @@ footer {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  margin: 1em 2.5em 0 2.5em;
+  margin: 1em 2.5em 1em 2.5em;
   padding: 0.5em 0.5em 0 0.5em;
   border: solid 0px;
   border-radius: 12px;
@@ -482,8 +515,17 @@ footer {
 }
 
 .commentArea form {
+  display: flex;
+  flex-direction: row;
   margin-top: 1em;
-  padding: 0.2em;
+  padding: 0.5em;
+  justify-content: space-between;
+}
+
+.commentArea form img {
+  width: 48px;
+  height: 48px;
+  margin-right: 2em;
 }
 
 .commentArea #print_comm p {
@@ -491,6 +533,26 @@ footer {
   border: solid 0px;
   background-color: white;
   width: 90%;
+}
+
+.commentArea #insert_comment {
+  padding: 0.5em;
+  min-width: 95%;
+  max-width: 95%;
+  min-height: 6em;
+  max-height: 6em;
+  margin-bottom: 0.5em;
+}
+
+.commentArea button {
+  width: 90px;
+  height: 30px;
+}
+
+.comm_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 /* LOGIN */
@@ -570,3 +632,5 @@ footer {
   background-color: #3d3d3d;
   color: #f2f2f2;
 }
+
+/*  FILTER PAGE */

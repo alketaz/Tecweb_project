@@ -38,7 +38,7 @@
           di curare l'accessibilità del tuo articolo e di pubblicarlo col tuo nome.
         </p>
         <label for="titolo_art">Titolo dell'articolo</label>
-        <input type="text" name="titolo_art" required="required" placeholder="Titolo... (Massimo 126 caratteri)">
+        <input type="text" name="titolo_art" id="titolo_art" required="required" oninvalid="this.setCustomValidity('Compila questo campo per continuare')" oninput="this.setCustomValidity('')" placeholder="Titolo... (Massimo 126 caratteri)">
         <label for="descr_art">Descrizione articolo</label>
         <input type="text" name="descr_art" required="required" placeholder="Descrizione... (Massimo 300 caratteri)">
         <label for="testo_art">Testo dell'articolo</label>
@@ -50,39 +50,43 @@
           </div>
           <div class="cat_sel">
             <p>Scegli una o pi&ugrave; categorie</p>
-              <div id="sport_cat" class="element">
+              <div id="sport_cat">
                 <label for="sport">Sport</label>
                 <input type="checkbox" name="sport" value="Sport">
               </div>
-              <div id="economy_cat" class="element">
+              <div id="economy_cat">
                 <label for="sport">Economia</label>
                 <input type="checkbox" name="sport" value="economia">
               </div>
-              <div id="politics_cat" class="element">
+              <div id="politics_cat">
                 <label for="sport">Politica</label>
                 <input type="checkbox" name="sport" value="politica">
               </div>
-              <div id="gossip_cat" class="element">
+              <div id="gossip_cat">
                 <label for="sport">Gossip</label>
                 <input type="checkbox" name="sport" value="gossip">
               </div>
-              <div id="world_cat" class="element">
+              <div id="world_cat">
                 <label for="sport">Mondo</label>
                 <input type="checkbox" name="sport" value="modno">
               </div>
-              <div id="science_cat" class="element">
+              <div id="science_cat">
                 <label for="sport">Scienze</label>
                 <input type="checkbox" name="sport" value="scienze">
               </div>
-              <div id="covid_cat" class="element">
+              <div id="covid_cat">
                 <label for="sport">Covid</label>
                 <input type="checkbox" name="sport" value="covid">
               </div>
-              <div id="spett_cat" class="element">
+              <div id="spett_cat">
                 <label for="sport">Spettacolo</label>
                 <input type="checkbox" name="sport" value="spettacolo">
               </div>
           </div>
+        </div>
+        <div class="alt_insert">
+          <label for="alt_img">Scrivi un alt per l'immagine</label>
+          <input type="text" name="alt_img" placeholder="Inserisci alt..." maxlength="300">
         </div>
         <button type="submit" name="submit">Invia</button>
       </form>
@@ -111,5 +115,10 @@
           x.className = "header";
         }
       }
-      </script>
+
+    function displayEmptyMsg() {
+      var x = document.getElementById("titolo_art");
+      if (x.)
+    }
+  </script>
 </html>
