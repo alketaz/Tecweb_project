@@ -30,6 +30,7 @@ header{
   padding: 30px 10%;
   background-color: #0d719d;
   /*background-image: linear-gradient(to right, #0d719d, #d8e7ed);*/
+  z-index: 1;
 }
 
 #logo {
