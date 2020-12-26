@@ -4,7 +4,7 @@
 }
 
 html {
-  background-image: url('img/paperboard-texture_95678-72.webp');
+  background-image: url('img/newspaper-texture.jpeg');
   background-color: white;
   width: 100%;
 }
@@ -46,12 +46,19 @@ header{
   height: 48px;
 }
 
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
 
 nav ul{
     /*list-style: none;*/
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
+    margin-right: 2em;
 }
 
 nav ul li{
@@ -65,6 +72,10 @@ nav ul li{
   transform: skew(-20deg);
 }
 
+nav ul li:hover {
+  background-color: #ccc;
+}
+
 nav li a{
   display: block;
   transform: skew(20deg);
@@ -73,7 +84,7 @@ nav li a{
 }
 
 #search_bar {
-  padding: 0.8em 3em 0.8em 0.8em;
+  padding: 0.8em 0;
   border: none;
 }
 
@@ -104,9 +115,9 @@ header a.icon{
   /*float: left;*/
   color: #f2f2f2;
   text-align: center;
-  /*padding: auto;*/
-  font-size: 17px;
-  margin: 0 2em 0 1em;
+  padding: 0.8em 1em;
+  /*font-size: 17px;*/
+  /*margin: 0 2em 0 1em;*/
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
@@ -121,17 +132,17 @@ header a.icon{
     display: block;
     float: left;
   }
+
   header a.icon {
     /*float: right;*/
     display: block;
     width: 48px;
-    padding: 13px 0;
     text-align: center center;
-    /*margin: auto;*/
+    margin-left: 0
   }
 
-  #search_bar {
-    top: 100px;
+  header form {
+    display: none;
   }
 
   /*header{
@@ -159,7 +170,7 @@ header a.icon{
     flex-direction: column;
     position: absolute;
     top: 5em;
-    right: 2em;
+    right: -1em;
     background-color: #f7f7f7 /*#0d719d*/;
     opacity: 0.98;
     border: solid 2px;
@@ -177,6 +188,7 @@ header a.icon{
   }
 
 }
+
 
 h1 {
   text-align: center;
