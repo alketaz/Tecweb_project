@@ -649,3 +649,34 @@ footer {
 .home_content_filter .articoli {
   margin: 1em;
 }
+
+/* USER PAGE */
+
+#row{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 4em;
+}
+
+.col{
+  padding-top: 2em;
+  margin: 1em;
+}
+
+.admin{
+  flex-basis: 20%;
+}
+
+.user{
+  flex-basis: 25%;
+}
+
+.col ul{
+  list-style: none;
+}
+
+.col img{
+  max-width: 8em;
+  max-height: 8em;
+}
