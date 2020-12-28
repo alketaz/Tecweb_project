@@ -4,18 +4,17 @@
 }
 
 html {
-  background-image: url('img/paperboard-texture_95678-72.webp');
+  background-image: url('img/newspaper-texture.jpeg');
   background-color: white;
   width: 100%;
 }
 
 body{
   background-color: white;
-  max-width: 1660px;
+  max-width: 1400px;
   width: auto;
   margin: auto;
   font-family: 'Eugenio Text',Georgia,Times,'Times New Roman',serif;
-  font-size: 1.2em;
 }
 
 
@@ -25,71 +24,100 @@ body{
 
 header{
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: space-between;
   align-items: center;
-  padding: 30px 10%;
-  background-color: white;
-  background-image: linear-gradient(to right bottom, #0d719d, #d8e7ed);
+  padding: 10px 0;
+  background-color: #0d719d;
+  /*background-image: linear-gradient(to right bottom, #0d719d, #d8e7ed);*/
   /*background-image: linear-gradient(to right bottom, #828282, #d1d1d1);*/
   z-index: 1;
 }
 
 #logo {
-  max-width: 8em;
-  margin-right: auto;
+  max-width: 9em;
+  margin-left: 2em;
+  /*margin-right: auto;*/
 }
 
 .user_img {
-  max-width: 6em;
+  width: 48px;
+  height: 48px;
 }
 
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
 
 nav ul{
-  list-style: none;
+    /*list-style: none;*/
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
+    margin-right: 2em;
 }
 
 nav ul li{
   display: inline-block;
-  padding: 0 20px;
-  margin: auto;
+  padding: 0 10px;
+  margin: 0 5px;
   text-align: center;
+  border: solid 1px;
+  background-color: white /*#f7f7f7*/;
+  opacity: 0.96;
+  transform: skew(-20deg);
+}
+
+nav ul li:hover {
+  background-color: #ccc;
 }
 
 nav li a{
-  border: solid 0px;
-  border-radius: 25px;
+  display: block;
+  transform: skew(20deg);
   padding: 0.8em;
-  /*background-color: #f7f7f7;*/
   transition: all 0.3s ease 0s;
 }
 
-nav li a:hover{
-  scale: 1.2;
+#search_bar {
+  padding: 0.8em 0;
+  border: none;
 }
 
-.user_img{
-  max-width: 3em;
-  max-height: 3em;
-  margin: 2em;
+#search_button {
+  padding: 0.8em 1em;
+  border: none;
+}
+
+#search_button:hover {
+  background:  #ccc;
+}
+
+/*nav li a:hover{
+  scale: 1.2;
+}*/
+
+#user_desk{
+  margin: 0 2em 0 1em;
 }
 
 #user_mob{
   display: none;
+  margin: 0 1em 0 2em;
 }
 
 header a.icon{
   display: none;
-  float: left;
+  /*float: left;*/
   color: #f2f2f2;
   text-align: center;
-  padding: auto;
-  text-decoration: none;
-  font-size: 17px;
-  margin: 0 0.75em;
+  padding: 0.8em 1em;
+  /*font-size: 17px;*/
+  /*margin: 0 2em 0 1em;*/
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
@@ -104,15 +132,22 @@ header a.icon{
     display: block;
     float: left;
   }
+
   header a.icon {
-    float: right;
+    /*float: right;*/
     display: block;
-    margin: auto;
+    width: 48px;
+    text-align: center center;
+    margin-left: 0
   }
 
-  header{
-    justify-content: space-between;
+  header form {
+    display: none;
   }
+
+  /*header{
+    justify-content: space-between;
+  }*/
 
   #logo{
     margin: auto;
@@ -134,15 +169,26 @@ header a.icon{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 10em;
-    right: 2em;
-    background-color: #0d719d;
+    top: 5em;
+    right: -1em;
+    background-color: #f7f7f7 /*#0d719d*/;
+    opacity: 0.98;
+    border: solid 2px;
   }
 
   .responsive ul li{
-    padding: 2em;
+    padding: 1em;
+    margin: 0;
+    transform: skew(0);
+    border: solid 1px grey;
   }
+
+  .responsive li a {
+    transform: skew(0);
+  }
+
 }
+
 
 h1 {
   text-align: center;
