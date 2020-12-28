@@ -51,6 +51,13 @@
         <div class="row">
             <div class="col user">
                 <img src="../img/user_icon.png" alt="" id="prof_pic">
+                <form action="upload.php" method="post" enctype="multipart/form-data">
+                    Cambia immagine:
+                    <br>
+                    <input type="file" name="fileToUpload" id="fileToUpload">
+                    <br>
+                    <input type="submit" value="Carica immagine" name="submit">
+                </form>
             </div>
 
             <div class="col user">
@@ -71,11 +78,7 @@
                     <li>Articoli pubblicati: <span id="art_num">3</span></li>
                 </ul>
             </div>
-        </div>
 
-        <hr>
-
-        <div class="row">
             <div class="col user"></div>
             <div class="col user">
                 <form id="pw_reset" action="index.html" method="post">

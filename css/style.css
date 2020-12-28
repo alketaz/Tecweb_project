@@ -731,13 +731,6 @@ footer {
   margin: 1em;
 }
 
-.admin{
-  flex-basis: 20%;
-}
-
-.user{
-  flex-basis: 25%;
-}
 
 .col ul{
   list-style: none;
