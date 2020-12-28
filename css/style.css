@@ -84,7 +84,7 @@ header nav li a{
 }
 
 #search_bar {
-  padding: 0.8em 0;
+  padding: 0.8em 0 0.8em 1em;
   border: none;
 }
 
@@ -237,6 +237,7 @@ header a.icon{
 
   .resp_srch #search_bar_mobile {
       width: 100%;
+      padding-left: 1em;
       border: none;
   }
 
