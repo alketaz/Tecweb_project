@@ -337,7 +337,9 @@ footer {
 
 .form_articolo > textarea {
   min-height: 15em;
+  min-width: 100%;
   max-width: 100%;
+  max-height: 90em;
   margin-top: 0.5em;
   margin-bottom: 2.3em;
 }

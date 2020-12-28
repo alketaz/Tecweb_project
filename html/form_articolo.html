@@ -26,7 +26,7 @@
         </nav>
         <img src="../img/user_icon.png" alt="" class="user_img" id="user_desk">
         <a href="javascript:void(0);" class="icon txt_link" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
+          <i class="fa fa-navicon"></i>
         </a>
     </header>
 
@@ -38,18 +38,18 @@
           di curare l'accessibilità del tuo articolo e di pubblicarlo col tuo nome.
         </p>
         <label for="titolo_art">Titolo dell'articolo</label>
-        <input type="text" name="titolo_art" required="required" placeholder="Titolo... (Massimo 126 caratteri)">
+        <input type="text" name="titolo_art" placeholder="Titolo... (Massimo 126 caratteri)" required>
         <label for="descr_art">Descrizione articolo</label>
-        <input type="text" name="descr_art" required="required" placeholder="Descrizione... (Massimo 300 caratteri)">
+        <input type="text" name="descr_art" placeholder="Descrizione... (Massimo 300 caratteri)" required>
         <label for="testo_art">Testo dell'articolo</label>
-        <textarea maxlength="10000" name="testo_art" required="required" placeholder="Testo dell'articolo... (Massimo 10000 caratteri)"></textarea>
+        <textarea maxlength="10000" name="testo_art" placeholder="Testo dell'articolo... (Massimo 10000 caratteri)" required></textarea>
         <div class="cat_img">
           <div class="img_sel">
-            <label for="image">Scegli un'immagine</label>
+            <label for="image"><i class="fa fa-folder-open-o"></i> Scegli un'immagine</label>
             <input type="file" name="image" accept="image/jpeg, image/png">
           </div>
           <div class="cat_sel">
-            <p>Scegli una o pi&ugrave; categorie</p>
+            <p>Scegli una o pi&ugrave; categorie:</p>
               <div id="sport_cat" class="element">
                 <label for="sport">Sport</label>
                 <input type="checkbox" name="sport" value="Sport">
