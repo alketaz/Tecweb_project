@@ -11,11 +11,10 @@ html {
 
 body{
   background-color: white;
-  max-width: 1660px;
+  max-width: 1400px;
   width: auto;
   margin: auto;
   font-family: 'Eugenio Text',Georgia,Times,'Times New Roman',serif;
-  font-size: 1.2em;
 }
 
 
@@ -39,7 +38,7 @@ header{
 #logo {
   max-width: 9em;
   margin-left: 2em;
-  margin-right: auto;
+  /*margin-right: auto;*/
 }
 
 .user_img {
@@ -58,16 +57,33 @@ nav ul{
 nav ul li{
   display: inline-block;
   padding: 0 10px;
-  /*margin: auto;*/
+  margin: 0 5px;
   text-align: center;
+  border: solid 1px;
+  background-color: white /*#f7f7f7*/;
+  opacity: 0.96;
+  transform: skew(-20deg);
 }
 
 nav li a{
-  border: solid 0px;
-  border-radius: 25px;
+  display: block;
+  transform: skew(20deg);
   padding: 0.8em;
-  background-color: #f7f7f7;
   transition: all 0.3s ease 0s;
+}
+
+#search_bar {
+  padding: 0.8em 3em 0.8em 0.8em;
+  border: none;
+}
+
+#search_button {
+  padding: 0.8em 1em;
+  border: none;
+}
+
+#search_button:hover {
+  background:  #ccc;
 }
 
 /*nav li a:hover{
@@ -114,6 +130,10 @@ header a.icon{
     /*margin: auto;*/
   }
 
+  #search_bar {
+    top: 100px;
+  }
+
   /*header{
     justify-content: space-between;
   }*/
@@ -147,7 +167,13 @@ header a.icon{
 
   .responsive ul li{
     padding: 1em;
-    border: solid 1px lightgrey;
+    margin: 0;
+    transform: skew(0);
+    border: solid 1px grey;
+  }
+
+  .responsive li a {
+    transform: skew(0);
   }
 
 }
