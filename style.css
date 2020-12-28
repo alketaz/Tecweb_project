@@ -4,7 +4,7 @@
 }
 
 html {
-  background-image: url('img/newspaper-texture.jpeg');
+  background-image: url('../img/newspaper-texture.jpeg');
   background-color: white;
   width: 100%;
 }
@@ -430,35 +430,35 @@ footer {
 }
 
 .cat_page #sport {
-  background-image: url("img/sport_cat.jpeg");
+  background-image: url("../img/sport_cat.jpeg");
 }
 
 .cat_page #politica {
-  background-image: url("img/politics_cat.png")
+  background-image: url("../img/politics_cat.png")
 }
 
 .cat_page #covid {
-  background-image: url("img/covid_cat.jpeg");
+  background-image: url("../img/covid_cat.jpeg");
 }
 
 .cat_page #economia {
-  background-image: url("img/economy_cat.jpeg");
+  background-image: url("../img/economy_cat.jpeg");
 }
 
 .cat_page #spettacolo {
-  background-image: url("img/spett_cat.jpeg");
+  background-image: url("../img/spett_cat.jpeg");
 }
 
 .cat_page #gossip {
-  background-image: url("img/gossip_cat.jpeg");
+  background-image: url("../img/gossip_cat.jpeg");
 }
 
 .cat_page #scienze {
-  background-image: url("img/science_cat.jpeg");
+  background-image: url("../img/science_cat.jpeg");
 }
 
 .cat_page #mondo {
-  background-image: url("img/world_cat.jpeg");
+  background-image: url("../img/world_cat.jpeg");
 }
 
 @media screen and (max-width: 1024px){
