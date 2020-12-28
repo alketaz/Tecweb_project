@@ -752,13 +752,13 @@ footer {
   margin: 1em;
 }
 
-/* USER PAGE */
+/* USER/ADMIN PAGE */
 
-#row{
+.row{
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin: 4em;
+  margin: 2em;
 }
 
 .col{
@@ -781,4 +781,9 @@ footer {
 .col img{
   max-width: 8em;
   max-height: 8em;
+}
+
+#pw_reset input{
+  margin: 1em;
+  padding: 0.5em;
 }
