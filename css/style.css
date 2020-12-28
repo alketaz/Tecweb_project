@@ -4,7 +4,7 @@
 }
 
 html {
-  background-image: url('../img/newspaper-texture.jpeg');
+  background-image: url('../img/Wrinkled-Paper-Texture.jpeg');
   background-color: white;
   width: 100%;
 }
@@ -20,8 +20,6 @@ body{
 
 
 /*HOME PAGE + HEADER E FOOTER*/
-/* Add a black background color to the top navigation */
-
 header{
   display: flex;
   flex-direction: row;
@@ -30,15 +28,12 @@ header{
   align-items: center;
   padding: 10px 0;
   background-color: #0d719d;
-  /*background-image: linear-gradient(to right bottom, #0d719d, #d8e7ed);*/
-  /*background-image: linear-gradient(to right bottom, #828282, #d1d1d1);*/
   z-index: 1;
 }
 
 #logo {
   max-width: 9em;
   margin-left: 2em;
-  /*margin-right: auto;*/
 }
 
 .user_img {
@@ -54,7 +49,6 @@ header nav {
 }
 
 header nav ul{
-    /*list-style: none;*/
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
@@ -67,7 +61,7 @@ header nav ul li{
   margin: 0 5px;
   text-align: center;
   border: solid 1px;
-  background-color: white /*#f7f7f7*/;
+  background-color: white;
   opacity: 0.96;
   transform: skew(-20deg);
 }
@@ -97,10 +91,6 @@ header nav li a{
   background:  #ccc;
 }
 
-/*nav li a:hover{
-  scale: 1.2;
-}*/
-
 #user_desk{
   margin: 0 2em 0 1em;
 }
@@ -112,11 +102,8 @@ header nav li a{
 
 header a.icon{
   display: none;
-  /*float: left;*/
   color: #f2f2f2;
   text-align: center;
-  /*font-size: 17px;*/
-  /*margin: 0 2em 0 1em;*/
 }
 
 
@@ -140,13 +127,43 @@ header a.icon{
   padding: 0.5em 0;
 }
 
-.search_link {
-  border-right: solid 1px lightgrey;
+.txt_link {
+  border-left: solid 1px lightgrey;
 }
 
+@media screen and (max-width: 1200px) {
+  header form {
+    display: none;
+  }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 870px) {
+  header a.search_link {
+    display: block;
+    width: 48px;
+    text-align: center center;
+  }
+
+  .resp_srch{
+    position: relative;
+    display: flex;
+  }
+
+  .resp_srch form{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border: solid 1px #0d719d;
+    background: black;
+  }
+
+
+  .resp_srch #search_bar_mobile {
+      width: 100%;
+      padding-left: 1em;
+      border: none;
+  }
+}
+
+@media screen and (max-width: 764px) {
   header nav {
       display: none;
   }
@@ -159,31 +176,13 @@ header a.icon{
     float: left;
   }
 
-  header a.icon {
-    /*float: right;*/
+  header a.txt_link{
     display: block;
     width: 48px;
     text-align: center center;
     margin-left: 0
   }
 
-  header form {
-    display: none;
-  }
-
-  /*header{
-    justify-content: space-between;
-  }*/
-
-  /*#logo{
-    margin: auto;
-  }*/
-
-
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 870px) {
   .responsive {
       display: flex;
       width: 100%;
@@ -193,18 +192,15 @@ header a.icon{
     flex-direction: column;
     text-align: right;
     width: 100%;
-    border-top: solid 1px #0d719d;
-    border-bottom: solid 1px #0d719d;
+    border-left: solid 1px #0d719d;
+    border-right: solid 1px #0d719d;
   }
 
   .responsive nav ul{
     display: flex;
     flex-direction: column;
     width: 100%;
-    /*position: absolute;
-    top: 6em;
-    right: 0em;*/
-    background-color: white /*#0d719d*/;
+    background-color: #ededed;
     opacity: 0.98;
   }
 
@@ -212,37 +208,13 @@ header a.icon{
     display: inline-block;
     padding: 1em;
     transform: skew(0);
-    border: solid 1px #0d719d;
+    border-bottom: solid 1px #0d719d;
   }
 
   .responsive li a {
     transform: skew(0);
   }
 }
-
-@media screen and (max-width: 870px) {
-  .resp_srch{
-    position: relative;
-    display: flex;
-  }
-
-  .resp_srch form{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    border: solid 1px grey;
-    background: black;
-  }
-
-
-  .resp_srch #search_bar_mobile {
-      width: 100%;
-      padding-left: 1em;
-      border: none;
-  }
-
-}
-
 
 h1 {
   text-align: center;
@@ -255,7 +227,6 @@ h1 {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  /*font-family: 'Eugenio Text',Georgia,Times,'Times New Roman',serif;*/
   font-size: 1.3em;
 }
 
@@ -268,7 +239,6 @@ article {
   display: flex;
   background-color: white;
   border: solid 1px grey;
-  /*border-radius: 12px;*/
   padding: 1em;
   margin-top: 1em;
   flex-direction: column;
@@ -294,7 +264,7 @@ article #mobile_img {
   display: none;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   article img {
     width: 100%;
     float: none;
@@ -307,7 +277,6 @@ article #mobile_img {
   }
 
   article {
-    /*border: solid 0px;*/
     border-radius: 15px;
   }
 
@@ -329,7 +298,6 @@ article #mobile_img {
 aside {
   background-color: white;
   border: solid 1px grey;
-  /*border-radius: 12px;*/
   padding: 1em;
   margin: 1em;
   margin-top: 2em;
@@ -669,7 +637,6 @@ footer {
 }
 
 /* LOGIN */
-
 #short_html{
   height: 100%;
 }
@@ -747,13 +714,11 @@ footer {
 }
 
 /*  FILTER PAGE */
-
 .home_content_filter .articoli {
   margin: 1em;
 }
 
 /* USER/ADMIN PAGE */
-
 .row{
   display: flex;
   justify-content: flex-start;

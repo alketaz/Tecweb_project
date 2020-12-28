@@ -8,22 +8,45 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body id="short_body">
-  <header id="hd" class="header">
+  <header class="header">
       <img src="../img/user_icon.png" alt="" class="user_img" id="user_mob">
       <img src="../img/logo.png" alt="" id="logo">
       <nav>
           <ul>
-              <li><a href="base.html">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="cat.html">Categorie</a></li>
               <li><a href="form_articolo.html">Scrivi il tuo articolo</a></li>
               <li><a href="login.html">Accedi</a></li>
           </ul>
       </nav>
+      <form action="article_filter.html?art_text = {input}">
+        <input type="text" placeholder="Cerca.." id="search_bar" required><button type="submit" id="search_button"><i class="fa fa-search"></i></button>
+      </form>
       <img src="../img/user_icon.png" alt="" class="user_img" id="user_desk">
-      <a href="javascript:void(0);" class="icon txt_link" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
+      <div class="mob_buttons_wrapper">
+        <a href="javascript:void(0);" class="icon search_link" onclick="searchFunction()">
+          <div class="fa fa-search"></div>
+        </a>
+        <a href="javascript:void(0);" class="icon txt_link" onclick="myFunction()">
+          <div class="fa fa-bars"></div>
+        </a>
+      </div>
   </header>
+  <div class="mob_srch" id="search_mobile">
+    <form action="article_filter.html?art_text = {input}">
+      <input type="text" placeholder="Cerca.." id="search_bar_mobile" required><button type="submit" id="search_button"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+  <div class="mob_nav" id="hd">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cat.html">Categorie</a></li>
+            <li><a href="form_articolo.html">Scrivi il tuo articolo</a></li>
+            <li><a href="login.html">Accedi</a></li>
+        </ul>
+    </nav>
+  </div>
 
     <div id="wrapper_login">
     <form class="box" action="index.html" method="post">
@@ -35,26 +58,35 @@
     </div>
 
     <footer>
-        <img id="html5" src="../img/badge-w3c-valid-html5.png" alt="Logo che certifica il rispetto dello standard w3c nella scrittura del codice html">
-        <img id="cssLogo" src="../img/css.png" alt="Logo che certifica il rispetto dello standard w3c nella scrittura del codice css">
-        <address>
-            Progetto di Tecnologie Web sviluppato da:<br>
-            <a href="mailto:andrea.polato.7@studenti.unipd.it">Andrea Polato</a><br>
-            <a href="mailto:andrea.polato.7@studenti.unipd.it">Tommaso Allegretti</a><br>
-            <a href="mailto:andrea.polato.7@studenti.unipd.it">Giosu&egrave; Calgaro</a><br>
-            <a href="mailto:andrea.polato.7@studenti.unipd.it">Matteo Miotello</a><br>
-        </address>
-      </footer>
-</body>
+      <img id="html5" src="../img/badge-w3c-valid-html5.png" alt="Logo che certifica il rispetto dello standard w3c nella scrittura del codice html">
+      <img id="cssLogo" src="../img/css.png" alt="Logo che certifica il rispetto dello standard w3c nella scrittura del codice css">
+      <address>
+          Progetto di Tecnologie Web sviluppato da:<br>
+          <a href="mailto:andrea.polato.7@studenti.unipd.it">Andrea Polato</a><br>
+          <a href="mailto:andrea.polato.7@studenti.unipd.it">Tommaso Allegretti</a><br>
+          <a href="mailto:andrea.polato.7@studenti.unipd.it">Giosu&egrave; Calgaro</a><br>
+          <a href="mailto:andrea.polato.7@studenti.unipd.it">Matteo Miotello</a><br>
+      </address>
+    </footer>
+  </body>
 
-<script>
-  function myFunction() {
-      var x = document.getElementById("hd");
-      if (x.className === "header") {
-        x.className += " responsive";
+  <script>
+    function myFunction() {
+        var x = document.getElementById("hd");
+        if (x.className === "mob_nav") {
+          x.className += " responsive";
+        } else {
+          x.className = "mob_nav";
+        }
+      }
+
+    function searchFunction() {
+      var x = document.getElementById("search_mobile");
+      if (x.className === "mob_srch"){
+        x.className += " resp_srch";
       } else {
-        x.className = "header";
+        x.className = "mob_srch";
       }
     }
-    </script>
+  </script>
 </html>
