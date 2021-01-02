@@ -272,12 +272,12 @@ article #mobile_img {
 }
 
 @media screen and (max-width: 768px) {
-  .articoli {
-    margin: 2em;
+  * {
+    font-size: .95em;
   }
 
-  article {
-    border-radius: 15px;
+  .articoli {
+    margin: 2em;
   }
 
   article img {
@@ -660,7 +660,7 @@ footer {
   padding: 3em;
   border: 3px solid #3d3d3d;
   text-align: center;
-  border-radius: 36px;
+  /*border-radius: 36px;*/
 }
 
 .box h1{
