@@ -471,57 +471,45 @@ footer {
   justify-content: space-around;
   height: 100%;
   padding: 2em;
-  padding-right: 0em;
-  padding-bottom: 0em;
+}
+
+.cat_page figure {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
 }
 
 .cat_page a {
-  display: inline-block;
-  padding-top: 6.53%;
-  padding-bottom: 6.53%;
-  width: 29.9%;
-  font-size: 2em;
-  font-weight: bolder;
-  border: solid 1px;
-  border-color: grey;
-  border-radius: 15px;
-  text-align: center;
+  max-width: 30%;
+  /*max-height: 18%;*/
   margin-bottom: 1em;
-  margin-right: 1em;
-  background-size: cover;
 }
 
-.cat_page #sport {
-  background-image: url("../img/sport_cat.jpeg");
+.cat_page figure > img {
+  width: 100%;
+  opacity: 0.9;
+  border: solid 1px;
+  margin-bottom: -7px;
 }
 
-.cat_page #politica {
-  background-image: url("../img/politics_cat.png")
+.cat_page figcaption {
+  position: absolute;
+  /*bottom: 0.4em;*/
+  bottom: 35%;
+  left: 30%;
+  right: 30%;
+  background-color: white;
+  opacity: 0.95;
+  padding: 5% 0;
+  border: solid 2px black;
+  text-align: center;
+  font-size: 1.6em;
 }
 
-.cat_page #covid {
-  background-image: url("../img/covid_cat.jpeg");
+.cat_page a:hover {
+  background-color: blue;
 }
 
-.cat_page #economia {
-  background-image: url("../img/economy_cat.jpeg");
-}
-
-.cat_page #spettacolo {
-  background-image: url("../img/spett_cat.jpeg");
-}
-
-.cat_page #gossip {
-  background-image: url("../img/gossip_cat.jpeg");
-}
-
-.cat_page #scienze {
-  background-image: url("../img/science_cat.jpeg");
-}
-
-.cat_page #mondo {
-  background-image: url("../img/world_cat.jpeg");
-}
 
 @media screen and (max-width: 1024px){
   .cat_page{
