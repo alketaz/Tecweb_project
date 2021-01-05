@@ -11,6 +11,7 @@ html {
   background-image: url('../img/Wrinkled-Paper-Texture.jpeg');
   background-color: white;
   width: 100%;
+  height: 100%;
 }
 
 body{
@@ -19,6 +20,9 @@ body{
   width: auto;
   margin: auto;
   font-family: 'Eugenio Text',Georgia,Times,'Times New Roman',serif;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -37,7 +41,7 @@ header{
 
 #logo {
   max-width: 9em;
-  margin-left: 2em;
+  margin: 0 1em 0 2em;
 }
 
 .user_img {
@@ -71,7 +75,7 @@ header nav ul li{
 }
 
 header nav ul li:hover {
-  background-color: #ccc;
+  background-color: azure/*#ccc*/;
 }
 
 header nav li a{
@@ -79,6 +83,18 @@ header nav li a{
   transform: skew(20deg);
   padding: 0.8em;
   transition: all 0.3s ease 0s;
+}
+
+header ul #currentItem{
+  background-color: lightgrey;
+}
+
+header ul li #currentLink{
+  display: block;
+  transform: skew(20deg);
+  padding: 0.8em;
+  color: #0d719d;
+  font-weight: bold;
 }
 
 #search_bar {
@@ -247,10 +263,18 @@ header a.icon{
   }
 }
 
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 3em 1em 3em;
+}
+
 h1 {
   text-align: center;
-  margin: 1em 0 0 0;
   font-size: 2em;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-bottom: solid 2px #0d719d;
 }
 
 .home_content {
@@ -262,17 +286,20 @@ h1 {
 }
 
 .home_content .articoli {
-  margin: 1em;
+  margin-right: 1em;
   width: 1220px;
 }
 
 article {
   display: flex;
   background-color: white;
-  border: solid 1px grey;
+  /*border: solid 1px grey;*/
+  -moz-box-shadow:    0 3px 5px 3px #ccc;
+  -webkit-box-shadow: 0 3px 5px 3px #ccc;
+  box-shadow:         0 3px 5px 3px #ccc;
   padding: 1em;
-  margin-top: 1em;
   flex-direction: column;
+  margin-bottom: 2em;
 }
 
 article h3 {
@@ -295,7 +322,23 @@ article #mobile_img {
   display: none;
 }
 
+aside {
+  background-color: white;
+  /*border: solid 1px grey;*/
+  -moz-box-shadow:    0 3px 5px 3px #ccc;
+  -webkit-box-shadow: 0 3px 5px 3px #ccc;
+  box-shadow:         0 3px 5px 3px #ccc;
+  padding: 1em;
+  width: 440px;
+  min-height: 600px;
+  margin-bottom: 2em;
+}
+
 @media screen and (max-width: 1200px) {
+  * {
+    font-size: 0.98em;
+  }
+
   article img {
     width: 100%;
     float: none;
@@ -307,16 +350,16 @@ article #mobile_img {
     font-size: .95em;
   }
 
-  .articoli {
-    margin: 2em;
+  .home_content .articoli {
+    margin-right: 0;
   }
 
-  article {
+  /*article {
     border: none;
     -moz-box-shadow:    0 3px 5px 3px #ccc;
     -webkit-box-shadow: 0 3px 5px 3px #ccc;
     box-shadow:         0 3px 5px 3px #ccc;
-  }
+  }*/
 
   article img {
     display: none;
@@ -330,17 +373,8 @@ article #mobile_img {
 
   aside{
     display: none;
+    position: absolute;
   }
-}
-
-aside {
-  background-color: white;
-  border: solid 1px grey;
-  padding: 1em;
-  margin: 1em;
-  margin-top: 2em;
-  width: 440px;
-  min-height: 600px;
 }
 
 footer {
@@ -374,11 +408,11 @@ footer {
 
 
 /*  FORM SCRITTURA ARTICOLO  */
-.form_articolo {
+/*.form_articolo {
   display: flex;
   flex-direction: column;
   margin: 0 3em 1em 3em;
-}
+}*/
 
 .form_articolo > h1 {
   margin-left: -.5em;
@@ -393,6 +427,7 @@ footer {
   width: 99%;
   margin-top: 0.5em;
   margin-bottom: 2.3em;
+  padding: 0.5em;
 }
 
 .form_articolo > textarea {
@@ -402,6 +437,7 @@ footer {
   max-height: 90em;
   margin-top: 0.5em;
   margin-bottom: 2.3em;
+  padding: 0.5em;
 }
 
 .cat_img {
@@ -481,7 +517,6 @@ footer {
 
 .cat_page a {
   max-width: 30%;
-  /*max-height: 18%;*/
   margin-bottom: 1em;
 }
 
@@ -494,7 +529,6 @@ footer {
 
 .cat_page figcaption {
   position: absolute;
-  /*bottom: 0.4em;*/
   bottom: 35%;
   left: 30%;
   right: 30%;
@@ -511,16 +545,12 @@ footer {
 }
 
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 764px){
   .cat_page{
     padding: 1em;
   }
   .cat_page a {
-    font-size: 1.2em;
-    padding-top: 10%;
-    padding-bottom: 9%;
-    width: 45%;
-    margin-right: 0em;
+    max-width: 45%;
     min-width: 164px;
   }
 }
@@ -661,18 +691,6 @@ footer {
   flex-direction: column;
   width: 100%;
 }
-
-/* LOGIN */
-#short_html{
-  height: 100%;
-}
-
-#short_body{
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
 
 #wrapper_login{
   display: flex;
