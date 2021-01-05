@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Pagina Utente</title>
+    <title>Registrazione</title>
     <link rel="stylesheet" href="../css/style1.css">
 </head>
 <body>
@@ -49,60 +49,40 @@
     </nav>
   </div>
 
-  <div class="reg_form">
+  <form action="" class="reg_form">
     <div class="form-group">
       <label for="pro_pic"></label>
       <div class="inpu-control">
         <div class="img_prof">
           <img src="https://images.pexels.com/photos/5101217/pexels-photo-5101217.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="img_img">
         </div>
+        <br>
+        <input type="file" name="fileToUpload" id="fileToUpload" required>
+        <input type="submit" value="Carica immagine" name="submit">
       </div>
     </div>
 
     <div class="form-group">
       <label for="email">Email</label>
-      <div class="input-control">
-        allegretti.tommaso@gmail.com
-      </div>
+      <input id="email" class="input-control" />
+    </div>
+
+    <div class="form-group">
       <label for="user">Username</label>
-      <div class="input-control">
-        Tommaso99
-      </div>
+      <input id="user" class="input-control" />
     </div>
 
-      <div class="form-group">
-        <label>&nbsp;</label>
-        <button class="form_btn">Modifica</button>
-      </div>
+    <div class="form-group">
+      <label for="pass">Password</label>
+      <input id="pass" class="input-control" />
     </div>
 
-    <hr>
-
-    <div class="reg_form">
-  
-      <div class="form-group">
-        <label for="email">Mi Piace:</label>
-        <div class="input-control">
-          143
-        </div>
-        <label for="user">Non mi piace:</label>
-        <div class="input-control">
-          48
-        </div>
-      </div>
-  
-      <div class="form-group">
-        <label for="email">Commenti:</label>
-        <div class="input-control">
-          13
-        </div>
-        <label for="user">Articoli pubblicati:</label>
-        <div class="input-control">
-          3
-        </div>
-      </div>
-      </div>
-    
+    <div class="form-group">
+      <label>&nbsp;</label>
+      <button class="form_btn">Save</button>
+      <button class="form_btn">Cancel</button>
+    </div>
+  </form>
 
 
     <footer>
