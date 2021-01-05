@@ -331,7 +331,6 @@ aside {
   padding: 1em;
   width: 440px;
   min-height: 600px;
-  margin-bottom: 2em;
 }
 
 @media screen and (max-width: 1200px) {
@@ -551,7 +550,6 @@ footer {
   }
   .cat_page a {
     max-width: 45%;
-    min-width: 164px;
   }
 }
 
