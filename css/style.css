@@ -7,6 +7,7 @@ html {
   background-image: url('../img/Wrinkled-Paper-Texture.jpeg');
   background-color: white;
   width: 100%;
+  height: 100%;
 }
 
 body{
@@ -16,8 +17,6 @@ body{
   margin: auto;
   font-family: 'Eugenio Text',Georgia,Times,'Times New Roman',serif;
 }
-
-
 
 /*HOME PAGE + HEADER E FOOTER*/
 header{
@@ -215,6 +214,9 @@ header a.icon{
     transform: skew(0);
   }
 }
+/* ---------------------------------------------------------------- */
+/* fine break 764px */
+/* ---------------------------------------------------------------- */
 
 h1 {
   text-align: center;
@@ -241,18 +243,17 @@ article {
   border: solid 1px grey;
   padding: 1em;
   margin-top: 1em;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+article div {
+  width: 65%;
 }
 
-article h3 {
-  padding-bottom: 1em;
-}
-
-article img {
+article > img {
   width: 30%;
-  position: relative;
-  float: left;
-  padding-right: 1em;
+  margin: auto;
+  padding-right: 5%;
   padding-bottom: 1em;
 }
 
@@ -260,34 +261,24 @@ article a {
   width: inherit;
 }
 
-article #mobile_img {
-  display: none;
-}
-
-@media screen and (max-width: 1200px) {
-  article img {
-    width: 100%;
-    float: none;
-  }
+article footer img {
+  width: 1em;
+  height: 1em;
 }
 
 @media screen and (max-width: 768px) {
-  * {
-    font-size: .95em;
-  }
-
   .articoli {
     margin: 2em;
   }
 
+  article {
+    border-radius: 15px;
+  }
+  article div {
+    width: 100%;
+  }
   article img {
     display: none;
-  }
-
-  article #mobile_img {
-    display: block;
-    position: relative;
-    width: 100%;
   }
 
   aside{
@@ -302,7 +293,7 @@ aside {
   margin: 1em;
   margin-top: 2em;
   width: 440px;
-  min-height: 600px;
+  height: fit-content;
 }
 
 footer {
@@ -498,7 +489,25 @@ footer {
     min-width: 164px;
   }
 }
+/* GENERIC PAGE ARTICOLO PER MODIFICA*/
+.upperPrint textarea {
+  width: 90%;
+  height: 10em;
+  margin: auto;
+}
+.upperPrint label {
+  margin: 1em;
+}
 
+.printArticolo > textarea {
+  width: 90%;
+  margin:auto;
+  height: 25em;
+}
+
+.printArticolo > label {
+  align-self: center;
+}
 /* GENERIC PAGE ARTICOLO*/
 .printArticolo {
   display: flex;
@@ -515,6 +524,7 @@ footer {
   border-top: solid 1px;
   padding: 0 3em 3em 3em;
   margin-top: 3em;
+  width: 93%;
 }
 
 .upperPrint img {
@@ -637,10 +647,6 @@ footer {
 }
 
 /* LOGIN */
-#short_html{
-  height: 100%;
-}
-
 #short_body{
   min-height: 100%;
   display: flex;
@@ -660,7 +666,7 @@ footer {
   padding: 3em;
   border: 3px solid #3d3d3d;
   text-align: center;
-  /*border-radius: 36px;*/
+  border-radius: 36px;
 }
 
 .box h1{
