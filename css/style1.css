@@ -44,8 +44,8 @@ header{
 }
 
 .user_img {
-  width: 48px;
-  height: 48px;
+  width: 60px;
+  height: 60px;
 }
 
 header nav {
@@ -163,6 +163,19 @@ header ul li #currentLink{
   display: block;
   transform: skew(20deg);
 }
+
+.user_cont a {
+  background: white;
+  padding: 0.8em 50px 0.8em 0.5em;
+  margin-right: 24px;
+  border: solid 1px black;
+  transform: skew(-20deg);
+}
+
+.user_cont a > div {
+  transform: skew(20deg);
+}
+
 .user_cont > img {
   position: absolute;
   right: 0;
@@ -748,7 +761,7 @@ footer {
 
   header a.search_link {
     display: block;
-    margin-right: 0.5em;
+    margin: 2em;
     text-align: center center;
   }
 
@@ -921,5 +934,8 @@ footer {
   .img_lg{
     width: 30vw;
     height: 30vw;
+  }
+  a.search_link{
+    margin: 0 0.5em 0 0 !important;
   }
 }
