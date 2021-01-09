@@ -15,29 +15,29 @@
 
   <body>
     <header class="header">
-        <img src="../img/user_icon.png" alt="" class="user_img" id="user_mob">
-        <img src="../img/logo.png" alt="" id="logo">
-        <nav>
-            <ul>
-                <li id="currentItem"><span lang="en" id="currentLink">Home</span></li>
-                <li><a href="cat.html">Categorie</a></li>
-                <li><a href="form_articolo.html">Scrivi il tuo articolo</a></li>
-                <li><a href="login.html">Accedi</a></li>
-            </ul>
-        </nav>
-        <form action="article_filter.html?art_text = {input}">
-          <input type="text" placeholder="Cerca.." id="search_bar" required><button type="submit" id="search_button"><i class="fa fa-search"></i></button>
-        </form>
-        <div class="mob_buttons_wrapper">
-          <a href="javascript:void(0);" class="icon search_link" onclick="searchToggle()">
-            <div class="fa fa-search"></div>
-          </a>
-          <a href="javascript:void(0);" class="icon txt_link" onclick="menuToggle()">
-            <div class="fa fa-bars"></div>
-          </a>
-        </div>
-        <img src="../img/user_icon.png" alt="" class="user_img" id="user_desk">
-    </header>
+      <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="immagine del profilo" class="user_img img_sm" id="user_mob">
+      <img src="../img/logo.png" alt="" id="logo">
+      <nav>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="cat.html">Categorie</a></li>
+              <li><a href="form_articolo.html">Scrivi il tuo articolo</a></li>
+              <li><a href="login.html">Accedi</a></li>
+          </ul>
+      </nav>
+      <form action="article_filter.html?art_text = {input}">
+        <input type="text" placeholder="Cerca.." id="search_bar" required><button type="submit" id="search_button"><i class="fa fa-search"></i></button>
+      </form>
+      <div class="mob_buttons_wrapper">
+        <a href="javascript:void(0);" class="icon search_link" onclick="searchToggle()">
+          <div class="fa fa-search"></div>
+        </a>
+        <a href="javascript:void(0);" class="icon txt_link" onclick="menuToggle()">
+          <div class="fa fa-bars"></div>
+        </a>
+      </div>
+      <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="immagine del profilo" class="user_img img_sm" id="user_desk">
+  </header>
     <div class="mob_srch" id="search_mobile">
       <form action="article_filter.html?art_text = {input}">
         <input type="text" placeholder="Cerca.." id="search_bar_mobile" required><button type="submit" id="search_button"><i class="fa fa-search"></i></button>

@@ -41,7 +41,6 @@ header{
 
 #logo {
   max-width: 9em;
-  margin: 0 1em 0 1em;
 }
 
 .user_img {
@@ -120,13 +119,13 @@ header ul li #currentLink{
 }
 
 #user_desk{
-  margin-left: 1em;
+  margin-right: 0.5em;
   border-radius: 50%;
 }
 
 #user_mob{
   display: none;
-  margin: 0 1em 0 2em;
+  margin-left: 0.5em;
   border-radius: 50%;
 }
 
@@ -185,12 +184,10 @@ header a.icon{
 }
 
 .mob_buttons_wrapper {
-  position: absolute;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-end;
-  margin: 0 1em 0 1em;
 }
 
 .mob_buttons_wrapper a{
@@ -583,7 +580,7 @@ footer {
 #wrapper_login{
   display: flex;
   justify-content: center;
-  padding: 5em 0;
+  padding: 20vh 0;
 }
 
 .box{
@@ -592,6 +589,7 @@ footer {
   padding: 3em;
   border: 3px solid #3d3d3d;
   text-align: center;
+  /*border-radius: 36px;*/
 }
 
 .box h1{
@@ -607,7 +605,6 @@ footer {
   margin: 20px auto;
   text-align: center;
   border: 2px solid #3d3d3d;
-  border-radius: 24px;
   padding: 14px 10px;
   width: 200px;
   outline: none;
@@ -617,11 +614,11 @@ footer {
 
 .box input[type="text"]:focus, .box input[type="password"]:focus{
   width: 280px;
-  border-color: #00b3b3;
+  border-color:#0d719d;
 }
 
 .box input[type="text"]:hover, .box input[type="password"]:hover{
-  border-color: #00b3b3;
+  border-color:#0d719d;
 }
 
 .box input[type="submit"]{
@@ -630,8 +627,7 @@ footer {
   display: block;
   margin: 20px auto;
   text-align: center;
-  border: 2px solid #00b3b3;
-  border-radius: 24px;
+  border: 2px solid #0d719d;
   padding: 14px 40px;
   outline: none;
   color: black;
@@ -640,7 +636,7 @@ footer {
 }
 
 .box input[type="submit"]:hover{
-  background-color: #3d3d3d;
+  background-color: #0d719d;
   color: #f2f2f2;
 }
 
@@ -723,19 +719,14 @@ footer {
   padding: 1em;
 }
 
-.img_prof{
- -moz-box-shadow:    0 3px 5px 3px #ccc;
- -webkit-box-shadow: 0 3px 5px 3px #ccc;
- box-shadow:         0 3px 5px 3px #ccc;
+.img_lg{
+  -moz-box-shadow:    0 3px 5px 3px #ccc;
+  -webkit-box-shadow: 0 3px 5px 3px #ccc;
+  box-shadow:         0 3px 5px 3px #ccc;
   border-radius: 50%;
   width: 15vw;
   height: 15vw;
   overflow: hidden;
-}
-
-.img_img{
- width: 15vw;
- height: 15vw;
 }
 
 @media screen and (max-width: 1200px) {
@@ -757,7 +748,7 @@ footer {
 
   header a.search_link {
     display: block;
-    width: 48px;
+    margin-right: 0.5em;
     text-align: center center;
   }
 
@@ -825,9 +816,8 @@ footer {
 
   header a.txt_link{
     display: block;
-    width: 48px;
+    padding: 0.5em;
     text-align: center center;
-    margin-left: 0
   }
 
   .user_cont{
@@ -928,14 +918,8 @@ footer {
     padding-left: 0;
   }
 
-  .img_prof{
+  .img_lg{
     width: 30vw;
     height: 30vw;
-    margin: auto;
-  }
-
-  .img_img{
-   width: 30vw;
-   height: 30vw;
   }
 }
