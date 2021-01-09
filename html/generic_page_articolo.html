@@ -28,10 +28,10 @@
           <input type="text" placeholder="Cerca.." id="search_bar" required><button type="submit" id="search_button"><i class="fa fa-search"></i></button>
         </form>
         <div class="mob_buttons_wrapper">
-          <a href="javascript:void(0);" class="icon search_link" onclick="searchFunction()">
+          <a href="javascript:void(0);" class="icon search_link" onclick="searchToggle()">
             <div class="fa fa-search"></div>
           </a>
-          <a href="javascript:void(0);" class="icon txt_link" onclick="myFunction()">
+          <a href="javascript:void(0);" class="icon txt_link" onclick="menuToggle()">
             <div class="fa fa-bars"></div>
           </a>
         </div>
@@ -91,23 +91,5 @@
     </footer>
   </body>
 
-  <script>
-    function myFunction() {
-        var x = document.getElementById("hd");
-        if (x.className === "mob_nav") {
-          x.className += " responsive";
-        } else {
-          x.className = "mob_nav";
-        }
-      }
-
-    function searchFunction() {
-      var x = document.getElementById("search_mobile");
-      if (x.className === "mob_srch"){
-        x.className += " resp_srch";
-      } else {
-        x.className = "mob_srch";
-      }
-    }
-  </script>
+  <script type="text/javascript" src="../js/util.js"></script>
 </html>

@@ -1,3 +1,20 @@
 header, .mob_srch, .mob_nav, img{
     display: none;
 }
+
+body{
+    font-family: Georgia, serif;
+    font-size: 16pt;
+    line-height: 24pt;
+    background: none;
+    color: #000;
+    width: 100%;
+}
+
+a:link{
+    margin: 0;
+}
+
+a::after{
+    content: " [" attr(href) "] ";
+  }
