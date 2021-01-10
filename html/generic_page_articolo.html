@@ -20,9 +20,9 @@
       <img src="../img/logo.png" alt="" id="logo">
       <nav>
           <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="cat.html">Categorie</a></li>
-              <li><a href="form_articolo.html">Scrivi il tuo articolo</a></li>
+              <li><a href="index.html"><span lang="en"><div>Home</div></span></a></li>
+              <li><a href="cat.html"><div>Categorie</div></a></li>
+              <li><a href="form_articolo.html"><div>Scrivi il tuo articolo</div></a></li>
           </ul>
       </nav>
       <form action="article_filter.html?art_text = {input}">
@@ -49,7 +49,7 @@
     <div class="mob_nav" id="hd">
       <nav>
           <ul>
-              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html"><span lang="en">Home</span></a></li>
               <li><a href="cat.html">Categorie</a></li>
               <li><a href="form_articolo.html">Scrivi il tuo articolo</a></li>
               <li><a href="login.html">Accedi/Registrati</a></li>
@@ -62,24 +62,24 @@
 
     <div class="commentArea">
       <h2>Commenti</h2>
-      <div id="print_comm">
+      <section id="print_comm">
       <img src="https://toppng.com/uploads/preview/donkey-from-shrek-smiling-11549860938myfrdpllko.png" alt="" class="user_img img_sm" id="user_desk">
         <p>Wow che figata sto articolo!</p>
-      </div>
-      <div id="print_comm">
+      </section>
+      <section id="print_comm">
       <img src="https://images-na.ssl-images-amazon.com/images/I/51CP3A15JKL._AC_.jpg" alt="" class="user_img img_sm" id="user_desk">
         <p>Il covid ha rotto le palle</p>
-      </div>
-      <div id="print_comm">
+      </section>
+      <section id="print_comm">
         <img src="https://i.pinimg.com/600x315/83/22/28/83222899a6194563500c0de384edbb84.jpg" alt="" class="user_img img_sm" id="user_desk">
         <p>Tyler Herro &lt; Jayson Tatum</p>
-      </div>
+      </section>
       <form action="index.html" method="post">
         <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="" class="user_img img_sm" id="user_desk">
-        <div class="comm_container">
+        <section class="comm_container">
           <textarea name="comment" id="insert_comment" maxlength="200" placeholder="Inserisci un commento..." required></textarea>
           <button type="submit" name="pub_comm">Pubblica</button>
-        </div>
+        </section>
       </form>
     </div>
 

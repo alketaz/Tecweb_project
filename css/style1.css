@@ -81,9 +81,12 @@ header nav ul li:hover {
 
 header nav li a{
   display: block;
+  transition: all 0.3s ease 0s;
+}
+
+header nav li a div{
   transform: skew(20deg);
   padding: 0.8em;
-  transition: all 0.3s ease 0s;
 }
 
 header ul #currentItem{
@@ -92,10 +95,13 @@ header ul #currentItem{
 
 header ul li #currentLink{
   display: block;
-  transform: skew(20deg);
   padding: 0.8em;
   color: #0d719d;
   font-weight: bold;
+}
+
+header ul li #currentLink div{
+  transform: skew(20deg);
 }
 
 .right_section {
@@ -601,7 +607,6 @@ footer {
   padding: 3em;
   border: 3px solid #3d3d3d;
   text-align: center;
-  /*border-radius: 36px;*/
 }
 
 .box h1{
@@ -611,7 +616,6 @@ footer {
 }
 
 .box input[type="text"], .box input[type="password"]{
-  border: 0;
   background: none;
   display: block;
   margin: 20px auto;
@@ -634,7 +638,6 @@ footer {
 }
 
 .box input[type="submit"]{
-  border: 0;
   background: none;
   display: block;
   margin: 20px auto;

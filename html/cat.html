@@ -20,13 +20,13 @@
       <img src="../img/logo.png" alt="" id="logo">
       <nav>
           <ul>
-              <li><a href="index.html">Home</a></li>
-              <li id="currentItem"><span id="currentLink">Categorie</span></li>
-              <li><a href="form_articolo.html">Scrivi il tuo articolo</a></li>
+              <li><a href="index.html" tabindex="1"><span lang="en"><div>Home</div></span></a></li>
+              <li id="currentItem"><span id="currentLink"><div>Categorie</div></span></li>
+              <li><a href="form_articolo.html" tabindex="2"><div>Scrivi il tuo articolo</div></a></li>
           </ul>
       </nav>
       <form action="article_filter.html?art_text = {input}">
-        <input type="text" placeholder="Cerca.." id="search_bar" required><button type="submit" id="search_button"><i class="fa fa-search"></i></button>
+        <input type="text" placeholder="Cerca.." id="search_bar" tabindex="3" required><button type="submit" id="search_button" tabindex="4"><i class="fa fa-search"></i></button>
       </form>
       <div class="mob_buttons_wrapper">
         <a href="javascript:void(0);" class="icon search_link" onclick="searchToggle()">
@@ -37,7 +37,7 @@
         </a>
       </div>
       <div class="user_cont">
-        <a href="login.html"><div>Accedi/Registrati</div></a>
+        <a href="login.html" tabindex="5"><div>Accedi/Registrati</div></a>
         <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="" class="user_img img_sm" id="user_desk">
     </div>
   </header>
@@ -49,7 +49,7 @@
     <div class="mob_nav" id="hd">
       <nav>
           <ul>
-              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html"><span lang="en">Home</span></a></li>
               <li id="currentItem"><span id="currentLink">Categorie</span></li>
               <li><a href="form_articolo.html">Scrivi il tuo articolo</a></li>
               <li><a href="login.html">Accedi/Registrati</a></li>
@@ -59,49 +59,49 @@
     <div id="wrapper">
       <h1>Scegli una categoria</h1>
       <div class="cat_page">
-        <a href="article_filter.html/?cat_name=Sport">
+        <a href="article_filter.html/?cat_name=Sport" tabindex="6">
           <figure>
              <img src="../img/sport_cat.jpeg" alt="pallone">
              <figcaption>Sport</figcaption>
           </figure>
         </a>
-        <a href="article_filter.html/?cat_name=Economia">
+        <a href="article_filter.html/?cat_name=Economia" tabindex="7">
           <figure>
             <img src="../img/economy_cat.jpeg">
             <figcaption>Economia</figcaption>
           </figure>
         </a>
-        <a href="article_filter.html/?cat_name=Politica">
+        <a href="article_filter.html/?cat_name=Politica" tabindex="8">
           <figure>
             <img src="../img/politics_cat.jpeg" alt="">
             <figcaption>Politica</figcaption>
           </figure>
         </a>
-        <a href="article_filter.html/?cat_name=Covid">
+        <a href="article_filter.html/?cat_name=Covid" tabindex="9">
           <figure>
             <img src="../img/covid_cat.jpeg" alt="">
             <figcaption>Covid</figcaption>
           </figure>
         </a>
-        <a href="article_filter.html/?cat_name=Spettacolo">
+        <a href="article_filter.html/?cat_name=Spettacolo" tabindex="10">
           <figure>
             <img src="../img/spett_cat.jpeg" alt="">
             <figcaption>Spettacolo</figcaption>
           </figure>
         </a>
-        <a href="article_filter.html/?cat_name=Gossip">
+        <a href="article_filter.html/?cat_name=Gossip" tabindex="11">
           <figure>
             <img src="../img/gossip_cat.jpeg" alt="">
             <figcaption>Gossip</figcaption>
           </figure>
         </a>
-        <a href="article_filter.html/?cat_name=Scienze">
+        <a href="article_filter.html/?cat_name=Scienze" tabindex="12">
           <figure>
             <img src="../img/science_cat.jpeg" alt="">
             <figcaption>Scienze</figcaption>
           </figure>
         </a>
-        <a href="article_filter.html/?cat_name=Mondo">
+        <a href="article_filter.html/?cat_name=Mondo" tabindex="13">
           <figure>
             <img src="../img/world_cat.jpeg" alt="">
             <figcaption>Mondo</figcaption>
@@ -109,6 +109,9 @@
         </a>
       </div>
     </div>
+
+    <div style="break-after: page;"></div>
+
       <footer>
         <img id="html5" src="../img/badge-w3c-valid-html5.png" alt="Logo che certifica il rispetto dello standard w3c nella scrittura del codice html">
         <img id="cssLogo" src="../img/css.png" alt="Logo che certifica il rispetto dello standard w3c nella scrittura del codice css">

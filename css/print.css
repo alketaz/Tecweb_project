@@ -1,5 +1,5 @@
-header, .mob_srch, .mob_nav, img{
-    display: none;
+header, .mob_srch, .mob_nav, img, textarea, #myBtn {
+    display: none !important;
 }
 
 body{
@@ -18,3 +18,12 @@ a:link{
 a::after{
     content: " [" attr(href) "] ";
   }
+
+#wrapper_login, .box, .box input[type="text"], .box input[type="password"], .box input[type="submit"], .box h1 {
+    border: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    text-align: left;
+    justify-content: left;
+    text-transform: inherit;
+}

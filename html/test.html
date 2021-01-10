@@ -20,13 +20,13 @@
       <img src="../img/logo.png" alt="" id="logo">
       <nav>
           <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="cat.html">Categorie</a></li>
-              <li><a href="form_articolo.html">Scrivi il tuo articolo</a></li>
+              <li id="currentItem"><span id="currentLink" lang="en"><div>Home</div></span></li>
+              <li><a href="cat.html" tabindex="1"><div>Categorie</div></a></li>
+              <li><a href="form_articolo.html" tabindex="2"><div>Scrivi il tuo articolo</div></a></li>
           </ul>
       </nav>
       <form action="article_filter.html?art_text = {input}">
-        <input type="text" placeholder="Cerca.." id="search_bar" required><button type="submit" id="search_button"><i class="fa fa-search"></i></button>
+        <input type="text" placeholder="Cerca.." id="search_bar" tabindex="3" required><button type="submit" id="search_button" tabindex="4"><i class="fa fa-search"></i></button>
       </form>
       <div class="mob_buttons_wrapper">
         <a href="javascript:void(0);" class="icon search_link" onclick="searchToggle()">
@@ -37,7 +37,7 @@
         </a>
       </div>
       <div class="user_cont">
-        <a href="login.html"><div>Accedi/Registrati</div></a>
+        <a href="login.html" tabindex="5"><div>Accedi/Registrati</div></a>
         <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="" class="user_img img_sm" id="user_desk">
     </div>
   </div>
@@ -56,7 +56,7 @@
             <li><a href="user_page.html">Il mio profilo</a></li>
           </ul>-->
           <ul id="menu_nav">
-            <li><a href="index.html">Home</a></li>
+            <li id="currentItem"><span id="currentLink" lang="en">Home</span></li>
             <li><a href="cat.html">Categorie</a></li>
             <li><a href="form_articolo.html">Scrivi il tuo articolo</a></li>
             <li><a href="login.html">Accedi/Registrati</a></li>
