@@ -10,14 +10,13 @@
 </head>
 <body>
   <header class="header">
-      <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="" class="user_img img_sm" id="user_mob">
+      <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="immagine del profilo" class="user_img img_sm" id="user_mob">
       <img src="../img/logo.png" alt="" id="logo">
       <nav>
           <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="cat.html">Categorie</a></li>
               <li><a href="form_articolo.html">Scrivi il tuo articolo</a></li>
-              <li><a href="login.html">Accedi</a></li>
           </ul>
       </nav>
       <form action="article_filter.html?art_text = {input}">
@@ -31,9 +30,12 @@
           <div class="fa fa-bars"></div>
         </a>
       </div>
+      <div class="user_cont">
+        <a href="login.html"><div>Accedi/Registrati</div></a>
       <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="" class="user_img img_sm" id="user_desk">
-      
+    </div>
   </header>
+
   <div class="mob_srch" id="search_mobile">
     <form action="article_filter.html?art_text = {input}">
       <input type="text" placeholder="Cerca.." id="search_bar_mobile" required><button type="submit" id="search_button"><i class="fa fa-search"></i></button>
@@ -45,7 +47,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="cat.html">Categorie</a></li>
             <li><a href="form_articolo.html">Scrivi il tuo articolo</a></li>
-            <li><a href="login.html">Accedi</a></li>
+            <li><a href="login.html">Accedi/Registrati</a></li>
         </ul>
     </nav>
   </div>
