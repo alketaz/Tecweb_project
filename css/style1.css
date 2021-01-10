@@ -741,6 +741,28 @@ footer {
   overflow: hidden;
 }
 
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 120px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color:   #dcdcdc; /* Set a background color */
+  color:black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  border: #3d3d3d 3px solid;
+}
+
+#myBtn:hover {
+  background-color: #3d3d3d;
+  color: white; /* Add a dark-grey background on hover */
+}
+
 @media screen and (max-width: 1200px) {
   header {
     font-size: 0.88em;
