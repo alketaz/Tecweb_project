@@ -766,6 +766,32 @@ footer {
   color: white; /* Add a dark-grey background on hover */
 }
 
+#votes{
+  padding: 1em;
+}
+
+.fa-arrow-down{
+  font-size: 30px;
+  margin: 0 0.5em;
+}
+
+.fa-arrow-down:hover{
+  color: blue;
+}
+
+.fa-arrow-up{
+  font-size: 30px;
+  margin: 0 0.5em;
+}
+
+.fa-arrow-up:hover{
+  color: red;
+}
+
+#vote_num{
+  font-size: 30px;
+}
+
 @media screen and (max-width: 1200px) {
   header {
     font-size: 0.88em;
@@ -964,5 +990,9 @@ footer {
   }
   a.search_link{
     margin: 0 0.5em 0 0 !important;
+  }
+
+  .fa-arrow-down, .fa-arrow-up, #vote_num{
+    font-size: 20px;
   }
 }
