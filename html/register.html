@@ -6,17 +6,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Registrazione</title>
     <link rel="stylesheet" href="../css/style1.css">
+    <link rel="stylesheet" href="../css/print.css" media="print">
 </head>
 <body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   <header class="header">
-      <img src="https://images.pexels.com/photos/5101217/pexels-photo-5101217.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="user_img" id="user_mob">
+      <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="immagine del profilo" class="user_img img_sm" id="user_mob">
       <img src="../img/logo.png" alt="" id="logo">
       <nav>
           <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="cat.html">Categorie</a></li>
-              <li><a href="form_articolo.html">Scrivi il tuo articolo</a></li>
-              <li><a href="login.html">Accedi</a></li>
+              <li><a href="index.html"><span lang="en"><div>Home</div></span></a></li>
+              <li><a href="cat.html"><div>Categorie</div></a></li>
+              <li><a href="form_articolo.html"><div>Scrivi il tuo articolo</div></a></li>
           </ul>
       </nav>
       <form action="article_filter.html?art_text = {input}">
@@ -30,9 +31,12 @@
           <div class="fa fa-bars"></div>
         </a>
       </div>
-      <img src="https://images.pexels.com/photos/5101217/pexels-photo-5101217.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="user_img" id="user_desk">
-      
+      <div class="user_cont">
+        <a href="login.html"><div>Accedi/Registrati</div></a>
+      <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="" class="user_img img_sm" id="user_desk">
+    </div>
   </header>
+
   <div class="mob_srch" id="search_mobile">
     <form action="article_filter.html?art_text = {input}">
       <input type="text" placeholder="Cerca.." id="search_bar_mobile" required><button type="submit" id="search_button"><i class="fa fa-search"></i></button>
@@ -41,10 +45,10 @@
   <div class="mob_nav" id="hd">
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html"><span lang="en">Home</span></a></li>
             <li><a href="cat.html">Categorie</a></li>
             <li><a href="form_articolo.html">Scrivi il tuo articolo</a></li>
-            <li><a href="login.html">Accedi</a></li>
+            <li><a href="login.html">Accedi/Registrati</a></li>
         </ul>
     </nav>
   </div>
@@ -52,10 +56,8 @@
   <form action="" class="reg_form">
     <div class="form-group">
       <label for="pro_pic"></label>
-      <div class="inpu-control">
-        <div class="img_prof">
-          <img src="https://images.pexels.com/photos/5101217/pexels-photo-5101217.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="img_img">
-        </div>
+      <div class="input-control">
+          <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="immagine del profilo" class="user_img img_lg">
         <br>
         <input type="file" name="fileToUpload" id="fileToUpload" required>
         <input type="submit" value="Carica immagine" name="submit">
