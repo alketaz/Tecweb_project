@@ -1,12 +1,12 @@
 // mostra menu da mobile
 function menuToggle() {
-    var x = document.getElementById("hd");
-    if (x.className === "mob_nav") {
-      x.className += " responsive";
-    } else {
-      x.className = "mob_nav";
-    }
+  var x = document.getElementById("hd");
+  if (x.className === "mob_nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "mob_nav";
   }
+}
 
 // mostra barra di ricerca da mobile
 function searchToggle() {
