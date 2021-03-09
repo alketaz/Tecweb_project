@@ -17,8 +17,6 @@ function searchToggle() {
     x.className = "mob_srch";
   }
 }
-<<<<<<< HEAD
-=======
 
 //Get the button:
 mybutton = document.getElementById("myBtn");
@@ -39,4 +37,3 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
->>>>>>> 8a35190051594b70729e2e45d2f077c6c04a3019

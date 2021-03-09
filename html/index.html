@@ -14,20 +14,19 @@
   </head>
 
   <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <i class="fa fa-arrow-circle-up" onclick="topFunction()" id="myBtn"></i>
     <header class="header">
       <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="immagine del profilo" class="user_img img_sm" id="user_mob">
       <img src="../img/logo.png" alt="" id="logo">
       <nav>
           <ul>
-              <li id="currentItem"><span lang="en" id="currentLink">Home</span></li>
-              <li><a href="cat.html">Categorie</a></li>
-              <li><a href="form_articolo.html">Scrivi il tuo articolo</a></li>
-              <li><a href="login.html">Accedi</a></li>
+              <li id="currentItem"><span lang="en" id="currentLink"><div>Home</div></span></li>
+              <li><a href="cat.html"><div>Categorie</div></a></li>
+              <li><a href="form_articolo.html" tabindex="2"><div>Scrivi il tuo articolo</div></a></li>
           </ul>
       </nav>
       <form action="article_filter.html?art_text = {input}">
-        <input type="text" placeholder="Cerca.." id="search_bar" required><button type="submit" id="search_button"><i class="fa fa-search"></i></button>
+        <input type="text" placeholder="Cerca.." id="search_bar" tabindex="3" required><button type="submit" id="search_button" tabindex="4"><i class="fa fa-search"></i></button>
       </form>
       <div class="mob_buttons_wrapper">
         <a href="javascript:void(0);" class="icon search_link" onclick="searchToggle()">
@@ -37,7 +36,10 @@
           <div class="fa fa-bars"></div>
         </a>
       </div>
-      <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="immagine del profilo" class="user_img img_sm" id="user_desk">
+      <div class="user_cont">
+        <a href="login.html" tabindex="5"><div>Accedi/Registrati</div></a>
+        <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="" class="user_img img_sm" id="user_desk">
+    </div>
   </header>
     <div class="mob_srch" id="search_mobile">
       <form action="article_filter.html?art_text = {input}">
