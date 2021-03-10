@@ -302,11 +302,13 @@ footer {
 
 #html5 {
   align-self: center;
+  margin-left: 5em;
 }
 
 #cssLogo {
   order: 1;
   align-self: center;
+  margin-right: 5em;
 }
 
 
@@ -749,15 +751,13 @@ footer {
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  background: white;
-  bottom: 0.1em; /* Place the button at the bottom of the page */
-  right: 0.1em; /* Place the button 30px from the right */
+  bottom: 1em; /* Place the button at the bottom of the page */
+  right: 1em; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
+  border: none;/* Remove borders */
   outline: none; /* Remove outline */
   color:#094863; /* Text color colore da cambiare*/
   cursor: pointer; /* Add a mouse pointer on hover */
-  font-size: 4em; /* Increase font size */
 }
 
 #myBtn:hover {
@@ -813,6 +813,10 @@ footer {
     text-align: center center;
   }
 
+  #myBtn {
+    width: 56px;
+  }
+
   .resp_srch{
     position: relative;
     display: flex;
@@ -835,12 +839,6 @@ footer {
   .cat_page figcaption {
     font-size: 1.1em;
   }
-
-  /*#myBtn{
-    bottom: 0.1em !important;
-    right: 0.1em !important;
-    font-size: 3em;
-  }*/
 }
 
 @media screen and (max-width: 768px){
@@ -893,6 +891,10 @@ footer {
     width: 30px;
     padding-left: 0.5em;
     text-align: center center;
+  }
+
+  #myBtn {
+    width: 48px;
   }
 
   .user_cont{
