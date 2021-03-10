@@ -1,41 +1,53 @@
 <!DOCTYPE html>
-<html lang="en" id="short_html">
-<head>
-    <meta charset="UTF-8">
+<html lang="it" dir="ltr" id="short_html">
+  <head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+    <title>Il mio profilo - ViTimes</title>
+
+    <meta name="author" content="MPAC Group">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript, MySQL, notizie, covid, sport, economia, cultura, scienze, spettacolo, politica">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Pagina Utente</title>
-    <link rel="stylesheet" href="../css/style1.css">
+    <link rel="stylesheet" type="text/css" href="../css/style1.css" media="screen">
     <link rel="stylesheet" href="../css/print.css" media="print">
-</head>
-<body>
-  <i class="fa fa-arrow-circle-up" onclick="topFunction()" id="myBtn"></i>
-  <header class="header">
-      <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="" class="user_img" id="user_mob">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <i class="fa fa-arrow-circle-up" onclick="topFunction()" id="myBtn"></i>
+    <header class="header">
+      <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="immagine del profilo" class="user_img img_sm" id="user_mob">
       <img src="../img/logo.png" alt="" id="logo">
       <nav>
-          <ul>
-              <li><a href="index.html"><span lang="en"><div>Home</div></span></a></li>
-              <li><a href="cat.html"><div>Categorie</div></a></li>
-              <li><a href="form_articolo.html"><div>Scrivi il tuo articolo</div></a></li>
-          </ul>
+        <ul>
+            <li><a href="index.html"><span lang="en"><div>Home</div></span></a></li>
+            <li><a href="cat.html"><div>Categorie</div></a></li>
+            <li><a href="form_articolo.html"><div>Scrivi il tuo articolo</div></a></li>
+        </ul>
       </nav>
       <form action="article_filter.html?art_text = {input}">
-        <input type="text" placeholder="Cerca.." id="search_bar" required><button type="submit" id="search_button"><i class="fa fa-search"></i></button>
+        <input type="text" placeholder="Cerca.." id="search_bar" tabindex="3" required><button type="submit" id="search_button" tabindex="4"><i class="fa fa-search"></i></button>
       </form>
-      <div class="mob_buttons_wrapper">
-        <a href="javascript:void(0);" class="icon search_link" onclick="searchToggle()">
-          <div class="fa fa-search"></div>
-        </a>
-        <a href="javascript:void(0);" class="icon txt_link" onclick="menuToggle()">
-          <div class="fa fa-bars"></div>
-        </a>
+      <div class="right_section">
+        <div class="mob_buttons_wrapper">
+          <a href="javascript:void(0);" class="icon search_link" tabindex="4" onclick="searchToggle()">
+            <div class="fa fa-search"></div>
+          </a>
+          <a href="javascript:void(0);" class="icon txt_link" tabindex="5" onclick="menuToggle()">
+            <div class="fa fa-bars"></div>
+          </a>
+        </div>
+        <div class="user_cont">
+          <a href="login.html" tabindex="5"><div>Accedi/Registrati</div></a>
+          <!--<div class="logout_cont">
+                <a href="user_page.html">Il mio profilo</a>
+                <a href="index.html?logout_php">Esci</a>
+          </div>-->
+          <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="" class="user_img img_sm" id="user_desk">
+        </div>
       </div>
-      <div class="user_cont">
-        <a href="login.html"><div>Accedi/Registrati</div></a>
-        <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="" class="user_img img_sm" id="user_desk">
-    </div>
-  </header>
+    </header>
   <div class="mob_srch" id="search_mobile">
     <form action="article_filter.html?art_text = {input}">
       <input type="text" placeholder="Cerca.." id="search_bar_mobile" required><button type="submit" id="search_button"><i class="fa fa-search"></i></button>
@@ -80,7 +92,7 @@
     <hr>
 
     <div class="reg_form">
-  
+
       <div class="form-group">
         <label for="email">Mi Piace:</label>
         <div class="input-control">
@@ -91,7 +103,7 @@
           48
         </div>
       </div>
-  
+
       <div class="form-group">
         <label for="email">Commenti:</label>
         <div class="input-control">
@@ -103,7 +115,7 @@
         </div>
       </div>
       </div>
-    
+
 
 
     <footer>
