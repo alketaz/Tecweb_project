@@ -600,13 +600,15 @@ footer {
 /*  LOGIN */
 #wrapper_login{
   display: flex;
-  justify-content: center;
-  padding: 20vh 0;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em 0;
 }
 
 .box{
   flex: 0.25;
-  width: 20em;
+  min-width: 240px;
+  width: 30%;
   padding: 3em;
   border: 3px solid #3d3d3d;
   text-align: center;
@@ -615,7 +617,6 @@ footer {
 .box h1{
   color: black;
   font-weight: 500;
-  text-transform: uppercase;
 }
 
 .box input[type="text"], .box input[type="password"]{
@@ -656,6 +657,21 @@ footer {
 .box input[type="submit"]:hover{
   background-color: #0d719d;
   color: #f2f2f2;
+}
+
+#log {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+#reg {
+  border-top: none;
+  padding-top: 0;
+}
+
+#reg p {
+  padding-top: 1em;
+  border-top: solid 2px #3d3d3d;
 }
 
 /*  FILTER PAGE */
@@ -1005,6 +1021,10 @@ footer {
 
   .fa-arrow-down, .fa-arrow-up, #vote_num{
     font-size: 20px;
+  }
+
+  .box {
+    padding: 2em;
   }
 
   footer{

@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <i class="fa fa-arrow-circle-up" onclick="topFunction()" id="myBtn"></i>
+    <img src="../img/top.png" onclick="topFunction()" id="myBtn">
     <header class="header">
       <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="immagine del profilo" class="user_img img_sm" id="user_mob">
       <img src="../img/logo.png" alt="" id="logo">
@@ -65,15 +65,15 @@
   </div>
 
     <div id="wrapper_login">
-    <form class="box" action="index.html" method="post">
-        <h1><span lang="en">Login</span></h1>
+    <form class="box" action="index.html" method="post" id="log">
+        <h1><span lang="en">LOGIN</span></h1>
         <input type="text" placeholder="Username">
         <input type="password" placeholder="Password" id="pw">
-        <input type="submit" value="Login">
-        <form class="reg"action="register.html" method="post">
-          <p>Non sei ancora registrato?</p>
-          <input type="submit" name="" value="Registrati">
-        </form>
+        <input type="submit" value="Login" id="log_btn">
+    </form>
+    <form class="box" action="register.html" method="post" id="reg">
+      <p>Non sei ancora registrato?</p>
+      <input type="submit" name="" value="Registrati">
     </form>
     </div>
 
