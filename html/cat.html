@@ -31,15 +31,15 @@
       </form>
       <div class="right_section">
         <div class="mob_buttons_wrapper">
-          <a href="javascript:void(0);" class="icon search_link" tabindex="4" onclick="searchToggle()">
+          <a href="javascript:void(0);" class="icon search_link" tabindex="5" onclick="searchToggle()">
             <div class="fa fa-search"></div>
           </a>
-          <a href="javascript:void(0);" class="icon txt_link" tabindex="5" onclick="menuToggle()">
+          <a href="javascript:void(0);" class="icon txt_link" tabindex="6" onclick="menuToggle()">
             <div class="fa fa-bars"></div>
           </a>
         </div>
         <div class="user_cont">
-          <a href="login.html" tabindex="5"><div>Accedi/Registrati</div></a>
+          <a href="login.html" tabindex="7"><div>Accedi/Registrati</div></a>
           <!--<div class="logout_cont">
                 <a href="user_page.html">Il mio profilo</a>
                 <a href="index.html?logout_php">Esci</a>
@@ -50,65 +50,65 @@
     </header>
     <div class="mob_srch" id="search_mobile">
       <form action="article_filter.html?art_text = {input}">
-        <input type="text" placeholder="Cerca.." id="search_bar_mobile" required><button type="submit" id="search_button"><i class="fa fa-search"></i></button>
+        <input type="text" placeholder="Cerca.." id="search_bar_mobile" tabindex="8" required><button type="submit" id="search_button" tabindex="9"><i class="fa fa-search"></i></button>
       </form>
     </div>
     <div class="mob_nav" id="hd">
       <nav>
           <ul>
-              <li><a href="index.html"><span lang="en">Home</span></a></li>
-              <li id="currentItem"><span id="currentLink">Categorie</span></li>
-              <li><a href="form_articolo.html">Scrivi il tuo articolo</a></li>
-              <li><a href="login.html">Accedi/Registrati</a></li>
+              <li><a href="index.html" tabindex="10"><span lang="en">Home</span></a></li>
+              <li id="currentItem" tabindex="11"><span id="currentLink">Categorie</span></li>
+              <li><a href="form_articolo.html" tabindex="12">Scrivi il tuo articolo</a></li>
+              <li><a href="login.html" tabindex="13">Accedi/Registrati</a></li>
           </ul>
       </nav>
     </div>
     <div id="wrapper">
       <h1>Scegli una categoria</h1>
       <div class="cat_page">
-        <a href="article_filter.html/?cat_name=Sport" tabindex="6">
+        <a href="article_filter.html/?cat_name=Sport" tabindex="14">
           <figure>
              <img src="../img/sport_cat.jpeg" alt="pallone">
              <figcaption>Sport</figcaption>
           </figure>
         </a>
-        <a href="article_filter.html/?cat_name=Economia" tabindex="7">
+        <a href="article_filter.html/?cat_name=Economia" tabindex="15">
           <figure>
             <img src="../img/economy_cat.jpeg">
             <figcaption>Economia</figcaption>
           </figure>
         </a>
-        <a href="article_filter.html/?cat_name=Politica" tabindex="8">
+        <a href="article_filter.html/?cat_name=Politica" tabindex="16">
           <figure>
             <img src="../img/politics_cat.jpeg" alt="">
             <figcaption>Politica</figcaption>
           </figure>
         </a>
-        <a href="article_filter.html/?cat_name=Covid" tabindex="9">
+        <a href="article_filter.html/?cat_name=Covid" tabindex="17">
           <figure>
             <img src="../img/covid_cat.jpeg" alt="">
             <figcaption>Covid</figcaption>
           </figure>
         </a>
-        <a href="article_filter.html/?cat_name=Spettacolo" tabindex="10">
+        <a href="article_filter.html/?cat_name=Spettacolo" tabindex="18">
           <figure>
             <img src="../img/spett_cat.jpeg" alt="">
             <figcaption>Spettacolo</figcaption>
           </figure>
         </a>
-        <a href="article_filter.html/?cat_name=Gossip" tabindex="11">
+        <a href="article_filter.html/?cat_name=Gossip" tabindex="19">
           <figure>
             <img src="../img/gossip_cat.jpeg" alt="">
             <figcaption>Gossip</figcaption>
           </figure>
         </a>
-        <a href="article_filter.html/?cat_name=Scienze" tabindex="12">
+        <a href="article_filter.html/?cat_name=Scienze" tabindex="20">
           <figure>
             <img src="../img/science_cat.jpeg" alt="">
             <figcaption>Scienze</figcaption>
           </figure>
         </a>
-        <a href="article_filter.html/?cat_name=Mondo" tabindex="13">
+        <a href="article_filter.html/?cat_name=Mondo" tabindex="21">
           <figure>
             <img src="../img/world_cat.jpeg" alt="">
             <figcaption>Mondo</figcaption>
@@ -124,10 +124,10 @@
         <img id="cssLogo" src="../img/css.png" alt="Logo che certifica il rispetto dello standard w3c nella scrittura del codice css">
         <address>
             Progetto di Tecnologie Web sviluppato da:<br>
-            <a href="mailto:andrea.polato.7@studenti.unipd.it">Andrea Polato</a><br>
-            <a href="mailto:andrea.polato.7@studenti.unipd.it">Tommaso Allegretti</a><br>
-            <a href="mailto:andrea.polato.7@studenti.unipd.it">Giosu&egrave; Calgaro</a><br>
-            <a href="mailto:andrea.polato.7@studenti.unipd.it">Matteo Miotello</a><br>
+            <a href="mailto:andrea.polato.7@studenti.unipd.it" tabindex="22">Andrea Polato</a><br>
+            <a href="mailto:andrea.polato.7@studenti.unipd.it" tabindex="23">Tommaso Allegretti</a><br>
+            <a href="mailto:andrea.polato.7@studenti.unipd.it" tabindex="24">Giosu&egrave; Calgaro</a><br>
+            <a href="mailto:andrea.polato.7@studenti.unipd.it" tabindex="25">Matteo Miotello</a><br>
         </address>
       </footer>
     </body>

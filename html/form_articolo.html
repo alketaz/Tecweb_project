@@ -21,8 +21,8 @@
       <img src="../img/logo.png" alt="" id="logo">
       <nav>
         <ul>
-            <li><a href="index.html"><span lang="en"><div>Home</div></span></a></li>
-            <li><a href="cat.html"><div>Categorie</div></a></li>
+            <li><a href="index.html" tabindex="1"><span lang="en"><div>Home</div></span></a></li>
+            <li><a href="cat.html" tabindex="2"><div>Categorie</div></a></li>
             <li id="currentItem"><span id="currentLink"><div>Scrivi il tuo articolo</div></li>
         </ul>
       </nav>
@@ -39,7 +39,7 @@
           </a>
         </div>
         <div class="user_cont">
-          <a href="login.html" tabindex="5"><div>Accedi/Registrati</div></a>
+          <a href="login.html" tabindex="6"><div>Accedi/Registrati</div></a>
           <!--<div class="logout_cont">
                 <a href="user_page.html">Il mio profilo</a>
                 <a href="index.html?logout_php">Esci</a>
@@ -50,16 +50,16 @@
     </header>
     <div class="mob_srch" id="search_mobile">
       <form action="article_filter.html?art_text = {input}">
-        <input type="text" placeholder="Cerca.." id="search_bar_mobile" required><button type="submit" id="search_button"><i class="fa fa-search"></i></button>
+        <input type="text" placeholder="Cerca.." id="search_bar_mobile" tabindex="7" required><button type="submit" id="search_button" tabindex="8"><i class="fa fa-search"></i></button>
       </form>
     </div>
     <div class="mob_nav" id="hd">
       <nav>
           <ul>
-              <li><a href="index.html"><span lang="en">Home</span></a></li>
-              <li><a href="cat.html">Categorie</a></li>
+              <li><a href="index.html" tabindex="9"><span lang="en">Home</span></a></li>
+              <li><a href="cat.html" tabindex="10">Categorie</a></li>
               <li id="currentItem"><span id="currentLink">Scrivi il tuo articolo</span></li>
-              <li><a href="login.html">Accedi/Registrati</a></li>
+              <li><a href="login.html" tabindex="11">Accedi/Registrati</a></li>
           </ul>
       </nav>
     </div>
@@ -72,56 +72,56 @@
           di curare l'accessibilità del tuo articolo e di pubblicarlo col tuo nome.
         </p>
         <label for="titolo_art">Titolo dell'articolo</label>
-        <input type="text" name="titolo_art" placeholder="Titolo... (Massimo 126 caratteri)" required>
+        <input type="text" name="titolo_art" placeholder="Titolo... (Massimo 126 caratteri)" tabindex="12" required>
         <br>
         <label for="descr_art">Descrizione articolo</label>
-        <input type="text" name="descr_art" placeholder="Descrizione... (Massimo 300 caratteri)" required>
+        <input type="text" name="descr_art" placeholder="Descrizione... (Massimo 300 caratteri)" tabindex="13" required>
         <br>
         <label for="testo_art">Testo dell'articolo</label>
-        <textarea maxlength="10000" name="testo_art" placeholder="Testo dell'articolo... (Massimo 10000 caratteri)" required></textarea>
+        <textarea maxlength="10000" name="testo_art" placeholder="Testo dell'articolo... (Massimo 10000 caratteri)" tabindex="14" required></textarea>
         <br>
         <div class="cat_img">
           <div class="img_sel">
             <label for="image"><i class="fa fa-folder-open-o"></i> Scegli un'immagine</label>
-            <input type="file" name="image" accept="image/jpeg, image/png">
+            <input type="file" name="image" accept="image/jpeg, image/png" tabindex="15">
           </div>
           <div class="cat_sel">
             <p>Scegli una o pi&ugrave; categorie:</p>
               <div id="sport_cat" class="element">
                 <label for="sport">Sport</label>
-                <input type="checkbox" name="sport" value="Sport">
+                <input type="checkbox" name="sport" value="Sport" tabindex="16">
               </div>
               <div id="economy_cat" class="element">
-                <label for="sport">Economia</label>
-                <input type="checkbox" name="sport" value="economia">
+                <label for="economia">Economia</label>
+                <input type="checkbox" name="economia" value="economia" tabindex="17">
               </div>
               <div id="politics_cat" class="element">
-                <label for="sport">Politica</label>
-                <input type="checkbox" name="sport" value="politica">
+                <label for="politica">Politica</label>
+                <input type="checkbox" name="politica" value="politica" tabindex="18">
               </div>
               <div id="gossip_cat" class="element">
-                <label for="sport">Gossip</label>
-                <input type="checkbox" name="sport" value="gossip">
+                <label for="gossip">Gossip</label>
+                <input type="checkbox" name="gossip" value="gossip" tabindex="19">
               </div>
               <div id="world_cat" class="element">
-                <label for="sport">Mondo</label>
-                <input type="checkbox" name="sport" value="mondo">
+                <label for="mondo">Mondo</label>
+                <input type="checkbox" name="mondo" value="mondo" tabindex="20">
               </div>
               <div id="science_cat" class="element">
-                <label for="sport">Scienze</label>
-                <input type="checkbox" name="sport" value="scienze">
+                <label for="scienze">Scienze</label>
+                <input type="checkbox" name="scienze" value="scienze" tabindex="21">
               </div>
               <div id="covid_cat" class="element">
-                <label for="sport">Covid</label>
-                <input type="checkbox" name="sport" value="covid">
+                <label for="covid">Covid</label>
+                <input type="checkbox" name="covid" value="covid" tabindex="22">
               </div>
               <div id="spett_cat" class="element">
-                <label for="sport">Spettacolo</label>
-                <input type="checkbox" name="sport" value="spettacolo">
+                <label for="spettacolo">Spettacolo</label>
+                <input type="checkbox" name="spettacolo" value="spettacolo" tabindex="23">
               </div>
           </div>
         </div>
-        <button type="submit" name="submit">Invia</button>
+        <button type="submit" name="submit" tabindex="24">Invia</button>
       </form>
     </div>
 
@@ -131,10 +131,10 @@
       <img id="cssLogo" src="../img/css.png" alt="Logo che certifica il rispetto dello standard w3c nella scrittura del codice css">
       <address>
           Progetto di Tecnologie Web sviluppato da:<br>
-          <a href="mailto:andrea.polato.7@studenti.unipd.it">Andrea Polato</a><br>
-          <a href="mailto:andrea.polato.7@studenti.unipd.it">Tommaso Allegretti</a><br>
-          <a href="mailto:andrea.polato.7@studenti.unipd.it">Giosu&egrave; Calgaro</a><br>
-          <a href="mailto:andrea.polato.7@studenti.unipd.it">Matteo Miotello</a><br>
+          <a href="mailto:andrea.polato.7@studenti.unipd.it" tabindex="25">Andrea Polato</a><br>
+          <a href="mailto:andrea.polato.7@studenti.unipd.it" tabindex="26">Tommaso Allegretti</a><br>
+          <a href="mailto:andrea.polato.7@studenti.unipd.it" tabindex="27">Giosu&egrave; Calgaro</a><br>
+          <a href="mailto:andrea.polato.7@studenti.unipd.it" tabindex="28">Matteo Miotello</a><br>
       </address>
     </footer>
   </body>

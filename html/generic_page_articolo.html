@@ -21,25 +21,25 @@
       <img src="../img/logo.png" alt="" id="logo">
       <nav>
         <ul>
-            <li><a href="index.html"><span lang="en"><div>Home</div></span></a></li>
-            <li><a href="cat.html"><div>Categorie</div></a></li>
-            <li><a href="form_articolo.html"><div>Scrivi il tuo articolo</div></a></li>
+            <li><a href="index.html" tabindex="1"><span lang="en"><div>Home</div></span></a></li>
+            <li><a href="cat.html" tabindex="2"><div>Categorie</div></a></li>
+            <li><a href="form_articolo.html" tabindex="3"><div>Scrivi il tuo articolo</div></a></li>
         </ul>
       </nav>
       <form action="article_filter.html?art_text = {input}">
-        <input type="text" placeholder="Cerca.." id="search_bar" tabindex="3" required><button type="submit" id="search_button" tabindex="4"><i class="fa fa-search"></i></button>
+        <input type="text" placeholder="Cerca.." id="search_bar" tabindex="4" required><button type="submit" id="search_button" tabindex="5"><i class="fa fa-search"></i></button>
       </form>
       <div class="right_section">
         <div class="mob_buttons_wrapper">
-          <a href="javascript:void(0);" class="icon search_link" tabindex="4" onclick="searchToggle()">
+          <a href="javascript:void(0);" class="icon search_link" tabindex="6" onclick="searchToggle()">
             <div class="fa fa-search"></div>
           </a>
-          <a href="javascript:void(0);" class="icon txt_link" tabindex="5" onclick="menuToggle()">
+          <a href="javascript:void(0);" class="icon txt_link" tabindex="7" onclick="menuToggle()">
             <div class="fa fa-bars"></div>
           </a>
         </div>
         <div class="user_cont">
-          <a href="login.html" tabindex="5"><div>Accedi/Registrati</div></a>
+          <a href="login.html" tabindex="8"><div>Accedi/Registrati</div></a>
           <!--<div class="logout_cont">
                 <a href="user_page.html">Il mio profilo</a>
                 <a href="index.html?logout_php">Esci</a>
@@ -50,16 +50,16 @@
     </header>
     <div class="mob_srch" id="search_mobile">
       <form action="article_filter.html?art_text = {input}">
-        <input type="text" placeholder="Cerca.." id="search_bar_mobile" required><button type="submit" id="search_button"><i class="fa fa-search"></i></button>
+        <input type="text" placeholder="Cerca.." id="search_bar_mobile" tabindex="9" required><button type="submit" id="search_button" tabindex="10"><i class="fa fa-search"></i></button>
       </form>
     </div>
     <div class="mob_nav" id="hd">
       <nav>
           <ul>
-              <li><a href="index.html"><span lang="en">Home</span></a></li>
-              <li><a href="cat.html">Categorie</a></li>
-              <li><a href="form_articolo.html">Scrivi il tuo articolo</a></li>
-              <li><a href="login.html">Accedi/Registrati</a></li>
+              <li><a href="index.html" tabindex="11"><span lang="en">Home</span></a></li>
+              <li><a href="cat.html" tabindex="12">Categorie</a></li>
+              <li><a href="form_articolo.html" tabindex="13">Scrivi il tuo articolo</a></li>
+              <li><a href="login.html" tabindex="14">Accedi/Registrati</a></li>
           </ul>
       </nav>
     </div>
@@ -68,8 +68,8 @@
     <!-- <articolo />  tag fittizio per l'inserimento dell'articolo da visualizzare per intero -->
     <div class="commentArea">
       <section id="votes">
-        <i class="fa fa-arrow-up"></i>
-        <i class="fa fa-arrow-down"></i>
+        <i class="fa fa-arrow-up" tabindex="15"></i>
+        <i class="fa fa-arrow-down" tabindex="16"></i>
         <span id="vote_num">74</span>
       </section>
       <hr>
@@ -89,8 +89,8 @@
       <form action="index.html" id="post_comm" method="post">
         <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="" class="user_img img_sm" id="user_desk">
         <section class="comm_container">
-          <textarea name="comment" id="insert_comment" maxlength="200" placeholder="Inserisci un commento..." required></textarea>
-          <button type="submit" name="pub_comm">Pubblica</button>
+          <textarea name="comment" id="insert_comment" maxlength="200" placeholder="Inserisci un commento..." tabindex="17" required></textarea>
+          <button type="submit" name="pub_comm" tabindex="18">Pubblica</button>
         </section>
       </form>
     </div>
@@ -100,10 +100,10 @@
       <img id="cssLogo" src="../img/css.png" alt="Logo che certifica il rispetto dello standard w3c nella scrittura del codice css">
       <address>
           Progetto di Tecnologie Web sviluppato da:<br>
-          <a href="mailto:andrea.polato.7@studenti.unipd.it">Andrea Polato</a><br>
-          <a href="mailto:andrea.polato.7@studenti.unipd.it">Tommaso Allegretti</a><br>
-          <a href="mailto:andrea.polato.7@studenti.unipd.it">Giosu&egrave; Calgaro</a><br>
-          <a href="mailto:andrea.polato.7@studenti.unipd.it">Matteo Miotello</a><br>
+          <a href="mailto:andrea.polato.7@studenti.unipd.it" tabindex="19">Andrea Polato</a><br>
+          <a href="mailto:andrea.polato.7@studenti.unipd.it" tabindex="20">Tommaso Allegretti</a><br>
+          <a href="mailto:andrea.polato.7@studenti.unipd.it" tabindex="21">Giosu&egrave; Calgaro</a><br>
+          <a href="mailto:andrea.polato.7@studenti.unipd.it" tabindex="22">Matteo Miotello</a><br>
       </address>
     </footer>
   </body>
