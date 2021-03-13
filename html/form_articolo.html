@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <i class="fa fa-arrow-circle-up" onclick="topFunction()" id="myBtn"></i>
+    <img src="../img/top.png" onclick="topFunction()" id="myBtn">
     <header class="header">
       <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="immagine del profilo" class="user_img img_sm" id="user_mob">
       <img src="../img/logo.png" alt="" id="logo">
@@ -72,21 +72,21 @@
           di curare l'accessibilità del tuo articolo e di pubblicarlo col tuo nome.
         </p>
         <label for="titolo_art">Titolo dell'articolo</label>
-        <input type="text" name="titolo_art" placeholder="Titolo... (Massimo 126 caratteri)" tabindex="12" required>
+        <input spellcheck="true" type="text" maxlength="126"name="titolo_art" placeholder="Titolo... (Massimo 126 caratteri)" tabindex="12" required>
         <br>
         <label for="descr_art">Descrizione articolo</label>
-        <input type="text" name="descr_art" placeholder="Descrizione... (Massimo 300 caratteri)" tabindex="13" required>
+        <input spellcheck="true" type="text" maxlength="300" name="descr_art" placeholder="Descrizione... (Massimo 300 caratteri)" tabindex="13" required>
         <br>
         <label for="testo_art">Testo dell'articolo</label>
-        <textarea maxlength="10000" name="testo_art" placeholder="Testo dell'articolo... (Massimo 10000 caratteri)" tabindex="14" required></textarea>
+        <textarea spellcheck="true" maxlength="10000" name="testo_art" placeholder="Testo dell'articolo... (Massimo 10000 caratteri)" tabindex="14" required></textarea>
         <br>
         <div class="cat_img">
           <div class="img_sel">
             <label for="image"><i class="fa fa-folder-open-o"></i> Scegli un'immagine</label>
             <input type="file" name="image" accept="image/jpeg, image/png" tabindex="15">
           </div>
-          <div class="cat_sel">
-            <p>Scegli una o pi&ugrave; categorie:</p>
+          <fieldset class="cat_sel">
+            <legend>Scegli una o pi&ugrave; categorie:</legend>
               <div id="sport_cat" class="element">
                 <label for="sport">Sport</label>
                 <input type="checkbox" name="sport" value="Sport" tabindex="16">
@@ -119,7 +119,7 @@
                 <label for="spettacolo">Spettacolo</label>
                 <input type="checkbox" name="spettacolo" value="spettacolo" tabindex="23">
               </div>
-          </div>
+          </fieldset>
         </div>
         <button type="submit" name="submit" tabindex="24">Invia</button>
       </form>
