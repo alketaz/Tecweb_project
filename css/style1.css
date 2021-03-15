@@ -116,6 +116,7 @@ header nav li a div{
 
 #search_bar {
   padding: 0.8em 0 0.8em 1em;
+  outline: none;
   border: none;
 }
 
