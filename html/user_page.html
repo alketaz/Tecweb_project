@@ -1,53 +1,38 @@
 <!DOCTYPE html>
-<html lang="it" dir="ltr" id="short_html">
-  <head>
-    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
-    <title>Il mio profilo - ViTimes</title>
-
-    <meta name="author" content="MPAC Group">
+<html lang="en" id="short_html">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="HTML, CSS, JavaScript, MySQL, notizie, covid, sport, economia, cultura, scienze, spettacolo, politica">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/style1.css" media="screen">
-    <link rel="stylesheet" href="../css/print.css" media="print">
-    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-  </head>
-
-  <body>
-    <img src="../img/top.png" onclick="topFunction()" id="myBtn">
-    <header class="header">
-      <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="immagine del profilo" class="user_img img_sm" id="user_mob">
+    <title>Pagina Utente</title>
+    <link rel="stylesheet" href="../css/style1.css">
+</head>
+<body>
+  <header class="header">
+      <img src="https://images.pexels.com/photos/5101217/pexels-photo-5101217.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="user_img" id="user_mob">
       <img src="../img/logo.png" alt="" id="logo">
       <nav>
-        <ul>
-            <li><a href="index.html"><span lang="en"><div>Home</div></span></a></li>
-            <li><a href="cat.html"><div>Categorie</div></a></li>
-            <li><a href="form_articolo.html"><div>Scrivi il tuo articolo</div></a></li>
-        </ul>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="cat.html">Categorie</a></li>
+              <li><a href="form_articolo.html">Scrivi il tuo articolo</a></li>
+              <li><a href="login.html">Accedi</a></li>
+          </ul>
       </nav>
       <form action="article_filter.html?art_text = {input}">
-        <input type="text" placeholder="Cerca.." id="search_bar" tabindex="3" required><button type="submit" id="search_button" tabindex="4"><i class="fa fa-search"></i></button>
+        <input type="text" placeholder="Cerca.." id="search_bar" required><button type="submit" id="search_button"><i class="fa fa-search"></i></button>
       </form>
-      <div class="right_section">
-        <div class="mob_buttons_wrapper">
-          <a href="javascript:void(0);" class="icon search_link" tabindex="4" onclick="searchToggle()">
-            <div class="fa fa-search"></div>
-          </a>
-          <a href="javascript:void(0);" class="icon txt_link" tabindex="5" onclick="menuToggle()">
-            <div class="fa fa-bars"></div>
-          </a>
-        </div>
-        <div class="user_cont">
-          <!--<a href="login.html" tabindex="5"><div>Accedi/Registrati</div></a>-->
-          <div class="logout_cont">
-                <span id="currentLink">Il mio profilo</span>
-                <a href="index.html?logout_php" id="exit">Esci</a>
-          </div>
-          <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="" class="user_img img_sm" id="user_desk">
-        </div>
+      <div class="mob_buttons_wrapper">
+        <a href="javascript:void(0);" class="icon search_link" onclick="searchToggle()">
+          <div class="fa fa-search"></div>
+        </a>
+        <a href="javascript:void(0);" class="icon txt_link" onclick="menuToggle()">
+          <div class="fa fa-bars"></div>
+        </a>
       </div>
-    </header>
+      <img src="https://images.pexels.com/photos/5101217/pexels-photo-5101217.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="user_img" id="user_desk">
+      
+  </header>
   <div class="mob_srch" id="search_mobile">
     <form action="article_filter.html?art_text = {input}">
       <input type="text" placeholder="Cerca.." id="search_bar_mobile" required><button type="submit" id="search_button"><i class="fa fa-search"></i></button>
@@ -56,10 +41,10 @@
   <div class="mob_nav" id="hd">
     <nav>
         <ul>
-            <li><a href="index.html"><span lang="en">Home</span></a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="cat.html">Categorie</a></li>
             <li><a href="form_articolo.html">Scrivi il tuo articolo</a></li>
-            <li><a href="login.html">Accedi/Registrati</a></li>
+            <li><a href="login.html">Accedi</a></li>
         </ul>
     </nav>
   </div>
@@ -68,7 +53,9 @@
     <div class="form-group">
       <label for="pro_pic"></label>
       <div class="inpu-control">
-        <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="Immagine del profilo" class="user_img img_lg">
+        <div class="img_prof">
+          <img src="https://images.pexels.com/photos/5101217/pexels-photo-5101217.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="img_img">
+        </div>
       </div>
     </div>
 
@@ -92,7 +79,7 @@
     <hr>
 
     <div class="reg_form">
-
+  
       <div class="form-group">
         <label for="email">Mi Piace:</label>
         <div class="input-control">
@@ -103,7 +90,7 @@
           48
         </div>
       </div>
-
+  
       <div class="form-group">
         <label for="email">Commenti:</label>
         <div class="input-control">
@@ -115,7 +102,7 @@
         </div>
       </div>
       </div>
-
+    
 
 
     <footer>
