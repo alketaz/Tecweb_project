@@ -71,22 +71,26 @@
           La nostra redazione studierà attentamente il tuo articolo e deciderà se può essere pubblicato o meno. In caso di riscontro positivo ci occuperemo noi
           di curare l'accessibilità del tuo articolo e di pubblicarlo col tuo nome.
         </p>
-        <label for="titolo_art">Titolo dell'articolo</label>
-        <input spellcheck="true" type="text" maxlength="126"name="titolo_art" placeholder="Titolo... (Massimo 126 caratteri)" tabindex="12" required>
-        <br>
-        <label for="descr_art">Descrizione articolo</label>
-        <input spellcheck="true" type="text" maxlength="300" name="descr_art" placeholder="Descrizione... (Massimo 300 caratteri)" tabindex="13" required>
-        <br>
-        <label for="testo_art">Testo dell'articolo</label>
-        <textarea spellcheck="true" maxlength="10000" name="testo_art" placeholder="Testo dell'articolo... (Massimo 10000 caratteri)" tabindex="14" required></textarea>
-        <br>
+        <fieldset class="cont_art">
+          <legend>Contenuto dell'articolo</legend>
+          <label for="titolo_art">Titolo dell'articolo</label>
+          <input spellcheck="true" type="text" maxlength="126"name="titolo_art" placeholder="Titolo... (Massimo 126 caratteri)" tabindex="12" required>
+          <br>
+          <label for="descr_art">Descrizione articolo</label>
+          <input spellcheck="true" type="text" maxlength="300" name="descr_art" placeholder="Descrizione... (Massimo 300 caratteri)" tabindex="13" required>
+          <br>
+          <label for="testo_art">Testo dell'articolo</label>
+          <textarea spellcheck="true" maxlength="10000" name="testo_art" placeholder="Testo dell'articolo... (Massimo 10000 caratteri)" tabindex="14" required></textarea>
+          <br>
+        </fieldset>
         <div class="cat_img">
-          <div class="img_sel">
+          <fieldset class="img_sel">
+            <legend>Inserisci un'immagine (opzionale)</legend>
             <label for="image"><i class="fa fa-folder-open-o"></i> Scegli un'immagine</label>
             <input type="file" name="image" accept="image/jpeg, image/png" tabindex="15">
-          </div>
+          </fieldset>
           <fieldset class="cat_sel">
-            <legend>Scegli una o pi&ugrave; categorie:</legend>
+            <legend>Scegli una o pi&ugrave; categorie:  (opzionale)</legend>
               <div id="sport_cat" class="element">
                 <label for="sport">Sport</label>
                 <input type="checkbox" name="sport" value="Sport" tabindex="16">
