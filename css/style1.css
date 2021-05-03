@@ -7,6 +7,15 @@
   margin: 0em;
 }
 
+.hFlex {
+  display: flex;
+}
+
+.vFlex {
+  display: flex;
+  flex-direction: column;
+}
+
 html {
   background-image: url('../img/Wrinkled-Paper-Texture.jpeg');
   background-color: white;
@@ -21,15 +30,10 @@ body {
   margin: auto;
   font-family: 'Eugenio Text',Georgia,Times,'Times New Roman',serif;
   min-height: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 /*HOME PAGE + HEADER E FOOTER*/
 header{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
@@ -48,16 +52,11 @@ header{
 }
 
 header nav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   align-items: center;
   margin-right: -3em;
 }
 
 header nav ul{
-    display: flex;
-    flex-wrap: nowrap;
     justify-content: space-around;
     margin-right: 2em;
 }
@@ -104,9 +103,6 @@ nav #currentItem{
 }
 
 .right_section {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-between;
 }
 
@@ -142,21 +138,16 @@ nav #currentItem{
 .user_cont{
   position: relative;
   margin-right: 1em;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   align-items: center;
   justify-content: flex-end;
 }
 
-/*.login_cont, */.logout_cont {
+.logout_cont {
   background: white;
   margin-right: 24px;
   border: solid 1px black;
   transform: skew(-20deg);
   text-align: right;
-  display: flex;
-  flex-direction: column;
   padding: 0.1em 50px 0.1em 0.5em;
 }
 
@@ -164,12 +155,6 @@ nav #currentItem{
   transform: skew(20deg);
   padding: 0;
 }
-
-/*.login_cont > a{
-  display: block;
-  transform: skew(20deg);
-  padding: 0.8em 50px 0.8em 0.5em;
-}*/
 
 .logout_cont > a{
   display: block;
@@ -230,9 +215,6 @@ header a.icon{
 
 .mob_buttons_wrapper {
   position: absolute;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: flex-end;
   margin-right: 1em;
 }
@@ -246,8 +228,6 @@ header a.icon{
 }
 
 #wrapper {
-    display: flex;
-    flex-direction: column;
     padding: 1em 3em 1em 3em;
 }
 
@@ -260,9 +240,6 @@ h1 {
 }
 
 .home_content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-between;
   font-size: 1.3em;
 }
@@ -273,14 +250,11 @@ h1 {
 }
 
 article {
-  display: flex;
   background-color: white;
-  /*border: solid 1px grey;*/
   -moz-box-shadow:    0 3px 5px 3px #ccc;
   -webkit-box-shadow: 0 3px 5px 3px #ccc;
   box-shadow:         0 3px 5px 3px #ccc;
   padding: 1em;
-  flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 2em;
 }
@@ -299,6 +273,7 @@ article > img {
 article a {
   width: inherit;
 }
+
 article footer img {
   width: 1em;
   height: 1em;
@@ -306,7 +281,6 @@ article footer img {
 
 aside {
   background-color: white;
-  /*border: solid 1px grey;*/
   -moz-box-shadow:    0 3px 5px 3px #ccc;
   -webkit-box-shadow: 0 3px 5px 3px #ccc;
   box-shadow:         0 3px 5px 3px #ccc;
@@ -317,8 +291,6 @@ aside {
 
 footer {
   background-color: #0d719d;
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
   text-align: center;
   margin-top: 1em;
@@ -338,11 +310,8 @@ footer {
   margin-right: 5em;
 }
 
-
 /*  FORM SCRITTURA ARTICOLO  */
 .form_articolo {
-  display: flex;
-  flex-direction: column;
   width: 100%;
 }
 
@@ -374,22 +343,16 @@ footer {
 }
 
 .cat_img {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
 fieldset{
-  display: flex;
-  flex-direction: column;
   padding: 0.5em;
   border: 1px solid grey;
   border-radius: 5px;
 }
 
 .img_sel{
-  display: flex;
-  flex-direction: column;
   max-height: 80px;
 }
 
@@ -410,7 +373,6 @@ legend {
 }
 
 .form_articolo > button {
-  /*margin-top: 3em;*/
   position: relative;
   top: -42px;
   width: 100px;
@@ -423,8 +385,6 @@ legend {
 /*  FORM ADMIN  */
 .alt_insert{
   margin-top: 1em;
-  display: flex;
-  flex-direction: column;
 }
 
 .alt_insert input {
@@ -434,8 +394,6 @@ legend {
 
 /*  CSS PAGINA CATEGORIE  */
 .cat_page {
-  display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   height: 100%;
@@ -505,8 +463,6 @@ legend {
 
 .upperPrint {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
   border-top: solid 1px;
@@ -530,8 +486,6 @@ legend {
 
 .info_art {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-between;
   border-top: solid 1px;
   border-bottom: solid 1px;
@@ -542,16 +496,12 @@ legend {
 .info_art #author {
   display: flex;
   width: 45%;
-  flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: flex-start;
 }
 
 .info_art #get_cat {
   display: flex;
   width: 45%;
-  flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: flex-end;
   font-weight: bold;
   color: #03bafc;
@@ -566,9 +516,6 @@ legend {
 }
 
 .commentArea {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
   justify-content: flex-start;
   margin: 1em 2.5em 1em 2.5em;
   padding: 0.5em 0.5em 0 0.5em;
@@ -577,9 +524,6 @@ legend {
 }
 
 .commentArea #print_comm{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: flex-start;
   margin-top: 1em;
   padding: 0.5em;
@@ -592,8 +536,6 @@ legend {
 }
 
 .commentArea form {
-  display: flex;
-  flex-direction: row;
   margin-top: 1em;
   padding: 0.5em;
   justify-content: space-between;
@@ -613,7 +555,6 @@ legend {
 }
 
 .commentArea #post_comm{
-  display: flex;
   justify-content: flex-start;
 }
 
@@ -635,15 +576,11 @@ legend {
 }
 
 .comm_container {
-  display: flex;
-  flex-direction: column;
   width: 90%;
 }
 
 /*  LOGIN */
 #wrapper_login{
-  display: flex;
-  flex-direction: column;
   align-items: center;
   margin: 2em 0;
 }
@@ -724,7 +661,6 @@ legend {
 
 /* USER/ADMIN PAGE */
 .row{
-  display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   margin: 2em;
@@ -758,8 +694,6 @@ legend {
 
 /* form specific formatting */
 .form-group {
-  display: flex;
-  flex-direction: row;
   margin-top: 2em;
 }
 
@@ -878,7 +812,6 @@ legend {
 
   .resp_srch{
     position: relative;
-    display: flex;
     height: auto;
     transition: height 1s;
   }
@@ -892,9 +825,9 @@ legend {
   }
 
   .resp_srch #search_bar_mobile{
-      width: 100%;
-      padding-left: 1em;
-      border: none;
+    width: 100%;
+    padding-left: 1em;
+    border: none;
   }
 
   .cat_page figcaption {
@@ -937,12 +870,13 @@ legend {
   }
 
   header nav {
-      display: none;
+      display: none !important;
   }
 
   #user_desk {
     display: none;
   }
+
   #user_mob {
     display: block;
   }
@@ -967,10 +901,9 @@ legend {
       display: flex;
       width: 100%;
   }
+
   .responsive nav {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     width: 100%;
     border: solid 1px #0d719d;
     border-top: none;
@@ -1010,10 +943,6 @@ legend {
     padding: 0;
   }
 
-  /*.cat_page{
-    padding: 1em;
-  }*/
-
   .cat_page a {
     max-width: 45%;
   }
@@ -1027,14 +956,13 @@ legend {
   }
 
   .cat_img {
-      display: flex;
-      flex-direction: column;
+    /*display: flex;*/
+    flex-direction: column;
   }
 
-
   .cat_sel{
-        align-items: flex-start;
-        margin-top: 1em;
+    align-items: flex-start;
+    margin-top: 1em;
   }
 
   .element {
@@ -1064,6 +992,7 @@ legend {
     width: 30vw;
     height: 30vw;
   }
+
   a.search_link{
     padding-right: 0.5em !important;
     margin: 0;
@@ -1094,7 +1023,6 @@ legend {
   address{
     width: 100%;
   }
-
 }
 
 /* provvisorio per far funzionare button "back to top" */

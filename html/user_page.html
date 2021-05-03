@@ -14,13 +14,13 @@
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
   </head>
 
-  <body>
+  <body class="vFlex">
     <img src="../img/top.png" onclick="topFunction()" id="myBtn">
-    <header class="header">
+    <header class="hFlex">
       <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="immagine del profilo" class="user_img img_sm" id="user_mob">
       <img src="../img/logo.png" alt="" id="logo">
-      <nav>
-        <ul>
+      <nav class="hFlex">
+        <ul class="hFlex">
             <li><a href="index.html"><span lang="en"><div>Home</div></span></a></li>
             <li><a href="cat.html"><div>Categorie</div></a></li>
             <li><a href="form_articolo.html"><div>Scrivi il tuo articolo</div></a></li>
@@ -29,8 +29,8 @@
       <form action="article_filter.html?art_text = {input}">
         <input type="text" placeholder="Cerca.." id="search_bar" tabindex="3" required><button type="submit" id="search_button" tabindex="4"><i class="fa fa-search"></i></button>
       </form>
-      <div class="right_section">
-        <div class="mob_buttons_wrapper">
+      <div class="right_section hFlex">
+        <div class="mob_buttons_wrapper hFlex">
           <a href="javascript:void(0);" class="icon search_link" tabindex="4" onclick="searchToggle()">
             <div class="fa fa-search"></div>
           </a>
@@ -38,9 +38,9 @@
             <div class="fa fa-bars"></div>
           </a>
         </div>
-        <div class="user_cont">
+        <div class="user_cont hFlex">
           <!--<a href="login.html" tabindex="5"><div>Accedi/Registrati</div></a>-->
-          <div class="logout_cont">
+          <div class="logout_cont vFlex">
                 <span id="currentLink">Il mio profilo</span>
                 <a href="index.html?logout_php" id="exit">Esci</a>
           </div>
@@ -65,14 +65,14 @@
   </div>
 
   <div class="reg_form">
-    <div class="form-group">
+    <div class="form-group hFlex">
       <label for="pro_pic"></label>
       <div class="inpu-control">
         <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="Immagine del profilo" class="user_img img_lg">
       </div>
     </div>
 
-    <div class="form-group">
+    <div class="form-group hFlex">
       <label for="email">Email</label>
       <div class="input-control">
         allegretti.tommaso@gmail.com
@@ -83,7 +83,7 @@
       </div>
     </div>
 
-      <div class="form-group">
+      <div class="form-group hFlex">
         <label>&nbsp;</label>
         <button class="form_btn">Modifica</button>
       </div>
@@ -93,7 +93,7 @@
 
     <div class="reg_form">
 
-      <div class="form-group">
+      <div class="form-group hFlex">
         <label for="email">Mi Piace:</label>
         <div class="input-control">
           143
@@ -104,7 +104,7 @@
         </div>
       </div>
 
-      <div class="form-group">
+      <div class="form-group hFlex">
         <label for="email">Commenti:</label>
         <div class="input-control">
           13
@@ -118,7 +118,7 @@
 
 
 
-    <footer>
+    <footer class="hFlex">
       <img id="html5" src="../img/badge-w3c-valid-html5.png" alt="Logo che certifica il rispetto dello standard w3c nella scrittura del codice html">
       <img id="cssLogo" src="../img/css.png" alt="Logo che certifica il rispetto dello standard w3c nella scrittura del codice css">
       <address>

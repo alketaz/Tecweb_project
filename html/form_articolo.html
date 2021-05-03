@@ -14,13 +14,13 @@
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
   </head>
 
-  <body>
+  <body class="vFlex">
     <img src="../img/top.png" onclick="topFunction()" id="myBtn">
-    <header class="header">
+    <header class="hFlex">
       <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="immagine del profilo" class="user_img img_sm" id="user_mob">
       <img src="../img/logo.png" alt="" id="logo">
-      <nav>
-        <ul>
+      <nav class="hFlex">
+        <ul class="hFlex">
             <li><a href="index.html" tabindex="1"><span lang="en"><div>Home</div></span></a></li>
             <li><a href="cat.html" tabindex="2"><div>Categorie</div></a></li>
             <li id="currentItem"><span id="currentLink"><div>Scrivi il tuo articolo</div></li>
@@ -29,8 +29,8 @@
       <form action="article_filter.html?art_text = {input}">
         <input type="text" placeholder="Cerca.." id="search_bar" tabindex="3" required><button type="submit" id="search_button" tabindex="4"><i class="fa fa-search"></i></button>
       </form>
-      <div class="right_section">
-        <div class="mob_buttons_wrapper">
+      <div class="right_section hFlex">
+        <div class="mob_buttons_wrapper hFlex">
           <a href="javascript:void(0);" class="icon search_link" tabindex="4" onclick="searchToggle()">
             <div class="fa fa-search"></div>
           </a>
@@ -38,9 +38,9 @@
             <div class="fa fa-bars"></div>
           </a>
         </div>
-        <div class="user_cont">
+        <div class="user_cont hFlex">
           <a href="login.html" tabindex="6"><div>Accedi/Registrati</div></a>
-          <!--<div class="logout_cont">
+          <!--<div class="logout_cont vFlex">
                 <a href="user_page.html">Il mio profilo</a>
                 <a href="index.html?logout_php">Esci</a>
           </div>-->
@@ -64,14 +64,14 @@
       </nav>
     </div>
 
-    <div id="wrapper">
-      <form action="/post_article.php" class="form_articolo" enctype="multipart/form-data">
+    <div id="wrapper" class="vFlex">
+      <form action="/post_article.php" class="form_articolo vFlex" enctype="multipart/form-data">
         <h1>Scrivi il tuo articolo!</h1>
         <p>Scrivi e mandaci il tuo articolo, noi penseremo a valutarlo e pubblicarlo.<br>
           La nostra redazione studierà attentamente il tuo articolo e deciderà se può essere pubblicato o meno. In caso di riscontro positivo ci occuperemo noi
           di curare l'accessibilità del tuo articolo e di pubblicarlo col tuo nome.
         </p>
-        <fieldset class="cont_art">
+        <fieldset class="cont_art vFlex">
           <legend>Contenuto dell'articolo</legend>
           <label for="titolo_art">Titolo dell'articolo</label>
           <input spellcheck="true" type="text" maxlength="126"name="titolo_art" placeholder="Titolo... (Massimo 126 caratteri)" tabindex="12" required>
@@ -83,13 +83,13 @@
           <textarea spellcheck="true" maxlength="10000" name="testo_art" placeholder="Testo dell'articolo... (Massimo 10000 caratteri)" tabindex="14" required></textarea>
           <br>
         </fieldset>
-        <div class="cat_img">
-          <fieldset class="img_sel">
+        <div class="cat_img hFlex">
+          <fieldset class="img_sel vFlex">
             <legend>Inserisci un'immagine (opzionale)</legend>
             <label for="image"><i class="fa fa-folder-open-o"></i> Scegli un'immagine</label>
             <input type="file" name="image" accept="image/jpeg, image/png" tabindex="15">
           </fieldset>
-          <fieldset class="cat_sel">
+          <fieldset class="cat_sel vFlex">
             <legend>Scegli una o pi&ugrave; categorie:  (opzionale)</legend>
               <div id="sport_cat" class="element">
                 <label for="sport">Sport</label>
@@ -130,7 +130,7 @@
     </div>
 
 
-    <footer>
+    <footer class="hFlex">
       <img id="html5" src="../img/badge-w3c-valid-html5.png" alt="Logo che certifica il rispetto dello standard w3c nella scrittura del codice html">
       <img id="cssLogo" src="../img/css.png" alt="Logo che certifica il rispetto dello standard w3c nella scrittura del codice css">
       <address>
