@@ -327,11 +327,7 @@ footer {
 
 .form_articolo textarea {
   resize: vertical;
-  /*min-height: 15em;
-  min-width: 99%;
-  max-width: 99%;
-  max-height: 90em;
-  margin-top: 0.5em;*/
+  margin-top: 0.2em;
   margin-bottom: 2.3em;
   padding: 0.5em;
 }
@@ -963,6 +959,11 @@ legend {
   .element {
     display: flex;
     flex-direction: row-reverse;
+  }
+
+  .form_articolo > button {
+    margin-top: 1em;
+    top: 0;
   }
 
   .main-content {
