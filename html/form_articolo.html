@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../css/style1.css" media="screen">
     <link rel="stylesheet" href="../css/print.css" media="print">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="../js/util.js"></script>
   </head>
 
   <body class="vFlex">
@@ -21,9 +22,9 @@
       <img src="../img/logo.png" alt="" id="logo">
       <nav class="hFlex">
         <ul class="hFlex">
-            <li><a href="index.html" tabindex="1"><span lang="en"><div>Home</div></span></a></li>
+            <li><a href="index.html" tabindex="1"><div lang="en">Home</div></a></li>
             <li><a href="cat.html" tabindex="2"><div>Categorie</div></a></li>
-            <li class="currentItem"><span class="currentLink"><div>Scrivi il tuo articolo</div></li>
+            <li class="currentItem"><div class="currentLink">Scrivi il tuo articolo</div></li>
         </ul>
       </nav>
       <form action="article_filter.html?art_text = {input}">
@@ -50,7 +51,7 @@
     </header>
     <div class="mob_srch" id="search_mobile">
       <form action="article_filter.html?art_text = {input}">
-        <input type="text" placeholder="Cerca.." id="search_bar_mobile" tabindex="7" required><button type="submit" id="search_button" tabindex="8"><i class="fa fa-search"></i></button>
+        <input type="text" placeholder="Cerca.." id="search_bar_mobile" tabindex="7" required><button type="submit" id="search_button_mob" tabindex="8"><i class="fa fa-search"></i></button>
       </form>
     </div>
     <div class="mob_nav" id="hd">
@@ -74,54 +75,54 @@
         <fieldset class="cont_art vFlex">
           <legend>Contenuto dell'articolo</legend>
           <label for="titolo_art">Titolo dell'articolo (massimo 126 caratteri)</label>
-          <textarea id="title_area" spellcheck="true" maxlength="126"name="titolo_art" placeholder="Titolo..." tabindex="12" required oninvalid="setCustomValidity('Inserisci il titolo dell'articolo')" oninput="setCustomValidity('')"></textarea>
+          <textarea spellcheck="true" maxlength="126" id="titolo_art" placeholder="Titolo..." tabindex="12" required oninvalid="setCustomValidity('Inserisci il titolo dell'articolo')" oninput="setCustomValidity('')"></textarea>
           <br>
           <label for="descr_art">Descrizione articolo (massimo 300 caratteri)</label>
-          <textarea id="desc_area" spellcheck="true" maxlength="300" name="descr_art" placeholder="Descrizione..." tabindex="13" required oninvalid="setCustomValidity('Inserisci la descrizione dell'articolo')" oninput="setCustomValidity('')"></textarea>
+          <textarea spellcheck="true" maxlength="300" id="descr_art" placeholder="Descrizione..." tabindex="13" required oninvalid="setCustomValidity('Inserisci la descrizione dell'articolo')" oninput="setCustomValidity('')"></textarea>
           <br>
           <label for="testo_art">Testo dell'articolo (massimo 10000 caratteri)</label>
-          <textarea id="text_area" spellcheck="true" maxlength="10000" name="testo_art" placeholder="Testo dell'articolo..." tabindex="14" required oninvalid="setCustomValidity('Inserisci il testo dell'articolo')" oninput="setCustomValidity('')"></textarea>
+          <textarea spellcheck="true" maxlength="10000" id="testo_art" placeholder="Testo dell'articolo..." tabindex="14" required oninvalid="setCustomValidity('Inserisci il testo dell'articolo')" oninput="setCustomValidity('')"></textarea>
           <br>
         </fieldset>
         <div class="cat_img hFlex">
           <fieldset class="img_sel vFlex">
             <legend>Inserisci un'immagine (opzionale)</legend>
-            <label for="image"><i class="fa fa-folder-open-o"></i> Scegli un'immagine</label>
-            <input type="file" name="image" accept="image/jpeg, image/png" tabindex="15">
+            <label for="image_up"><i class="fa fa-folder-open-o"></i> Scegli un'immagine</label>
+            <input type="file" id="image_up" accept="image/jpeg, image/png" tabindex="15">
           </fieldset>
           <fieldset class="cat_sel vFlex">
             <legend>Scegli una o pi&ugrave; categorie:  (opzionale)</legend>
               <div id="sport_cat" class="element">
-                <label for="sport">Sport</label>
-                <input type="checkbox" name="sport" value="Sport" tabindex="16">
+                <label for="sport_box">Sport</label>
+                <input type="checkbox" id="sport_box" value="Sport" tabindex="16">
               </div>
               <div id="economy_cat" class="element">
-                <label for="economia">Economia</label>
-                <input type="checkbox" name="economia" value="economia" tabindex="17">
+                <label for="economia_box">Economia</label>
+                <input type="checkbox" id="economia_box" value="economia" tabindex="17">
               </div>
               <div id="politics_cat" class="element">
-                <label for="politica">Politica</label>
-                <input type="checkbox" name="politica" value="politica" tabindex="18">
+                <label for="politica_box">Politica</label>
+                <input type="checkbox" id="politica_box" value="politica" tabindex="18">
               </div>
               <div id="gossip_cat" class="element">
-                <label for="gossip">Gossip</label>
-                <input type="checkbox" name="gossip" value="gossip" tabindex="19">
+                <label for="gossip_box">Gossip</label>
+                <input type="checkbox" id="gossip_box" value="gossip" tabindex="19">
               </div>
               <div id="world_cat" class="element">
-                <label for="mondo">Mondo</label>
-                <input type="checkbox" name="mondo" value="mondo" tabindex="20">
+                <label for="mondo_box">Mondo</label>
+                <input type="checkbox" id="mondo_box" value="mondo" tabindex="20">
               </div>
               <div id="science_cat" class="element">
-                <label for="scienze">Scienze</label>
-                <input type="checkbox" name="scienze" value="scienze" tabindex="21">
+                <label for="scienze_box">Scienze</label>
+                <input type="checkbox" id="scienze_box" value="scienze" tabindex="21">
               </div>
               <div id="covid_cat" class="element">
-                <label for="covid">Covid</label>
-                <input type="checkbox" name="covid" value="covid" tabindex="22">
+                <label for="covid_box">Covid</label>
+                <input type="checkbox" id="covid_box" value="covid" tabindex="22">
               </div>
               <div id="spett_cat" class="element">
-                <label for="spettacolo">Spettacolo</label>
-                <input type="checkbox" name="spettacolo" value="spettacolo" tabindex="23">
+                <label for="spettacolo_box">Spettacolo</label>
+                <input type="checkbox" id="spettacolo_box" value="spettacolo" tabindex="23">
               </div>
           </fieldset>
         </div>
@@ -142,6 +143,4 @@
       </address>
     </footer>
   </body>
-
-  <script type="text/javascript" src="../js/util.js"></script>
 </html>

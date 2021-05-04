@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../css/style1.css" media="screen">
     <link rel="stylesheet" href="../css/print.css" media="print">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="../js/util.js"></script>
   </head>
 
   <body class="vFlex">
@@ -21,8 +22,8 @@
       <img src="../img/logo.png" alt="" id="logo">
       <nav class="hFlex">
         <ul class="hFlex">
-            <li><a href="index.html" tabindex="1"><span lang="en"><div>Home</div></span></a></li>
-            <li class="currentItem"><span class="currentLink"><div>Categorie</div></span></li>
+            <li><a href="index.html" tabindex="1"><div lang="en">Home</div></a></li>
+            <li class="currentItem"><div class="currentLink">Categorie</div></li>
             <li><a href="form_articolo.html" tabindex="2"><div>Scrivi il tuo articolo</div></a></li>
         </ul>
       </nav>
@@ -50,7 +51,7 @@
     </header>
     <div class="mob_srch" id="search_mobile">
       <form action="article_filter.html?art_text = {input}">
-        <input type="text" placeholder="Cerca.." id="search_bar_mobile" tabindex="8" required><button type="submit" id="search_button" tabindex="9"><i class="fa fa-search"></i></button>
+        <input type="text" placeholder="Cerca.." id="search_bar_mobile" tabindex="8" required><button type="submit" id="search_button_mob" tabindex="9"><i class="fa fa-search"></i></button>
       </form>
     </div>
     <div class="mob_nav" id="hd">
@@ -131,6 +132,4 @@
         </address>
       </footer>
     </body>
-
-    <script type="text/javascript" src="../js/util.js"></script>
   </html>
