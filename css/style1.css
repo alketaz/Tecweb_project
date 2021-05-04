@@ -92,9 +92,6 @@ nav #currentItem {
   padding: 0.8em;
   color: #9a0606;
   font-weight: bold;
-}
-
-#currentLink div {
   transform: skew(20deg);
 }
 
@@ -107,12 +104,12 @@ nav #currentItem {
   border: none;
 }
 
-#search_button {
+#search_button, #search_button_mob {
   padding: 0.8em 1em;
   border: none;
 }
 
-#search_button:hover {
+#search_button:hover, #search_button_mob:hover {
   background:  #ccc;
 }
 
