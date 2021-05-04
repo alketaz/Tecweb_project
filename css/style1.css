@@ -140,11 +140,11 @@ nav #currentItem {
 
 .logout_cont {
   background: white;
-  margin-right: 24px;
+  margin-right: 30px;
   border: solid 1px black;
   transform: skew(-20deg);
   text-align: right;
-  padding: 0.1em 50px 0.1em 0.5em;
+  padding: 0.1em 45px 0.1em 0.5em;
 }
 
 .logout_cont > #currentLink {
@@ -163,8 +163,8 @@ nav #currentItem {
 
 .user_cont > a {
   background: white;
-  padding: 0.8em 50px 0.8em 0.5em;
-  margin-right: 24px;
+  padding: 0.8em 45px 0.8em 0.5em;
+  margin-right: 30px;
   border: solid 1px black;
   transform: skew(-20deg);
 }
@@ -796,14 +796,14 @@ legend {
   }
 
   .resp_srch{
+    display: block;
     position: relative;
     height: auto;
-    transition: height 1s;
   }
 
   .resp_srch form{
     display: flex;
-    width: 100%;
+    width: auto;
     justify-content: space-between;
     border: solid 1px #0d719d;
     background: black;
