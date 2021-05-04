@@ -82,12 +82,12 @@ header nav li a div {
   padding: 0.8em;
 }
 
-nav #currentItem {
+nav .currentItem {
   background-color: lightgrey;
   background-clip: padding-box;
 }
 
-#currentLink {
+.currentLink {
   display: block;
   padding: 0.8em;
   color: #9a0606;
@@ -144,7 +144,7 @@ nav #currentItem {
   padding: 0.1em 45px 0.1em 0.5em;
 }
 
-.logout_cont > #currentLink {
+.logout_cont > .currentLink {
   transform: skew(20deg);
   padding: 0;
 }
@@ -170,7 +170,7 @@ nav #currentItem {
   transform: skew(20deg);
 }
 
-.user_cont > #currentLink {
+.user_cont > .currentLink {
   background: lightgrey !important;
   padding: 0.8em 45px 0.8em 0.5em;
   margin-right: 30px;
@@ -178,11 +178,11 @@ nav #currentItem {
   transform: skew(-20deg);
 }
 
-.user_cont #currentItem {
+.user_cont .currentItem {
   background-color: transparent !important;
 }
 
-.user_cont > #currentLink > div {
+.user_cont > .currentLink > div {
   transform: skew(20deg);
 }
 
@@ -204,6 +204,10 @@ header a.icon {
 
 .mob_nav {
   display: none;
+}
+
+.mob_nav .currentLink {
+  transform: skew(0deg);
 }
 
 .mob_buttons_wrapper {
@@ -921,7 +925,7 @@ legend {
     text-align: right;
   }
 
-  .responsive #currentLink {
+  .responsive .currentLink {
     padding: 0;
   }
 
