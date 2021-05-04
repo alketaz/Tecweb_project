@@ -819,6 +819,7 @@ legend {
     width: 100%;
     padding-left: 1em;
     border: none;
+    outline: none;
   }
 
   .cat_page figcaption {
