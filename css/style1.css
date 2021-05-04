@@ -175,14 +175,14 @@ nav #currentItem {
 
 .user_cont > #currentLink {
   background: lightgrey !important;
-  padding: 0.8em 50px 0.8em 0.5em;
-  margin-right: 24px;
+  padding: 0.8em 45px 0.8em 0.5em;
+  margin-right: 30px;
   border: solid 1px black;
   transform: skew(-20deg);
 }
 
 .user_cont #currentItem {
-  background-color: none !important;
+  background-color: transparent !important;
 }
 
 .user_cont > #currentLink > div {
@@ -788,7 +788,7 @@ legend {
   header a.search_link {
     display: block;
     width: 30px;
-    text-align: center center;
+    text-align: center;
   }
 
   #myBtn {
@@ -870,7 +870,7 @@ legend {
     display: block;
     width: 30px;
     padding-left: 0.5em;
-    text-align: center center;
+    text-align: center;
   }
 
   #myBtn {
