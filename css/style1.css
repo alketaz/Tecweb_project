@@ -1,7 +1,3 @@
-
-/*  STYLESHEET DOVE FARE PROVE IN CASO DI RISCHIO DI SMINCHIAMENTO  */
-
-
 * {
   padding: 0em;
   margin: 0em;
@@ -33,7 +29,7 @@ body {
 }
 
 /*HOME PAGE + HEADER E FOOTER*/
-header{
+header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
@@ -56,12 +52,12 @@ header nav {
   margin-right: -3em;
 }
 
-header nav ul{
+header nav ul {
     justify-content: space-around;
     margin-right: 2em;
 }
 
-header nav ul li{
+header nav ul li {
   display: inline-block;
   padding: 0 5px;
   margin: 0 5px;
@@ -76,29 +72,29 @@ header nav ul li:hover {
   background-color: azure;
 }
 
-header nav li a{
+header nav li a {
   display: block;
   transition: all 0.3s ease 0s;
 }
 
-header nav li a div{
+header nav li a div {
   transform: skew(20deg);
   padding: 0.8em;
 }
 
-nav #currentItem{
+nav #currentItem {
   background-color: lightgrey;
   background-clip: padding-box;
 }
 
-#currentLink{
+#currentLink {
   display: block;
   padding: 0.8em;
   color: #9a0606;
   font-weight: bold;
 }
 
-#currentLink div{
+#currentLink div {
   transform: skew(20deg);
 }
 
@@ -120,22 +116,22 @@ nav #currentItem{
   background:  #ccc;
 }
 
-.search_link{
+.search_link {
   margin-left: 1em;
 }
 
-#user_desk{
+#user_desk {
   margin-right: 0.5em;
   border-radius: 50%;
 }
 
-#user_mob{
+#user_mob {
   display: none;
   margin-left: 1em;
   border-radius: 50%;
 }
 
-.user_cont{
+.user_cont {
   position: relative;
   margin-right: 1em;
   align-items: center;
@@ -151,12 +147,12 @@ nav #currentItem{
   padding: 0.1em 50px 0.1em 0.5em;
 }
 
-.logout_cont > #currentLink{
+.logout_cont > #currentLink {
   transform: skew(20deg);
   padding: 0;
 }
 
-.logout_cont > a{
+.logout_cont > a {
   display: block;
   transform: skew(20deg);
 }
@@ -198,7 +194,7 @@ nav #currentItem{
   right: 0;
 }
 
-header a.icon{
+header a.icon {
   display: none;
   color: #f2f2f2;
   text-align: center;
@@ -219,7 +215,7 @@ header a.icon{
   margin-right: 1em;
 }
 
-.mob_buttons_wrapper a{
+.mob_buttons_wrapper a {
   padding: 0.5em 0;
 }
 
@@ -320,24 +316,17 @@ footer {
   margin-bottom: 1em;
 }
 
-.cont_art{
+.cont_art {
   margin-bottom: 1em;
 }
 
-.form_articolo > input {
-  width: 99%;
-  margin-top: 0.5em;
-  margin-bottom: 2.3em;
-  padding: 0.5em;
-}
-
-.form_articolo  textarea {
+.form_articolo textarea {
   resize: vertical;
-  min-height: 15em;
+  /*min-height: 15em;
   min-width: 99%;
   max-width: 99%;
   max-height: 90em;
-  margin-top: 0.5em;
+  margin-top: 0.5em;*/
   margin-bottom: 2.3em;
   padding: 0.5em;
 }
@@ -346,13 +335,13 @@ footer {
   justify-content: space-between;
 }
 
-fieldset{
-  padding: 0.5em;
-  border: 1px solid grey;
+fieldset {
+  padding: 1em;
+  border: 1px solid #0d719d;
   border-radius: 5px;
 }
 
-.img_sel{
+.img_sel {
   max-height: 80px;
 }
 
@@ -360,7 +349,7 @@ fieldset{
   margin-top: 0.5em;
 }
 
-.cat_sel{
+.cat_sel {
   align-items: flex-end;
 }
 
@@ -381,16 +370,14 @@ legend {
   border-radius: 5px;
 }
 
-
 /*  FORM ADMIN  */
-.alt_insert{
+.alt_insert {
   margin-top: 1em;
 }
 
 .alt_insert input {
   width: 99%;
 }
-
 
 /*  CSS PAGINA CATEGORIE  */
 .cat_page {
@@ -687,7 +674,6 @@ legend {
 }
 
 /* REGISTER & USER PAGE */
-
 .main-content {
   padding: 20px;
 }
@@ -739,7 +725,6 @@ legend {
   height: 15vw;
   overflow: hidden;
 }
-
 
 #myBtn {
   display: none; /* Hidden by default */
@@ -1024,12 +1009,3 @@ legend {
     width: 100%;
   }
 }
-
-/* provvisorio per far funzionare button "back to top" */
-/*@media screen and (max-width: 1700px){
-  #myBtn{
-    font-size: 3em;
-    right: 0.1em;
-    bottom: 0.1em;
-    }
-  }*/

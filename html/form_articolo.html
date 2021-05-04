@@ -73,14 +73,14 @@
         </p>
         <fieldset class="cont_art vFlex">
           <legend>Contenuto dell'articolo</legend>
-          <label for="titolo_art">Titolo dell'articolo</label>
-          <input spellcheck="true" type="text" maxlength="126"name="titolo_art" placeholder="Titolo... (Massimo 126 caratteri)" tabindex="12" required>
+          <label for="titolo_art">Titolo dell'articolo (massimo 126 caratteri)</label>
+          <textarea id="title_area" spellcheck="true" maxlength="126"name="titolo_art" placeholder="Titolo..." tabindex="12" required oninvalid="setCustomValidity('Inserisci il titolo dell'articolo')" oninput="setCustomValidity('')"></textarea>
           <br>
-          <label for="descr_art">Descrizione articolo</label>
-          <input spellcheck="true" type="text" maxlength="300" name="descr_art" placeholder="Descrizione... (Massimo 300 caratteri)" tabindex="13" required>
+          <label for="descr_art">Descrizione articolo (massimo 300 caratteri)</label>
+          <textarea id="desc_area" spellcheck="true" maxlength="300" name="descr_art" placeholder="Descrizione..." tabindex="13" required oninvalid="setCustomValidity('Inserisci la descrizione dell'articolo')" oninput="setCustomValidity('')"></textarea>
           <br>
-          <label for="testo_art">Testo dell'articolo</label>
-          <textarea spellcheck="true" maxlength="10000" name="testo_art" placeholder="Testo dell'articolo... (Massimo 10000 caratteri)" tabindex="14" required></textarea>
+          <label for="testo_art">Testo dell'articolo (massimo 10000 caratteri)</label>
+          <textarea id="text_area" spellcheck="true" maxlength="10000" name="testo_art" placeholder="Testo dell'articolo..." tabindex="14" required oninvalid="setCustomValidity('Inserisci il testo dell'articolo')" oninput="setCustomValidity('')"></textarea>
           <br>
         </fieldset>
         <div class="cat_img hFlex">
