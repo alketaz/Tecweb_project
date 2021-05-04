@@ -166,6 +166,10 @@ nav .currentItem {
   transform: skew(-20deg);
 }
 
+.user_cont > a:hover{
+  background: azure;
+}
+
 .user_cont > a > div {
   transform: skew(20deg);
 }
@@ -182,7 +186,7 @@ nav .currentItem {
   background-color: transparent !important;
 }
 
-.user_cont > .currentLink > div {
+.user_cont > .currentLink > p {
   transform: skew(20deg);
 }
 
@@ -368,7 +372,12 @@ legend {
   width: 100px;
   height: 44px;
   border: 1px solid #0d719d;
-  border-radius: 5px;
+  transition: 0.25s;
+}
+
+.form_articolo > button:hover{
+  background: #0d719d;
+  color: white;
 }
 
 /*  FORM ADMIN  */
