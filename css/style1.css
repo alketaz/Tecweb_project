@@ -328,8 +328,12 @@ footer {
 .form_articolo textarea {
   resize: vertical;
   margin-top: 0.2em;
-  margin-bottom: 2.3em;
+  margin-bottom: 2em;
   padding: 0.5em;
+}
+
+#testo_art {
+  margin-bottom: 0;
 }
 
 .cat_img {
