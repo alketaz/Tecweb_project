@@ -15,8 +15,8 @@
   </head>
 
   <body class="vFlex">
-    <img src="../img/top.png" onclick="topFunction()" id="myBtn">
-    <header class="hFlex">
+    <a href="#top"><img src="../img/top.png" id="myBtn"></a>
+    <header id="top" class="hFlex">
       <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="immagine del profilo" class="user_img img_sm" id="user_mob">
       <img src="../img/logo.png" alt="" id="logo">
       <nav class="hFlex">
@@ -55,12 +55,14 @@
   </div>
   <div class="mob_nav" id="hd">
     <nav>
-        <ul>
-            <li><a href="index.html"><span lang="en">Home</span></a></li>
-            <li><a href="cat.html">Categorie</a></li>
-            <li><a href="form_articolo.html">Scrivi il tuo articolo</a></li>
-            <li><a href="login.html">Accedi/Registrati</a></li>
-        </ul>
+      <ul id="menu_nav">
+        <li><a href="user_page.html" lang="en">Home</a></li>
+        <li><a href="cat.html">Categorie</a></li>
+        <li><a href="form_articolo.html">Scrivi il tuo articolo</a></li>
+        <li><a href="login.html">Accedi/Registrati</a></li>
+        <li class="currentItem"><span class="currentLink">Il mio profilo</span></li>
+        <li><a href=".">Esci dal profilo</a></li>
+      </ul>
     </nav>
   </div>
 

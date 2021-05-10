@@ -300,6 +300,22 @@ footer {
   margin-top: auto;
 }
 
+.menu_noJS {
+  display: none;
+  background: #ededed;
+  text-align: center;
+  border: solid 1px;
+}
+
+.menu_noJS li{
+  display: block;
+  padding: 1em;
+}
+
+.menu_noJS li+li{
+  border-top: solid 1px;
+}
+
 #html5 {
   align-self: center;
   margin-left: 5em;
@@ -372,12 +388,17 @@ legend {
   width: 100px;
   height: 44px;
   border: 1px solid #0d719d;
-  transition: 0.25s;
+  transition: 0.1s;
 }
 
 .form_articolo > button:hover{
+  background: azure;
+}
+
+.form_articolo > button:focus{
   background: #0d719d;
   color: white;
+  border: solid 2px black;
 }
 
 /*  FORM ADMIN  */
@@ -737,19 +758,14 @@ legend {
 }
 
 #myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 1em; /* Place the button at the bottom of the page */
-  right: 1em; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none;/* Remove borders */
-  outline: none; /* Remove outline */
-  color:#094863; /* Text color colore da cambiare*/
-  cursor: pointer; /* Add a mouse pointer on hover */
-}
-
-#myBtn:hover {
-  color: black; /* Add a dark-grey background on hover */
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  z-index: 99;
+  border: none;
+  outline: none;
+  color:#094863;
+  cursor: pointer;
 }
 
 #votes{
@@ -836,6 +852,10 @@ legend {
     font-size: 1em;
   }
 
+  .menu_noJS {
+    display: block;
+  }
+
   #logo{
     max-width: 100px;
   }
@@ -915,7 +935,7 @@ legend {
 
   .responsive ul li{
     display: inline-block;
-    padding: 1em 1em;
+    padding: 1em;
     transform: skew(0);
   }
 
@@ -964,6 +984,10 @@ legend {
   .element {
     display: flex;
     flex-direction: row-reverse;
+  }
+
+  .element label {
+    padding: 0 0.5em;
   }
 
   .form_articolo > button {

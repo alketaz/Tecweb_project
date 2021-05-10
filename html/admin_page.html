@@ -8,7 +8,7 @@
         <title>Nome Giornale</title>
     </head>
     <body class="vFlex">
-      <header class="hFlex">
+      <header id="top" class="hFlex">
           <img src="../img/user_icon.png" alt="" class="user_img" id="user_mob">
           <img src="../img/logo.png" alt="" id="logo">
           <nav class="hFlex">
@@ -106,16 +106,26 @@
             </div>
         </div>
 
-        <footer class="hFlex">
-          <img id="html5" src="../img/badge-w3c-valid-html5.png" alt="Logo che certifica il rispetto dello standard w3c nella scrittura del codice html">
-          <img id="cssLogo" src="../img/css.png" alt="Logo che certifica il rispetto dello standard w3c nella scrittura del codice css">
-          <address>
+        <footer class="vFlex">
+          <div class="hFlex">
+            <img id="html5" src="../img/badge-w3c-valid-html5.png" alt="Logo che certifica il rispetto dello standard w3c nella scrittura del codice html">
+            <img id="cssLogo" src="../img/css.png" alt="Logo che certifica il rispetto dello standard w3c nella scrittura del codice css">
+            <address>
               Progetto di Tecnologie Web sviluppato da:<br>
               <a href="mailto:andrea.polato.7@studenti.unipd.it">Andrea Polato</a><br>
               <a href="mailto:andrea.polato.7@studenti.unipd.it">Tommaso Allegretti</a><br>
               <a href="mailto:andrea.polato.7@studenti.unipd.it">Giosu&egrave; Calgaro</a><br>
               <a href="mailto:andrea.polato.7@studenti.unipd.it">Matteo Miotello</a><br>
-          </address>
+            </address>
+          </div>
+          <nav class="vFlex menu_noJS">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="cat.html">Categorie</a></li>
+              <li><a href="form_articolo.html">Scrivi il tuo articolo</a></li>
+              <li><a href="login.html">Accedi</a></li>
+            </ul>
+          </nav>
         </footer>
       </body>
 

@@ -12,11 +12,12 @@
     <link rel="stylesheet" type="text/css" href="../css/style1.css" media="screen">
     <link rel="stylesheet" href="../css/print.css" media="print">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="../js/util.js"></script>
   </head>
 
   <body class="vFlex">
-    <img src="../img/top.png" onclick="topFunction()" id="myBtn">
-    <header class="hFlex">
+    <a href="#top"><img src="../img/top.png" id="myBtn"></a>
+    <header id="top" class="hFlex">
       <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="immagine del profilo" class="user_img img_sm" id="user_mob">
       <img src="../img/logo.png" alt="" id="logo">
       <nav class="hFlex">
@@ -50,12 +51,12 @@
     </header>
     <div class="mob_srch" id="search_mobile">
       <form action="article_filter.html?art_text = {input}">
-        <input type="text" placeholder="Cerca.." id="search_bar_mobile" required><button type="submit" id="search_button"><i class="fa fa-search"></i></button>
+        <input type="text" placeholder="Cerca.." id="search_bar_mobile" required><button type="submit" id="search_button_mob"><i class="fa fa-search"></i></button>
       </form>
     </div>
     <div class="mob_nav" id="hd">
       <nav>
-          <ul id="menu_nav">
+          <ul>
             <li class="currentItem"><span class="currentLink" lang="en">Home</span></li>
             <li><a href="cat.html">Categorie</a></li>
             <li><a href="form_articolo.html">Scrivi il tuo articolo</a></li>
@@ -65,11 +66,7 @@
           </ul>
       </nav>
     </div>
-    <fieldset class" vFlex" id="cornice">
-      <legend>Prova checkbutton</legend>
-      <label for="A">A</label>
-      <input type="checkbox" name="A" value="A">
-    </fieldset>
+
     <footer class="hFlex">
       <img id="html5" src="../img/badge-w3c-valid-html5.png" alt="Logo che certifica il rispetto dello standard w3c nella scrittura del codice html">
       <img id="cssLogo" src="../img/css.png" alt="Logo che certifica il rispetto dello standard w3c nella scrittura del codice css">
@@ -81,7 +78,14 @@
           <a href="mailto:andrea.polato.7@studenti.unipd.it">Matteo Miotello</a><br>
       </address>
     </footer>
+    <nav class="menu_noJS vFlex">
+      <ul>
+        <li lang="en"><a href="index.html">Home</a></li>
+        <li><a href="cat.hmtl">Categorie</a></li>
+        <li><a href="form_articolo.html">Scrivi il tuo articolo</a></li>
+        <li><a href="login.html">Accedi/Registrati</a></li>
+      </ul>
+    </nav>
   </body>
 
-  <script type="text/javascript" src="../js/util.js"></script>
 </html>
