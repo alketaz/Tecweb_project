@@ -22,6 +22,38 @@ function searchToggle() {
 window.onload = function() {hideBtn()};
 window.onscroll = function() {scrollFunction()};
 
+function validateForm(){
+  title = document.getElementById("titolo_art");
+  desc = document.getElementById("descr_art");
+  text = document.getElementById("testo_art");
+
+  title.reportValidity();
+  desc.reportValidity();
+  text.reportValidity();
+
+  if(title.validity.valueMissing){
+    title.setCustomValidity('Inserisci un titolo');
+    title.reportValidity();
+    desc.reportValidity();
+    text.reportValidity();
+  }
+
+  else if(desc.validity.valueMissing){
+    desc.setCustomValidity('Inserisci una descrizione');
+    title.reportValidity();
+    desc.reportValidity();
+    text.reportValidity();
+  }
+
+  else if(text.validity.valueMissing){
+    text.setCustomValidity('Inserisci il testo');
+    title.reportValidity();
+    desc.reportValidity();
+    text.reportValidity();
+  }
+  
+}
+
 function scrollFunction() {
   mybutton = document.getElementById("myBtn");
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {

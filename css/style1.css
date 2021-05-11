@@ -228,6 +228,23 @@ header a.icon {
   border-left: solid 1px lightgrey;
 }
 
+.breadcrumbs {
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+  background: azure /* #0d719d*/;
+  padding: 0.5em 1em;
+}
+
+.breadcrumbs li{
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+.breadcrumbs .currentLink {
+  transform: skew(0deg);
+  padding: 0;
+}
+
 #wrapper {
     padding: 1em 3em 1em 3em;
 }
@@ -238,6 +255,7 @@ h1 {
   padding: 10px;
   margin-bottom: 20px;
   border-bottom: solid 2px #0d719d;
+  color: #9a0606;
 }
 
 .home_content {
@@ -832,6 +850,7 @@ legend {
     width: auto;
     justify-content: space-between;
     border: solid 1px #0d719d;
+    border-top: none;
     background: black;
   }
 

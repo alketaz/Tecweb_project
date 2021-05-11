@@ -49,6 +49,11 @@
         </div>
       </div>
     </header>
+    <div class="breadcrumbs">
+      <ul>
+        <li class="currentLink">Scivi il tuo articolo</li>
+      </ul>
+    </div>
     <div class="mob_srch" id="search_mobile">
       <form action="article_filter.html?art_text = {input}">
         <input type="text" placeholder="Cerca.." id="search_bar_mobile" tabindex="7" required><button type="submit" id="search_button_mob" tabindex="8"><i class="fa fa-search"></i></button>
@@ -78,7 +83,7 @@
           <label for="titolo_art">Titolo dell'articolo (massimo 126 caratteri)</label>
           <textarea spellcheck="true" maxlength="126" id="titolo_art" rows="2" placeholder="Titolo..." tabindex="12" required></textarea>
           <label for="descr_art">Descrizione articolo (massimo 300 caratteri)</label>
-          <textarea spellcheck="true" maxlength="300" id="descr_art" rows="3" placeholder="Descrizione..." tabindex="13" required oninvalid="setCustomValidity('Inserisci la descrizione dell'articolo')" oninput="setCustomValidity('')"></textarea>
+          <textarea spellcheck="true" maxlength="300" id="descr_art" rows="3" placeholder="Descrizione..." tabindex="13" required oninvalid="this.setCustomValidity('Inserisci la descrizione dell'articolo')" oninput="this.setCustomValidity('')"></textarea>
           <label for="testo_art">Testo dell'articolo (massimo 10000 caratteri)</label>
           <textarea spellcheck="true" maxlength="10000" id="testo_art" rows="10" placeholder="Testo dell'articolo..." tabindex="14" required oninvalid="setCustomValidity('Inserisci il testo dell'articolo')" oninput="setCustomValidity('')"></textarea>
         </fieldset>
@@ -124,7 +129,7 @@
               </div>
           </fieldset>
         </div>
-        <button type="submit" name="submit" tabindex="24">Invia</button>
+        <button type="submit" name="submit" tabindex="24" onclick="validateForm()">Invia</button>
       </form>
     </div>
 
@@ -140,5 +145,13 @@
           <a href="mailto:andrea.polato.7@studenti.unipd.it" tabindex="28">Matteo Miotello</a><br>
       </address>
     </footer>
+    <nav class="menu_noJS vFlex">
+      <ul>
+        <li lang="en"><a href="index.html">Home</a></li>
+        <li><a href="cat.hmtl">Categorie</a></li>
+        <li><a href="form_articolo.html">Scrivi il tuo articolo</a></li>
+        <li><a href="login.html">Accedi/Registrati</a></li>
+      </ul>
+    </nav>
   </body>
 </html>
