@@ -15,31 +15,31 @@
   </head>
 
   <body class="vFlex">
-    <a href="#top"><img src="../img/top.png" id="myBtn"></a>
+    <a href="#top"><img src="../img/top.png" alt="Torna su" id="myBtn"></a>
     <header id="top" class="hFlex">
       <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="immagine del profilo" class="user_img img_sm" id="user_mob">
       <img src="../img/logo.png" alt="" id="logo">
       <nav class="hFlex">
         <ul class="hFlex">
-            <li><a href="index.html" tabindex="1"><div lang="en">Home</div></a></li>
-            <li><a href="cat.html" tabindex="2"><div>Categorie</div></a></li>
-            <li><a href="form_articolo.html" tabindex="3"><div>Scrivi il tuo articolo</div></a></li>
+            <li><a href="index.html" tabindex="0"><div lang="en">Home</div></a></li>
+            <li><a href="cat.html" tabindex="0"><div>Categorie</div></a></li>
+            <li><a href="form_articolo.html" tabindex="0"><div>Scrivi il tuo articolo</div></a></li>
         </ul>
       </nav>
       <form action="article_filter.html?art_text = {input}">
-        <input type="text" placeholder="Cerca.." id="search_bar" tabindex="4" required><button type="submit" id="search_button" tabindex="5"><i class="fa fa-search"></i></button>
+        <input type="text" placeholder="Cerca.." id="search_bar" tabindex="0" required><button type="submit" id="search_button" tabindex="0"><i class="fa fa-search"></i></button>
       </form>
       <div class="right_section hFlex">
         <div class="mob_buttons_wrapper hFlex">
-          <a href="javascript:void(0);" class="icon search_link" tabindex="6" onclick="searchToggle()">
+          <a href="javascript:void(0);" class="icon search_link" tabindex="0" onclick="searchToggle()">
             <div class="fa fa-search"></div>
           </a>
-          <a href="javascript:void(0);" class="icon txt_link" tabindex="7" onclick="menuToggle()">
+          <a href="javascript:void(0);" class="icon txt_link" tabindex="0" onclick="menuToggle()">
             <div class="fa fa-bars"></div>
           </a>
         </div>
         <div class="user_cont hFlex">
-          <a href="login.html" tabindex="8"><div>Accedi/Registrati</div></a>
+          <a href="login.html" tabindex="0"><div>Accedi/Registrati</div></a>
           <!--<div class="logout_cont vFlex">
                 <a href="user_page.html">Il mio profilo</a>
                 <a href="index.html?logout_php">Esci</a>
@@ -56,7 +56,7 @@
     </div>
     <div class="mob_srch" id="search_mobile">
       <form action="article_filter.html?art_text = {input}">
-        <input type="text" placeholder="Cerca.." id="search_bar_mobile" tabindex="9" required><button type="submit" id="search_button_mob" tabindex="10"><i class="fa fa-search"></i></button>
+        <input type="text" placeholder="Cerca.." id="search_bar_mobile" tabindex="0" required><button type="submit" id="search_button_mob" tabindex="10"><i class="fa fa-search"></i></button>
       </form>
     </div>
     <div class="mob_nav" id="hd">
