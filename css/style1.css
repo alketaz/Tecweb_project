@@ -235,9 +235,13 @@ header a.icon {
   padding: 0.5em 1em;
 }
 
+.breadcrumbs ul{
+  padding: 0 0.5em;
+}
+
 .breadcrumbs li{
   display: inline-block;
-  margin: 0 0.5em;
+  margin: 0 0.2em;
 }
 
 .breadcrumbs .currentLink {

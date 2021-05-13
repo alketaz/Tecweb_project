@@ -16,11 +16,11 @@
   </head>
 
   <body class="vFlex">
-    <a href="#top"><img src="../img/top.png" id="myBtn"></a>
+    <a href="#top"><img src="../img/top.png" alt="Torna all'inizio" id="myBtn"></a>
     <header id="top" class="hFlex">
       <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="immagine del profilo" class="user_img img_sm" id="user_mob">
       <img src="../img/logo.png" alt="" id="logo">
-      <nav class="hFlex">
+      <nav title="menu principale" class="hFlex">
         <ul class="hFlex">
             <li><a href="index.html"><div lang="en">Home</div></a></li>
             <li><a href="cat.html"><div>Categorie</div></a></li>
@@ -28,7 +28,7 @@
         </ul>
       </nav>
       <form action="article_filter.html?art_text = {input}">
-        <input type="text" placeholder="Cerca.." id="search_bar" tabindex="3" required><button type="submit" id="search_button" tabindex="4"><i class="fa fa-search"></i></button>
+        <input type="text" placeholder="Cerca su ViTimes" id="search_bar" tabindex="3" required><button type="submit" id="search_button" tabindex="4"><i class="fa fa-search"></i></button>
       </form>
       <div class="right_section hFlex">
         <div class="mob_buttons_wrapper hFlex">
@@ -49,6 +49,12 @@
         </div>
       </div>
     </header>
+    <div class="breadcrumbs">
+      <ul>
+        <li>Ti trovi in: </li>
+        <li class="currentLink">Accedi/Registrati</li>
+      </ul>
+    </div>
   <div class="mob_srch" id="search_mobile">
     <form action="article_filter.html?art_text = {input}">
       <input type="text" placeholder="Cerca.." id="search_bar_mobile" required><button type="submit" id="search_button_mob"><i class="fa fa-search"></i></button>
@@ -64,10 +70,10 @@
         </ul>
     </nav>
   </div>
-
+  <div id="wrapper" class="vFlex">
+    <h1><span lang="en">LOGIN</span></h1>
     <div class="vFlex" id="wrapper_login">
     <form class="box" action="index.html" method="post" id="log">
-        <h1><span lang="en">LOGIN</span></h1>
         <input type="text" placeholder="Username">
         <input type="password" placeholder="Password" id="pw">
         <input type="submit" value="Login" id="log_btn">
@@ -77,7 +83,7 @@
       <input type="submit" value="Registrati">
     </form>
     </div>
-
+  </div>
     <footer class="hFlex">
       <img id="html5" src="../img/badge-w3c-valid-html5.png" alt="Logo che certifica il rispetto dello standard w3c nella scrittura del codice html">
       <img id="cssLogo" src="../img/css.png" alt="Logo che certifica il rispetto dello standard w3c nella scrittura del codice css">
