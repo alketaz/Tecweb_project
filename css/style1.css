@@ -244,6 +244,15 @@ header a.icon {
   margin: 0 0.2em;
 }
 
+.breadcrumbs li+li::before {
+  display: inline-block;
+  margin-right: 0.5em;
+  transform: rotate(25deg);
+  border-right: 1px solid black;
+  height: 0.8em;
+  content: '';
+}
+
 .breadcrumbs .currentLink {
   transform: skew(0deg);
   padding: 0;
@@ -368,6 +377,10 @@ footer {
   margin-top: 0.2em;
   margin-bottom: 2em;
   padding: 0.5em;
+}
+
+.notValid {
+  border: solid 1px red;
 }
 
 #testo_art {

@@ -51,7 +51,6 @@
     </header>
     <div class="breadcrumbs">
       <ul>
-        <li>Ti trovi in: </li>
         <li class="currentLink">Scivi il tuo articolo</li>
       </ul>
     </div>
@@ -82,11 +81,11 @@
         <fieldset class="cont_art vFlex">
           <legend>Contenuto dell'articolo</legend>
           <label for="titolo_art">Titolo dell'articolo (massimo 126 caratteri)</label>
-          <textarea spellcheck="true" maxlength="126" id="titolo_art" rows="2" placeholder="Titolo..." tabindex="12" required oninvalid="this.setCustomValidity('Inserisci il titolo')" onchange="this.setCustomValidity('')"></textarea>
+          <textarea spellcheck="true" maxlength="126" id="titolo_art" rows="2" placeholder="Titolo..." tabindex="12" required oninvalid="this.setCustomValidity('Inserisci il titolo'); className ='notValid'" onchange="this.setCustomValidity(''); className = ''"></textarea>
           <label for="descr_art">Descrizione articolo (massimo 300 caratteri)</label>
-          <textarea spellcheck="true" maxlength="300" id="descr_art" rows="3" placeholder="Descrizione..." tabindex="13" required oninvalid="this.setCustomValidity('Inserisci la descrizione')" onchange="this.setCustomValidity('')"></textarea>
+          <textarea spellcheck="true" maxlength="300" id="descr_art" rows="3" placeholder="Descrizione..." tabindex="13" required oninvalid="this.setCustomValidity('Inserisci la descrizione'); className ='notValid'" onchange="this.setCustomValidity(''); className = ''"></textarea>
           <label for="testo_art">Testo dell'articolo (massimo 10000 caratteri)</label>
-          <textarea spellcheck="true" maxlength="10000" id="testo_art" rows="10" placeholder="Testo dell'articolo..." tabindex="14" required oninvalid="this.setCustomValidity('Inserisci il testo')" onchange="this.setCustomValidity('')"></textarea>
+          <textarea spellcheck="true" maxlength="10000" id="testo_art" rows="10" placeholder="Testo dell'articolo..." tabindex="14" required oninvalid="this.setCustomValidity('Inserisci il testo'); className ='notValid'" onchange="this.setCustomValidity(''); className = ''"></textarea>
         </fieldset>
         <div class="cat_img hFlex">
           <fieldset class="img_sel vFlex">
