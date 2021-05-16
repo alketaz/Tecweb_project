@@ -16,7 +16,6 @@
   </head>
 
   <body class="vFlex">
-    <a href="#top"><img src="../img/top.png" alt="Torna su" id="myBtn"></a>
     <header id="top" class="hFlex">
       <img src="https://www.cineon.it/wp-content/uploads/2020/08/Shrek.jpg" alt="immagine del profilo" class="user_img img_sm" id="user_mob">
       <img src="../img/logo.png" alt="" id="logo">
@@ -28,7 +27,7 @@
         </ul>
       </nav>
       <form action="article_filter.html?art_text = {input}">
-        <input type="text" placeholder="Cerca.." id="search_bar" tabindex="0" required><button type="submit" id="search_button" tabindex="0"><i class="fa fa-search"></i></button>
+        <input type="text" placeholder="Cerca.." id="search_bar" tabindex="0" required><button type="submit" id="search_button"><i class="fa fa-search"></i></button>
       </form>
       <div class="right_section hFlex">
         <div class="mob_buttons_wrapper hFlex">
@@ -56,16 +55,16 @@
     </div>
     <div class="mob_srch" id="search_mobile">
       <form action="article_filter.html?art_text = {input}">
-        <input type="text" placeholder="Cerca.." id="search_bar_mobile" tabindex="0" required><button type="submit" id="search_button_mob" tabindex="0"><i class="fa fa-search"></i></button>
+        <input type="text" placeholder="Cerca.." id="search_bar_mobile" tabindex="0" required><button type="submit" id="search_button_mob"><i class="fa fa-search"></i></button>
       </form>
     </div>
     <div class="mob_nav" id="hd">
       <nav>
           <ul>
               <li><a href="index.html" tabindex="0"><span lang="en">Home</span></a></li>
-              <li><a href="cat.html" tabindex="10">Categorie</a></li>
+              <li><a href="cat.html" tabindex="0">Categorie</a></li>
               <li class="currentItem"><span class="currentLink">Scrivi il tuo articolo</span></li>
-              <li><a href="login.html" tabindex="11">Accedi/Registrati</a></li>
+              <li><a href="login.html" tabindex="0">Accedi/Registrati</a></li>
           </ul>
       </nav>
     </div>
@@ -81,55 +80,55 @@
         <fieldset class="cont_art vFlex">
           <legend>Contenuto dell'articolo</legend>
           <label for="titolo_art">Titolo dell'articolo (massimo 126 caratteri)</label>
-          <textarea spellcheck="true" maxlength="126" id="titolo_art" rows="2" placeholder="Titolo..." tabindex="12" required oninvalid="this.setCustomValidity('Inserisci il titolo'); className ='notValid'" onchange="this.setCustomValidity(''); className = ''"></textarea>
+          <textarea spellcheck="true" maxlength="126" id="titolo_art" rows="2" placeholder="Titolo..." tabindex="0" required oninvalid="this.setCustomValidity('Inserisci il titolo'); className ='notValid'" onchange="this.setCustomValidity(''); className = ''"></textarea>
           <label for="descr_art">Descrizione articolo (massimo 300 caratteri)</label>
-          <textarea spellcheck="true" maxlength="300" id="descr_art" rows="3" placeholder="Descrizione..." tabindex="13" required oninvalid="this.setCustomValidity('Inserisci la descrizione'); className ='notValid'" onchange="this.setCustomValidity(''); className = ''"></textarea>
+          <textarea spellcheck="true" maxlength="300" id="descr_art" rows="3" placeholder="Descrizione..." tabindex="0" required oninvalid="this.setCustomValidity('Inserisci la descrizione'); className ='notValid'" onchange="this.setCustomValidity(''); className = ''"></textarea>
           <label for="testo_art">Testo dell'articolo (massimo 10000 caratteri)</label>
-          <textarea spellcheck="true" maxlength="10000" id="testo_art" rows="10" placeholder="Testo dell'articolo..." tabindex="14" required oninvalid="this.setCustomValidity('Inserisci il testo'); className ='notValid'" onchange="this.setCustomValidity(''); className = ''"></textarea>
+          <textarea spellcheck="true" maxlength="10000" id="testo_art" rows="10" placeholder="Testo dell'articolo..." tabindex="0" required oninvalid="this.setCustomValidity('Inserisci il testo'); className ='notValid'" onchange="this.setCustomValidity(''); className = ''"></textarea>
         </fieldset>
         <div class="cat_img hFlex">
           <fieldset class="img_sel vFlex">
             <legend>Inserisci un'immagine (opzionale)</legend>
             <label for="image_up"><i class="fa fa-folder-open-o"></i> Scegli un'immagine</label>
-            <input type="file" id="image_up" accept="image/jpeg, image/png" tabindex="15">
+            <input type="file" id="image_up" accept="image/jpeg, image/png" tabindex="0">
           </fieldset>
           <fieldset class="cat_sel vFlex">
-            <legend>Scegli una o pi&ugrave; categorie:  (opzionale)</legend>
+            <legend>Scegli una o pi&ugrave; categorie: (opzionale)</legend>
               <div id="sport_cat" class="element">
                 <label for="sport_box">Sport</label>
-                <input type="checkbox" id="sport_box" value="Sport" tabindex="16">
+                <input type="checkbox" id="sport_box" value="Sport" tabindex="0">
               </div>
               <div id="economy_cat" class="element">
                 <label for="economia_box">Economia</label>
-                <input type="checkbox" id="economia_box" value="economia" tabindex="17">
+                <input type="checkbox" id="economia_box" value="economia" tabindex="0">
               </div>
               <div id="politics_cat" class="element">
                 <label for="politica_box">Politica</label>
-                <input type="checkbox" id="politica_box" value="politica" tabindex="18">
+                <input type="checkbox" id="politica_box" value="politica" tabindex="0">
               </div>
               <div id="gossip_cat" class="element">
                 <label for="gossip_box">Gossip</label>
-                <input type="checkbox" id="gossip_box" value="gossip" tabindex="19">
+                <input type="checkbox" id="gossip_box" value="gossip" tabindex="0">
               </div>
               <div id="world_cat" class="element">
                 <label for="mondo_box">Mondo</label>
-                <input type="checkbox" id="mondo_box" value="mondo" tabindex="20">
+                <input type="checkbox" id="mondo_box" value="mondo" tabindex="0">
               </div>
               <div id="science_cat" class="element">
                 <label for="scienze_box">Scienze</label>
-                <input type="checkbox" id="scienze_box" value="scienze" tabindex="21">
+                <input type="checkbox" id="scienze_box" value="scienze" tabindex="0">
               </div>
               <div id="covid_cat" class="element">
                 <label for="covid_box">Covid</label>
-                <input type="checkbox" id="covid_box" value="covid" tabindex="22">
+                <input type="checkbox" id="covid_box" value="covid" tabindex="0">
               </div>
               <div id="spett_cat" class="element">
                 <label for="spettacolo_box">Spettacolo</label>
-                <input type="checkbox" id="spettacolo_box" value="spettacolo" tabindex="23">
+                <input type="checkbox" id="spettacolo_box" value="spettacolo" tabindex="0">
               </div>
           </fieldset>
         </div>
-        <button type="submit" name="submit" tabindex="24">Invia</button>
+        <button type="submit" name="submit" tabindex="0">Invia</button>
       </form>
     </div>
 
@@ -139,12 +138,13 @@
       <img id="cssLogo" src="../img/css.png" alt="Logo che certifica il rispetto dello standard w3c nella scrittura del codice css">
       <address>
           Progetto di Tecnologie Web sviluppato da:<br>
-          <a href="mailto:andrea.polato.7@studenti.unipd.it" tabindex="25">Andrea Polato</a><br>
-          <a href="mailto:andrea.polato.7@studenti.unipd.it" tabindex="26">Tommaso Allegretti</a><br>
-          <a href="mailto:andrea.polato.7@studenti.unipd.it" tabindex="27">Giosu&egrave; Calgaro</a><br>
-          <a href="mailto:andrea.polato.7@studenti.unipd.it" tabindex="28">Matteo Miotello</a><br>
+          <a href="mailto:andrea.polato.7@studenti.unipd.it" tabindex="0">Andrea Polato</a><br>
+          <a href="mailto:andrea.polato.7@studenti.unipd.it" tabindex="0">Tommaso Allegretti</a><br>
+          <a href="mailto:andrea.polato.7@studenti.unipd.it" tabindex="0">Giosu&egrave; Calgaro</a><br>
+          <a href="mailto:andrea.polato.7@studenti.unipd.it" tabindex="0">Matteo Miotello</a><br>
       </address>
     </footer>
+    <a href="#top"><img src="../img/top.png" alt="Torna su" id="myBtn" tabindex="0"></a>
     <nav class="menu_noJS vFlex">
       <ul>
         <li lang="en"><a href="index.html">Home</a></li>
